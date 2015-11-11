@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Miniblog API Test Result</title>
+    <script type="text/javascript" src="src/jquery.js"></script>
+    <script type="text/javascript" src="src/Expand_Collapse.js"></script>
+    <link type="text/css" rel="stylesheet" href="src/skin.css">
+</head>
+<body>
+    <h1 align="center">API Test Result</h1>
+    <p align="right">
+        <input type="submit" id="Expand ALL" value="展开用例" onclick="Expand_Header()"/>
+        <input type="submit" id="Expand ALL" value="展开详情" onclick="Expand_All()"/>
+        <input type="submit" id="Collapse ALL" value="收起所有" onclick="Collapse_All()"/>
+    </p>
+    <hr />
+    <div class="URLID" id="URLID">
+        <table width="100%" border="1" style="table-layout:fixed">
+            
+        <tr class="1_apiheader">
+      <td width="10%" scope="col" class="T_Header"><a href="#">1</a></td>
+      <td width="10%" scope="col" class="C_Display">接口说明</td>
+      <td width="30%" scope="col" class="L_Display">http://10.75.11.55/api/module/list<BR>投票接口</td>
+      <td width="10%" scope="col" class="C_Display">参数说明</td>
+      <td width="50%" scope="col" class="L_Display"></td>
+    </tr>
+    
+    <tr class="case1-1_cheader" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="T_Header"><a href="#">1-1</a></td>
+      <td colspan="3" class="URL_Details">curl -H "Host:i.v6.vote.weibo.com" "http://10.75.11.55/api/module/list?uid=2422317524&page_id=1008083921144dda7f7e1c6f03b5177b924761"<br>必选项</td>
+    </tr>
+
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">期望结果</td>
+      <td class="L_Display">error_code</td>
+      <td class="runresult"><b><font color='Green'> PASS </font></b></td>
+      <td class="LU_Display">time_connect: 0.004<BR>time_starttransfer: 0.177<br>time_total: 0.177</td>
+    </tr>  
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">运行结果</td>
+      <td colspan="3" class="L_Display">{"error_code":1000,"error_msg":"succ","cache":0,"data":{"page_name":"\u5434\u5947\u9686\u624b\u6ed1","ownership":false,"unfold":2829,"votes":{"2829":{"info":{"id":"2829","title":"\u5434\u5947\u9686\u79f0\u4e3a\u58f0\u8ba8\u5218\u8bd7\u8bd7\u5fae\u535a\u70b9\u8d5e\u662f\u624b\u6ed1\uff0c\u4f60\u600e\u4e48\u770b","select_type":"1","description":"","option_type":"1","hidden":"","etime":"1416039315","endtime":"2014-11-15-16-15-15","detail_url":"http:\/\/weibo.com\/p\/230307_2829"},"count":{"total_join":8620},"joined":{"options":["1"]},"options":{"1":{"description":"\u5c31\u662f\u624b\u6ed1\uff0c\u6211\u4e5f\u7ecf\u5e38\u624b\u6ed1\u70b9\u8d5e\u554a","count":4470,"percent":"52%"},"2":{"description":"\u53cd\u6b63\u6211\u662f\u4e0d\u76f8\u4fe1\u3002\u3002","count":4150,"percent":"48%"}},"show_detail":1}},"total":1,"default_picture":"http:\/\/img.t.sinajs.cn\/t6\/style\/images\/face\/face_card_vote.png","pageinfo":[],"pageid":"1008083921144dda7f7e1c6f03b5177b924761","pagesize":5,"current":1}}</td>
+    </tr>
+    
+    <tr >
+      <td colspan="2" class="C_Display">结果统计</td>
+      <td class="C_Display">Total: <b>1</b>  Pass: <b><font color='Green'>1</font></b>  Fail: <b><font color='Red'>0</font></b></td>
+      <td class="C_Display">运行时间</td>
+      <td class="C_Display">2014-11-17 16:01:11</td>
+    </tr>
+    
+      </table>
+  <hr />
+</div>
+</body>
+</html>
+    

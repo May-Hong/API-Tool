@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Miniblog API Test Result</title>
+    <script type="text/javascript" src="src/jquery.js"></script>
+    <script type="text/javascript" src="src/Expand_Collapse.js"></script>
+    <link type="text/css" rel="stylesheet" href="src/skin.css">
+</head>
+<body>
+    <h1 align="center">API Test Result</h1>
+    <p align="right">
+        <input type="submit" id="Expand ALL" value="展开用例" onclick="Expand_Header()"/>
+        <input type="submit" id="Expand ALL" value="展开详情" onclick="Expand_All()"/>
+        <input type="submit" id="Collapse ALL" value="收起所有" onclick="Collapse_All()"/>
+    </p>
+    <hr />
+    <div class="URLID" id="URLID">
+        <table width="100%" border="1" style="table-layout:fixed">
+            
+        <tr class="1_apiheader">
+      <td width="10%" scope="col" class="T_Header"><a href="#">1</a></td>
+      <td width="10%" scope="col" class="C_Display">接口说明</td>
+      <td width="30%" scope="col" class="L_Display">http://i.huati.weibo.com/2/hottopic/list<BR>首页右侧热点话题接口</td>
+      <td width="10%" scope="col" class="C_Display">参数说明</td>
+      <td width="50%" scope="col" class="L_Display"></td>
+    </tr>
+    
+    <tr class="case1-1_cheader" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="T_Header"><a href="#">1-1</a></td>
+      <td colspan="3" class="URL_Details">curl "http://i.huati.weibo.com/2/hottopic/list?"<br>必选项</td>
+    </tr>
+
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">期望结果</td>
+      <td class="L_Display">"url":"http:\/\/huati.weibo.com</td>
+      <td class="runresult"><b><font color='Green'> PASS </font></b></td>
+      <td class="LU_Display">time_connect: 0.353<BR>time_starttransfer: 0.508<br>time_total: 0.508</td>
+    </tr>  
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">运行结果</td>
+      <td colspan="3" class="L_Display">[{"hot_time":"1425284677","url":"http:\/\/huati.weibo.com\/2028001","thread":{"id":"2028001","ctg1":"1","ctg2":0,"category1":"社会","category2":"","title":"","content":"在济南物流公司打工的河北邯郸35岁男子石志勇，为节省房租，住在了药山的一个山洞里。每月3000元收入全部寄回家中，“济南干装卸工，一个月3000多元，在老家也就一千七八。”为让父母妻儿放心，他一直称自己住单位宿舍。","metadata":{"tiled":1,"settype":2,"banner":"bdb42105jw1epr4e5157fj2050050mxd"},"province":"37","city":"0","created_at":"Mon Mar 02 08:53:53 +0800 2015","topic_name":"打工男子住山洞","is_hot":1,"has_tab":0},"uid":3182698757},{"hot_time":"1425282700","url":"http:\/\/huati.weibo.com\/2011023","thread":{"id":"2011023","ctg1":"1","ctg2":"0","category1":"社会","category2":"","title":"","content":"","metadata":{"tiled":1,"settype":2,"banner":"005TZOApgw1epmxayfos7j30500503z3"},"province":"0","city":"0","created_at":"Thu Feb 26 09:48:53 +0800 2015","topic_name":"小崔在两会","is_hot":1,"has_tab":0},"uid":5408095105},{"hot_time":"1425278556","url":"http:\/\/huati.weibo.com\/102774","thread":{"id":"102774","ctg1":"1","ctg2":0,"category1":"社会","category2":"","title":"","content":"北京市气象台2015年03月02日14时发布大风蓝色预警信号，2日傍晚至3日，北京市大部分地区将有5、6级偏北风，阵风可达8级左右，请注意防范。大家外出一定要注意防风，小心高空坠物。 北京羊年的第一场大风来了！","metadata":{"settype":"2","banner":"58a6d4eatw1egso43t0qnj2050050glu","tabdef":"0","tiled":"0","match_area":"0"},"province":"11","city":"0","created_at":"Sun May 19 15:33:30 +0800 2013","topic_name":"北京大风","is_hot":1,"has_tab":1},"uid":3215951873},{"hot_time":"1425278535","url":"http:\/\/huati.weibo.com\/2028248","thread":{"id":"2028248","ctg1":"1","ctg2":0,"category1":"社会","category2":"","title":"","content":"一名在地铁扮残疾乞讨的男子近日被警方抓获。据他交代，通过行乞，他已在北京买了两套房！他还划定了自己的地盘：“现在5号线就我自己，还有那个抱小孩的，来一个我就把腿打折一个，所以一个都不敢来。”","metadata":{"tiled":1,"settype":2,"banner":"bfaf8801jw1epr6g9boohj20500503ym"},"province":"11","city":"0","created_at":"Mon Mar 02 10:03:45 +0800 2015","topic_name":"乞丐买了两套房","is_hot":1,"has_tab":0},"uid":3215951873},{"hot_time":"1425278518","url":"http:\/\/huati.weibo.com\/2028289","thread":{"id":"2028289","ctg1":"1","ctg2":"0","category1":"社会","category2":"","title":"","content":"北京自3月1日起开征施工扬尘排污费。并实施差别化收费政策，工地扬尘管理达到优秀等级标准的，每公斤1.5元；达到达标等级的，每公斤3元；不达标的，每公斤6元。公租房建设工程、救灾和抢险工程，以及居民住房装修工地免收施工扬尘排污费。","metadata":{"tiled":1,"settype":2,"banner":"bfaf8801jw1epr6bia71yj2050050mxb"},"province":"11","city":"0","created_at":"Mon Mar 02 10:15:47 +0800 2015","topic_name":"开征扬尘排污费","is_hot":1,"has_tab":0},"uid":3215951873},{"hot_time":"1425278045","url":"http:\/\/huati.weibo.com\/28713","thread":{"id":"28713","ctg1":"102","ctg2":"0","category1":"电视节目","category2":"","title":"中央电视台节目《小丫跑两会》","content":"《小丫跑两会》是中央电视台《经济半小时》栏目配合两会报道创办的特别节目。每年两会期间，《小丫跑两会》准确抓住政治、经济热点，引发社会关注，获得人大代表、政协委员和社会各界的高度评价，已经成为两会报道中著名的品牌节目。","metadata":{"settype":"2","banner":"5ed41c57jw1e298u3i62xj","tabdef":"0","tiled":"0","match_area":"0"},"province":"0","city":"0","created_at":"Thu Feb 28 17:25:55 +0800 2013","topic_name":"小丫跑两会","is_hot":1,"has_tab":1},"uid":2258727970},{"hot_time":"1425277515","url":"http:\/\/huati.weibo.com\/2029144","thread":{"id":"2029144","ctg1":"1","ctg2":0,"category1":"社会","category2":"","title":"","content":"一根香蕉，你从哪边开始吃？[doge]现在A、B两派已经撕起来了，还有直接从中间折断吃的。。。和甜咸之争一样严肃的问题，小编想问问，不剥皮次的那个是谁？！","metadata":{"tiled":1,"settype":2,"banner":"7d000298jw1eprcqbuk61j20500503yk"},"province":"0","city":"0","created_at":"Mon Mar 02 14:00:38 +0800 2015","topic_name":"香蕉从哪头吃","is_hot":1,"has_tab":0},"uid":2097152664},{"hot_time":"1425276964","url":"http:\/\/huati.weibo.com\/2028745","thread":{"id":"2028745","ctg1":"8","ctg2":"0","category1":"其他","category2":"","title":"","content":"2月26日，河南大学生孟瑞鹏下水救2名落水儿童，自己不幸溺亡，当时，被救儿童及家属却称，“那个男的是自己掉进水里的”！今日凌晨，警方还原真相，确定孟瑞鹏有救人行为！孩子母亲承认，怕担责让小孩撒谎！事发第四天，瑞鹏付出生命去救人的事实终于得到公正对待！","metadata":{"tiled":1,"settype":2,"banner":"73de75e5jw1epr9r5zcugj20500500sy"},"province":"0","city":"0","created_at":"Mon Mar 02 12:11:08 +0800 2015","topic_name":"母教儿撒谎污蔑救人者","is_hot":1,"has_tab":0},"uid":2656274875},{"hot_time":"1425266496","url":"http:\/\/huati.weibo.com\/2028029","thread":{"id":"2028029","ctg1":"1","ctg2":0,"category1":"社会","category2":"","title":"","content":"央视调查显示：26-35岁未婚无恋人的人群中，选择感觉幸福和比较幸福的女性受访者(40.67%)，比例高于选择幸福的男性受访者(28.28%)，其中\"剩女\"更爱旅游，领先于其他群体。除此之外，女博士的幸福感也高于男博士。@央视财经 你怎么看[思考]","metadata":{"tiled":1,"settype":2,"banner":"7a273328jw1epr4eabr3gj20500503yo"},"province":"0","city":"0","created_at":"Mon Mar 02 09:03:40 +0800 2015","topic_name":"剩女比剩男幸福","is_hot":1,"has_tab":0},"uid":2049389352},{"hot_time":"1425266491","url":"http:\/\/huati.weibo.com\/2028110","thread":{"id":"2028110","ctg1":"1","ctg2":"0","category1":"社会","category2":"","title":"","content":"幸福城市前十：合肥、太原、海口、长沙、石家庄、泰安、辽阳、连云港、衡水、黄山。你是幸福呢？还是“被幸福了”？","metadata":{"tiled":1,"settype":2,"banner":"8b0ea584jw1epr59prnbvj2050050mxf"},"province":"0","city":"0","created_at":"Mon Mar 02 09:28:16 +0800 2015","topic_name":"幸福城市十强","is_hot":1,"has_tab":0},"uid":2332992900}]</td>
+    </tr>
+    
+    <tr >
+      <td colspan="2" class="C_Display">结果统计</td>
+      <td class="C_Display">Total: <b>1</b>  Pass: <b><font color='Green'>1</font></b>  Fail: <b><font color='Red'>0</font></b></td>
+      <td class="C_Display">运行时间</td>
+      <td class="C_Display">2015-03-02 16:24:41</td>
+    </tr>
+    
+      </table>
+  <hr />
+</div>
+</body>
+</html>
+    

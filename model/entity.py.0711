@@ -1,0 +1,68 @@
+#coding:utf-8
+import os
+import commands
+from multiprocessing import Process
+import codecs
+class Entity(object):
+   def __init__(self, name,host="127.0.0.1"):
+       self.name = name
+       self.host = host
+   """   @staticmethod
+   def get(name):
+       result=[]
+       for k,v in enumerate(name):
+         cmd='python ./model/api.py data/'+v
+         status,res = commands.getstatusoutput(cmd)
+         result.append(res)
+       return result"""
+   @staticmethod
+   def interface(name):
+        list=[]
+        sum=1
+        number=1
+        listfile=os.listdir(name)
+        for line in listfile:
+# print os.path.isdir(line)
+            if(not os.path.isfile(line) and line!="result"):
+                dic = {'id':number,'pId':0,'name':line,'open':'false'}
+#    print "11"
+                list.append(dic.copy())
+#                print list
+                filelist=os.listdir("data/"+line)
+                for file in filelist:
+                    file = file.replace('_','/')
+                    if file[-4:] == '.xls':
+                       sum=1
+                       dic = {'id':sum+number,'pId':number,'name':file[:-4]}
+                       list.append(dic.copy())
+                       sum=sum+1
+                number=sum+number
+#        print list
+        return list
+#for line in listfile:
+#           line =line.replace('_','/')
+#           if line[-4:] == '.xls':
+#              dic = {'id':sum,'pId':0,'name':line[:-4]}
+#              list.append(dic.copy())
+#              sum=sum+1
+#       return list
+   @staticmethod
+   def excute(v,host):
+        cmd='python ./model/api.py data/'+v+' '+host
+#print cmd
+        status,res = commands.getstatusoutput(cmd)
+        fReport = codecs.open("data/result.tmp", "a", "utf-8")
+        fReport.writelines(res+"\n")
+        fReport.close
+
+# @staticmethod
+   def get(self,name,host="127.0.0.1"):
+        jobs=[]
+#host=name[0]
+#       del name[0]
+        for k,v in enumerate(name):
+            p=Process(target=self.excute,args=(v,host))
+            jobs.append(p)
+            p.start()
+        for j in jobs:
+            j.join()

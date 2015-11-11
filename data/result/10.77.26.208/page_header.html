@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Miniblog API Test Result</title>
+    <script type="text/javascript" src="src/jquery.js"></script>
+    <script type="text/javascript" src="src/Expand_Collapse.js"></script>
+    <link type="text/css" rel="stylesheet" href="src/skin.css">
+</head>
+<body>
+    <h1 align="center">API Test Result</h1>
+    <p align="right">
+        <input type="submit" id="Expand ALL" value="展开用例" onclick="Expand_Header()"/>
+        <input type="submit" id="Expand ALL" value="展开详情" onclick="Expand_All()"/>
+        <input type="submit" id="Collapse ALL" value="收起所有" onclick="Collapse_All()"/>
+    </p>
+    <hr />
+    <div class="URLID" id="URLID">
+        <table width="100%" border="1" style="table-layout:fixed">
+            
+        <tr class="1_apiheader">
+      <td width="10%" scope="col" class="T_Header"><a href="#">1</a></td>
+      <td width="10%" scope="col" class="C_Display">接口说明</td>
+      <td width="30%" scope="col" class="L_Display">http://10.77.26.208/page/header<BR>头部</td>
+      <td width="10%" scope="col" class="C_Display">参数说明</td>
+      <td width="50%" scope="col" class="L_Display"></td>
+    </tr>
+    
+    <tr class="case1-1_cheader" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="T_Header"><a href="#">1-1</a></td>
+      <td colspan="3" class="URL_Details">curl -H "Host:i.huati.weibo.com" "http://10.77.26.208/page/header?page_id=1008083ef687ed58637966b4f3a04d8ade9f69"<br>必选项</td>
+    </tr>
+
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">期望结果</td>
+      <td class="L_Display">"title":"#test06271946#"</td>
+      <td class="runresult"><b><font color='Green'> PASS </font></b></td>
+      <td class="LU_Display">time_connect: 0.211<BR>time_starttransfer: 0.277<br>time_total: 0.277</td>
+    </tr>  
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">运行结果</td>
+      <td colspan="3" class="L_Display">{"error_code":1000,"error_msg":"succ","cache":0,"data":{"keywords":"","description":"话题自动化专用话题，不要修改话题自动化专用话题，不要修改,自动化专用话题，不要修改","page_title":"test06271946 - 在微话题一起聊聊吧！","title":"#test06271946#","id":"3ef687ed58637966b4f3a04d8ade9f69","photo":{"name":"","pic":"http:\/\/ww4.sinaimg.cn\/thumb180\/897d2f57jw1eiunnwn04hj2050050jrf.jpg"},"actions":{"wb":{"type":2,"params":{"style":8,"text":"发微博","title":"发微博","content":"#test06271946# ","ssm_module":"share_topic","api_url":"http:\/\/i.huati.weibo.com\/page\/modulepublisher","id":"1008083ef687ed58637966b4f3a04d8ade9f69","domain":"100808"}},"follow":{"type":6,"params":{"style":4,"text":"关注","touid":"1008083ef687ed58637966b4f3a04d8ade9f69"}},"apply":{"type":18,"params":{"style":3,"text":"申请主持人","action":1,"layer":[]}}}}}</td>
+    </tr>
+    
+    <tr >
+      <td colspan="2" class="C_Display">结果统计</td>
+      <td class="C_Display">Total: <b>1</b>  Pass: <b><font color='Green'>1</font></b>  Fail: <b><font color='Red'>0</font></b></td>
+      <td class="C_Display">运行时间</td>
+      <td class="C_Display">2015-02-15 19:05:58</td>
+    </tr>
+    
+      </table>
+  <hr />
+</div>
+</body>
+</html>
+    

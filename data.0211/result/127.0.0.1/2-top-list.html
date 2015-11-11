@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Miniblog API Test Result</title>
+    <script type="text/javascript" src="src/jquery.js"></script>
+    <script type="text/javascript" src="src/Expand_Collapse.js"></script>
+    <link type="text/css" rel="stylesheet" href="src/skin.css">
+</head>
+<body>
+    <h1 align="center">API Test Result</h1>
+    <p align="right">
+        <input type="submit" id="Expand ALL" value="展开用例" onclick="Expand_Header()"/>
+        <input type="submit" id="Expand ALL" value="展开详情" onclick="Expand_All()"/>
+        <input type="submit" id="Collapse ALL" value="收起所有" onclick="Collapse_All()"/>
+    </p>
+    <hr />
+    <div class="URLID" id="URLID">
+        <table width="100%" border="1" style="table-layout:fixed">
+            
+        <tr class="1_apiheader">
+      <td width="10%" scope="col" class="T_Header"><a href="#">1</a></td>
+      <td width="10%" scope="col" class="C_Display">接口说明</td>
+      <td width="30%" scope="col" class="L_Display">http://i.huati.weibo.com/2/top/list<BR>话题排行榜</td>
+      <td width="10%" scope="col" class="C_Display">参数说明</td>
+      <td width="50%" scope="col" class="L_Display"></td>
+    </tr>
+    
+    <tr class="case1-1_cheader" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="T_Header"><a href="#">1-1</a></td>
+      <td colspan="3" class="URL_Details">curl "http://i.huati.weibo.com/2/top/list?"<br>必选项</td>
+    </tr>
+
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">期望结果</td>
+      <td class="L_Display">total_number</td>
+      <td class="runresult"><b><font color='Green'> PASS </font></b></td>
+      <td class="LU_Display">time_connect: 0.120<BR>time_starttransfer: 0.252<br>time_total: 0.252</td>
+    </tr>  
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">运行结果</td>
+      <td colspan="3" class="L_Display">{"total_number":7,"list":[{"title":"","content":"#东方眼#恒大公布亚冠巨奖方案，球队五年内要成#世界豪门#！恒大亚冠将实施“31031”奖金方案，即赢一场奖300万元，平局奖100万元，输球不奖不罚，每净胜对手一球奖300万元，每晋级一轮奖1000万元。而上赛季，恒大的净胜球奖是200万元，晋级奖为600万元。和去年相比今年恒大的亚冠奖金又涨了不少。","topic":"世界豪门","num":3768,"url":"http:\/\/huati.weibo.com\/1935702","province":0,"tid":1935702,"create_time":"1423203547","uid":"","ctg1_name":""},{"title":"","content":"一犯罪团伙将拐来的“越南新娘”贩卖给安徽农村的未婚男青年。近日，无锡@锡山法院 审理了这起案件。令人惊讶的是，犯罪嫌疑人熊某的女儿也曾被人贩子拐卖到外地。尝过失女之痛的熊某，却辩称自己是帮人介绍老婆，不是拐卖，是做善事。","topic":"人贩子女儿也曾被拐卖","num":15,"url":"http:\/\/huati.weibo.com\/1935350","province":"0","tid":1935350,"create_time":"1423198394","uid":"","ctg1_name":""},{"title":"","content":"近日，摄影师刘嘉楠通过时尚性感的手法来另类演绎，拍摄了一组女模特裸大腿放鞭炮的图片，向春节致敬。","topic":"性感女模裸大腿放鞭炮","num":198,"url":"http:\/\/huati.weibo.com\/1935280","province":"0","tid":1935280,"create_time":"1423197098","uid":"","ctg1_name":""},{"title":"","content":"父母把熊孩子辛辛苦苦拉扯大何其不易！乌鸦反哺，羊羔跪乳，开始搬砖挣钱的你，到年底会包个多大的红包给爸爸妈妈当做辛苦一年的年终奖呢？","topic":"给父母发年终奖","num":162,"url":"http:\/\/huati.weibo.com\/1935253","province":"0","tid":1935253,"create_time":"1423196794","uid":"","ctg1_name":""},{"title":"","content":"2月4日，沧州南皮县有一家5口人在自家门店摆摊卖春联时与城管发生冲突，5人被打伤，其中2人被打致多处骨折。","topic":"城管殴打一家五口","num":312,"url":"http:\/\/huati.weibo.com\/1934859","province":"0","tid":1934859,"create_time":"1423192329","uid":"","ctg1_name":""},{"title":"","content":"连续16年高考升学率雄踞湖北榜首，一本升学率90%以上。昨日，华师一附中“培养学生关键能力”博雅论坛上，校长周鹏程直言，将摒弃应试教育，不再比拼高考成绩，而重在赋予学生“关键能力”，“要让学生们走上社会后，活得很滋润、很幸福”。","topic":"不跟升学率玩了","num":3,"url":"http:\/\/huati.weibo.com\/1934690","province":"0","tid":1934690,"create_time":"1423190106","uid":"","ctg1_name":""},{"title":"","content":"又是一年春节到，在很多地方马上又到合家团圆吃饺子的时候啦！中式传统饺子肯定是再熟悉不过了，但是歪果仁吃什么饺子你造吗？黑麦白鼠饺子，仰面朝天的饺子……美食世界观又被刷新！戳图↓↓想不想尝试一下呢？","topic":"外国饺子也疯狂","num":129,"url":"http:\/\/huati.weibo.com\/1934586","province":"0","tid":1934586,"create_time":"1423188920","uid":"","ctg1_name":""},{"title":"","content":"看看群众的控诉吧!","topic":"坚决不用EMS","num":394,"url":"http:\/\/huati.weibo.com\/1934535","province":"0","tid":1934535,"create_time":"1423188216","uid":"","ctg1_name":""},{"title":"","content":"据@央广网：韩国专利厅查抄了一处制造假冒丽得姿面膜的窝点。此窝点已制造26.6万张丽得姿针剂补水面膜！更可怕的是，已有10万多张面膜销往中国。假冒品含有害防腐剂！提醒：韩国并非没假货！","topic":"韩国假面膜销往中国","num":7480,"url":"http:\/\/huati.weibo.com\/1934360","province":"0","tid":1934360,"create_time":"1423185739","uid":"","ctg1_name":""},{"title":"","content":"武汉郭女士说，父母喜欢出门旅游，每次出门前都准备100元钱和信给“不速之客”，这次居然涨到300元，真是醉了！但父母表示‘人之初性本善，拉一把总是有用的’。2010年夏天，他们的钱和信还真被拿走过，但家中其他地方没有被翻动。","topic":"给小偷备压岁钱","num":24,"url":"http:\/\/huati.weibo.com\/1934339","province":"0","tid":1934339,"create_time":"1423185466","uid":"","ctg1_name":""}]}</td>
+    </tr>
+    
+    <tr >
+      <td colspan="2" class="C_Display">结果统计</td>
+      <td class="C_Display">Total: <b>1</b>  Pass: <b><font color='Green'>1</font></b>  Fail: <b><font color='Red'>0</font></b></td>
+      <td class="C_Display">运行时间</td>
+      <td class="C_Display">2015-02-06 14:55:26</td>
+    </tr>
+    
+      </table>
+  <hr />
+</div>
+</body>
+</html>
+    

@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Miniblog API Test Result</title>
+    <script type="text/javascript" src="src/jquery.js"></script>
+    <script type="text/javascript" src="src/Expand_Collapse.js"></script>
+    <link type="text/css" rel="stylesheet" href="src/skin.css">
+</head>
+<body>
+    <h1 align="center">API Test Result</h1>
+    <p align="right">
+        <input type="submit" id="Expand ALL" value="展开用例" onclick="Expand_Header()"/>
+        <input type="submit" id="Expand ALL" value="展开详情" onclick="Expand_All()"/>
+        <input type="submit" id="Collapse ALL" value="收起所有" onclick="Collapse_All()"/>
+    </p>
+    <hr />
+    <div class="URLID" id="URLID">
+        <table width="100%" border="1" style="table-layout:fixed">
+            
+        <tr class="1_apiheader">
+      <td width="10%" scope="col" class="T_Header"><a href="#">1</a></td>
+      <td width="10%" scope="col" class="C_Display">接口说明</td>
+      <td width="30%" scope="col" class="L_Display">http://10.75.11.126/page/eventtvtop<BR>疯狂综艺季模块</td>
+      <td width="10%" scope="col" class="C_Display">参数说明</td>
+      <td width="50%" scope="col" class="L_Display"></td>
+    </tr>
+    
+    <tr class="case1-1_cheader" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="T_Header"><a href="#">1-1</a></td>
+      <td colspan="3" class="URL_Details">curl -H "Host:i.huati.weibo.com" "http://10.75.11.126/page/eventtvtop?page_id=1008089b194129c01fdedf57f5ea13593636da"<br>必选项</td>
+    </tr>
+
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">期望结果</td>
+      <td class="L_Display">"title":"\u7efc\u827a\u6392\u884c\u699c"</td>
+      <td class="runresult"><b><font color='Green'> PASS </font></b></td>
+      <td class="LU_Display">time_connect: 0.134<BR>time_starttransfer: 0.312<br>time_total: 0.312</td>
+    </tr>  
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">运行结果</td>
+      <td colspan="3" class="L_Display">{"error_code":1000,"error_msg":"\u6210\u529f","cache":600,"data":{"control":{"display":0},"card_title":{"title":"\u7efc\u827a\u6392\u884c\u699c"},"items":[{"text":"#\u7238\u7238\u53bb\u54ea\u513f#","desc":"112.4\u4ebf\u9605\u8bfb","text_link":"http:\/\/weibo.com\/p\/10080855e53ae2fe5a4875c96f36c9ee8f692e?k=%E7%88%B8%E7%88%B8%E5%8E%BB%E5%93%AA%E5%84%BF&from=page_eventtvtop","text_link_target":"blank","icon":"http:\/\/img.t.sinajs.cn\/t5\/style\/images\/topic_PCD\/num\/num1.png?version=20140617114630"},{"text":"#\u4e2d\u56fd\u597d\u58f0\u97f3#","desc":"15.9\u4ebf\u9605\u8bfb","text_link":"http:\/\/weibo.com\/p\/100808c567790fa04aee36bc73e42dbb5e4859?k=%E4%B8%AD%E5%9B%BD%E5%A5%BD%E5%A3%B0%E9%9F%B3&from=page_eventtvtop","text_link_target":"blank","icon":"http:\/\/img.t.sinajs.cn\/t5\/style\/images\/topic_PCD\/num\/num2.png?version=20140617114630"},{"text":"#\u6700\u5f3a\u5929\u56e2#","desc":"3\u4ebf\u9605\u8bfb","text_link":"http:\/\/weibo.com\/p\/1008084818c2b05cc29bcde6bc740df13f51ff?k=%E6%9C%80%E5%BC%BA%E5%A4%A9%E5%9B%A2&from=page_eventtvtop","text_link_target":"blank","icon":"http:\/\/img.t.sinajs.cn\/t5\/style\/images\/topic_PCD\/num\/num3.png?version=20140617114630"},{"text":"#\u4e00\u7ad9\u5230\u5e95\u82f1\u96c4\u8054\u76df\u5b63#","desc":"2385.5\u4e07\u9605\u8bfb","text_link":"http:\/\/weibo.com\/p\/100808ad69e0968b6b19b7a31f3ac4a4091549?k=%E4%B8%80%E7%AB%99%E5%88%B0%E5%BA%95%E8%8B%B1%E9%9B%84%E8%81%94%E7%9B%9F%E5%AD%A3&from=page_eventtvtop","text_link_target":"blank","icon":"http:\/\/img.t.sinajs.cn\/t5\/style\/images\/topic_PCD\/num\/num4.png?version=20140617114630"},{"text":"#\u8ba9\u4e16\u754c\u542c\u89c1#","desc":"1311.8\u4e07\u9605\u8bfb","text_link":"http:\/\/weibo.com\/p\/100808db613b491bbb5efe0123355e6e030c98?k=%E8%AE%A9%E4%B8%96%E7%95%8C%E5%90%AC%E8%A7%81&from=page_eventtvtop","text_link_target":"blank","icon":"http:\/\/img.t.sinajs.cn\/t5\/style\/images\/topic_PCD\/num\/num5.png?version=20140617114630"}],"more_text":"\u67e5\u770b\u66f4\u591a","more_link":"http:\/\/weibo.com\/p\/2304070002_785\/?from=huati_page_tvtop","more_link_target":"blank","bottom_pagebar":1}}</td>
+    </tr>
+    
+    <tr >
+      <td colspan="2" class="C_Display">结果统计</td>
+      <td class="C_Display">Total: <b>1</b>  Pass: <b><font color='Green'>1</font></b>  Fail: <b><font color='Red'>0</font></b></td>
+      <td class="C_Display">运行时间</td>
+      <td class="C_Display">2014-08-15 11:03:08</td>
+    </tr>
+    
+      </table>
+  <hr />
+</div>
+</body>
+</html>
+    

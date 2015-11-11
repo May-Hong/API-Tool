@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Miniblog API Test Result</title>
+    <script type="text/javascript" src="src/jquery.js"></script>
+    <script type="text/javascript" src="src/Expand_Collapse.js"></script>
+    <link type="text/css" rel="stylesheet" href="src/skin.css">
+</head>
+<body>
+    <h1 align="center">API Test Result</h1>
+    <p align="right">
+        <input type="submit" id="Expand ALL" value="展开用例" onclick="Expand_Header()"/>
+        <input type="submit" id="Expand ALL" value="展开详情" onclick="Expand_All()"/>
+        <input type="submit" id="Collapse ALL" value="收起所有" onclick="Collapse_All()"/>
+    </p>
+    <hr />
+    <div class="URLID" id="URLID">
+        <table width="100%" border="1" style="table-layout:fixed">
+            
+        <tr class="1_apiheader">
+      <td width="10%" scope="col" class="T_Header"><a href="#">1</a></td>
+      <td width="10%" scope="col" class="C_Display">接口说明</td>
+      <td width="30%" scope="col" class="L_Display">http://10.77.26.34/page/usertopic<BR>Page接口，获取用户的话题（主持的+参与的）</td>
+      <td width="10%" scope="col" class="C_Display">参数说明</td>
+      <td width="50%" scope="col" class="L_Display"></td>
+    </tr>
+    
+    <tr class="case1-1_cheader" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="T_Header"><a href="#">1-1</a></td>
+      <td colspan="3" class="URL_Details">curl -H "Host:i.huati.weibo.com" "http://10.77.26.34/page/usertopic?page_id=1008082919868217&uid=2919868217"<br>必选项</td>
+    </tr>
+
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">期望结果</td>
+      <td class="L_Display">"error_msg":"succ"</td>
+      <td class="runresult"><b><font color='Green'> PASS </font></b></td>
+      <td class="LU_Display">time_connect: 0.089<BR>time_starttransfer: 0.280<br>time_total: 0.280</td>
+    </tr>  
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">运行结果</td>
+      <td colspan="3" class="L_Display">{"error_code":1000,"error_msg":"succ","cache":0,"data":{"control":{"display":0,"message":"","image":""},"title":"我的话题","items":[{"img_src":"http:\/\/img.t.sinajs.cn\/t4\/appstyle\/topic\/images\/topic\/page\/normal_150.png?version=20141030023137","img_link":"http:\/\/huati.weibo.com\/1374313?from=weibo_tab_user_topic","title":"[url='http:\/\/huati.weibo.com\/1374313?from=weibo_tab_user_topic' title='test___%E6%88%91%E6%89%8D%E4%B8%8D%E5%8A%A0%E7%8F%AD%E5%91%A2' alt='test___%E6%88%91%E6%89%8D%E4%B8%8D%E5%8A%A0%E7%8F%AD%E5%91%A2' target='_blank']#test___我才不加班呢#[\/url]","detail":"","desc":"693阅读","detail_operate_link":[{"type":2,"params":{"style":3,"text":"分享","title":"分享到微博","content":"#test___我才不加班呢# http:\/\/huati.weibo.com\/1374313","ssm_module":"share_topic"}}]},{"img_src":"http:\/\/ww2.sinaimg.cn\/thumb150\/e9345cbdjw1enm0w4jgaqj2050050dft.jpg","img_link":"http:\/\/huati.weibo.com\/1671498?from=weibo_tab_user_topic","title":"[url='http:\/\/huati.weibo.com\/1671498?from=weibo_tab_user_topic' title='%E4%B8%80%E8%B5%B7%E5%8F%91%E7%BA%A2%E5%8C%85%E5%90%A7' alt='%E4%B8%80%E8%B5%B7%E5%8F%91%E7%BA%A2%E5%8C%85%E5%90%A7' target='_blank']#一起发红包吧#[\/url]","detail":"2月2日！小红携手超人气大咖，一起发红包。真金白银的现金福利，怎能错过？今年，就跟着爱豆们一起发红包吧！","desc":"44.2亿阅读","detail_operate_link":[{"type":2,"params":{"style":3,"text":"分享","title":"分享到微博","content":"#一起发红包吧# http:\/\/huati.weibo.com\/1671498","ssm_module":"share_topic"}}]},{"img_src":"http:\/\/img.t.sinajs.cn\/t4\/appstyle\/topic\/images\/topic\/page\/normal_150.png?version=20141030023137","img_link":"http:\/\/huati.weibo.com\/1368776?from=weibo_tab_user_topic","title":"[url='http:\/\/huati.weibo.com\/1368776?from=weibo_tab_user_topic' title='test___lixiangtest4' alt='test___lixiangtest4' target='_blank']#test___lixiangtest4#[\/url]","detail":"","desc":"5511阅读","detail_operate_link":[{"type":2,"params":{"style":3,"text":"分享","title":"分享到微博","content":"#test___lixiangtest4# http:\/\/huati.weibo.com\/1368776","ssm_module":"share_topic"}}]},{"img_src":"http:\/\/img.t.sinajs.cn\/t4\/appstyle\/topic\/images\/topic\/page\/normal_150.png?version=20141030023137","img_link":"http:\/\/huati.weibo.com\/1366516?from=weibo_tab_user_topic","title":"[url='http:\/\/huati.weibo.com\/1366516?from=weibo_tab_user_topic' title='test___lixiangtest2' alt='test___lixiangtest2' target='_blank']#test___lixiangtest2#[\/url]","detail":"","desc":"4215阅读","detail_operate_link":[{"type":2,"params":{"style":3,"text":"分享","title":"分享到微博","content":"#test___lixiangtest2# http:\/\/huati.weibo.com\/1366516","ssm_module":"share_topic"}}]},{"img_src":"http:\/\/img.t.sinajs.cn\/t4\/appstyle\/topic\/images\/topic\/page\/normal_150.png?version=20141030023137","img_link":"http:\/\/huati.weibo.com\/1365863?from=weibo_tab_user_topic","title":"[url='http:\/\/huati.weibo.com\/1365863?from=weibo_tab_user_topic' title='test___lixiangtest15' alt='test___lixiangtest15' target='_blank']#test___lixiangtest15#[\/url]","detail":"","desc":"8725阅读","detail_operate_link":[{"type":2,"params":{"style":3,"text":"分享","title":"分享到微博","content":"#test___lixiangtest15# http:\/\/huati.weibo.com\/1365863","ssm_module":"share_topic"}}]},{"img_src":"http:\/\/ww4.sinaimg.cn\/thumb150\/7dced06cjw1emyzl5cfo5j2050050aan.jpg","img_link":"http:\/\/huati.weibo.com\/1142794?from=weibo_tab_user_topic","title":"[url='http:\/\/huati.weibo.com\/1142794?from=weibo_tab_user_topic' title='%E6%88%91%E6%98%AF%E7%BB%BC%E8%89%BA%E5%92%96' alt='%E6%88%91%E6%98%AF%E7%BB%BC%E8%89%BA%E5%92%96' target='_blank']#我是综艺咖#[\/url]","detail":"快来看看你是哪种综艺咖吧！","desc":"2.5亿阅读","detail_operate_link":[{"type":2,"params":{"style":3,"text":"分享","title":"分享到微博","content":"#我是综艺咖# http:\/\/huati.weibo.com\/1142794","ssm_module":"share_topic"}}]},{"img_src":"http:\/\/ww4.sinaimg.cn\/thumb150\/897d2f57jw1eiunnwn04hj2050050jrf.jpg","img_link":"http:\/\/huati.weibo.com\/1117911?from=weibo_tab_user_topic","title":"[url='http:\/\/huati.weibo.com\/1117911?from=weibo_tab_user_topic' title='test06271946' alt='test06271946' target='_blank']#test06271946#[\/url]","detail":"话题自动化专用话题，不要修改话题自动化专用话题，不要修改,自动化专用话题，不要修改","desc":"6万阅读","detail_operate_link":[{"type":2,"params":{"style":3,"text":"分享","title":"分享到微博","content":"#test06271946# http:\/\/huati.weibo.com\/1117911","ssm_module":"share_topic"}}]},{"img_src":"http:\/\/ww1.sinaimg.cn\/thumb150\/7dc4ccf3jw1enwbqum8yej20f30ebt8y.jpg","img_link":"http:\/\/huati.weibo.com\/338701?from=weibo_tab_user_topic","title":"[url='http:\/\/huati.weibo.com\/338701?from=weibo_tab_user_topic' title='%E7%88%B8%E7%88%B8%E5%9B%9E%E6%9D%A5%E4%BA%86' alt='%E7%88%B8%E7%88%B8%E5%9B%9E%E6%9D%A5%E4%BA%86' target='_blank']#爸爸回来了#[\/url]","detail":" ","desc":"10.7亿阅读","detail_operate_link":[{"type":2,"params":{"style":3,"text":"分享","title":"分享到微博","content":"#爸爸回来了# http:\/\/huati.weibo.com\/338701","ssm_module":"share_topic"}}]},{"img_src":"http:\/\/ww1.sinaimg.cn\/thumb150\/ea954021jw1eo4hxiscxnj2050050q35.jpg","img_link":"http:\/\/huati.weibo.com\/905045?from=weibo_tab_user_topic","title":"[url='http:\/\/huati.weibo.com\/905045?from=weibo_tab_user_topic' title='%E7%83%AD%E9%97%A8%E8%B4%A2%E7%BB%8F' alt='%E7%83%AD%E9%97%A8%E8%B4%A2%E7%BB%8F' target='_blank']#热门财经#[\/url]","detail":"利息网(51Saving.Com)是国内较早的致力于金融导航服务的提供商之一。自2005年建立以来，利息网积聚九年专业精神，秉承一切以用户价值为依归的经营理念，逐步确立了自己在互联网金融与传统银行业之间的整合优势地位和品牌...","desc":"1217.9万阅读","detail_operate_link":[{"type":2,"params":{"style":3,"text":"分享","title":"分享到微博","content":"#热门财经# http:\/\/huati.weibo.com\/905045","ssm_module":"share_topic"}}]},{"img_src":"http:\/\/ww2.sinaimg.cn\/thumb150\/e191a194tw1efweo6u8c3j2050050jrm.jpg","img_link":"http:\/\/huati.weibo.com\/999822?from=weibo_tab_user_topic","title":"[url='http:\/\/huati.weibo.com\/999822?from=weibo_tab_user_topic' title='%E4%B8%80%E8%B5%B7%E5%A4%B8%E8%80%81%E5%A6%88' alt='%E4%B8%80%E8%B5%B7%E5%A4%B8%E8%80%81%E5%A6%88' target='_blank']#一起夸老妈#[\/url]","detail":" 一起夸老妈大赛来袭！把一切赞美的言语都献给自己最爱的老妈吧~~ ","desc":"7772.9万阅读","detail_operate_link":[{"type":2,"params":{"style":3,"text":"分享","title":"分享到微博","content":"#一起夸老妈# http:\/\/huati.weibo.com\/999822","ssm_module":"share_topic"}}]}],"total_number":72}}</td>
+    </tr>
+    
+    <tr >
+      <td colspan="2" class="C_Display">结果统计</td>
+      <td class="C_Display">Total: <b>1</b>  Pass: <b><font color='Green'>1</font></b>  Fail: <b><font color='Red'>0</font></b></td>
+      <td class="C_Display">运行时间</td>
+      <td class="C_Display">2015-01-29 13:31:00</td>
+    </tr>
+    
+      </table>
+  <hr />
+</div>
+</body>
+</html>
+    

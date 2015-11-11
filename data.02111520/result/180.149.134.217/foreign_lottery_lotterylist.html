@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Miniblog API Test Result</title>
+    <script type="text/javascript" src="src/jquery.js"></script>
+    <script type="text/javascript" src="src/Expand_Collapse.js"></script>
+    <link type="text/css" rel="stylesheet" href="src/skin.css">
+</head>
+<body>
+    <h1 align="center">API Test Result</h1>
+    <p align="right">
+        <input type="submit" id="Expand ALL" value="展开用例" onclick="Expand_Header()"/>
+        <input type="submit" id="Expand ALL" value="展开详情" onclick="Expand_All()"/>
+        <input type="submit" id="Collapse ALL" value="收起所有" onclick="Collapse_All()"/>
+    </p>
+    <hr />
+    <div class="URLID" id="URLID">
+        <table width="100%" border="1" style="table-layout:fixed">
+            
+        <tr class="1_apiheader">
+      <td width="10%" scope="col" class="T_Header"><a href="#">1</a></td>
+      <td width="10%" scope="col" class="C_Display">接口说明</td>
+      <td width="30%" scope="col" class="L_Display">http://180.149.134.217/foreign_lottery/lotterylist<BR>判断一个用户在一个活动中是否有抽奖资格</td>
+      <td width="10%" scope="col" class="C_Display">参数说明</td>
+      <td width="50%" scope="col" class="L_Display"></td>
+    </tr>
+    
+    <tr class="case1-1_cheader" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="T_Header"><a href="#">1-1</a></td>
+      <td colspan="3" class="URL_Details">curl -H "Host:i.brand.service.weibo.com" "http://180.149.134.217/foreign_lottery/lotterylist?event_id=15530"<br>必选项</td>
+    </tr>
+
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">期望结果</td>
+      <td class="L_Display">"code":"1000","msg":"success</td>
+      <td class="runresult"><b><font color='Green'> PASS </font></b></td>
+      <td class="LU_Display">time_connect: 0.005<BR>time_starttransfer: 0.207<br>time_total: 0.207</td>
+    </tr>  
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">运行结果</td>
+      <td colspan="3" class="L_Display">{"code":"1000","msg":"success","data":{"list":[{"uid":"3971689911","eventid":"15530","awardid":"28957","code":"d41db3b21f5aacbadb8e6867","time":"1398134541","flag":"0","groupflag":"0","lotteryid":"7906462","name":"10\u5143\u5145\u503c\u5361"},{"uid":"3190132503","eventid":"15530","awardid":"28957","code":"d8f2c18ab3ba4e1b6c1f9a36","time":"1398130153","flag":"0","groupflag":"0","lotteryid":"7906410","name":"10\u5143\u5145\u503c\u5361"},{"uid":"3577650945","eventid":"15530","awardid":"28957","code":"7a4fe2969a03ff6a92766a78","time":"1398126194","flag":"0","groupflag":"0","lotteryid":"7906354","name":"10\u5143\u5145\u503c\u5361"},{"uid":"1253923801","eventid":"15530","awardid":"28957","code":"928d74872046dfe7682c9bdb","time":"1398122588","flag":"0","groupflag":"0","lotteryid":"7906306","name":"10\u5143\u5145\u503c\u5361"},{"uid":"3210304491","eventid":"15530","awardid":"28957","code":"3206a846e14b1fad07f79e1f","time":"1398110864","flag":"0","groupflag":"0","lotteryid":"7906230","name":"10\u5143\u5145\u503c\u5361"},{"uid":"2053606615","eventid":"15530","awardid":"28957","code":"208954db43d0010c84e195b3","time":"1398109069","flag":"0","groupflag":"0","lotteryid":"7906222","name":"10\u5143\u5145\u503c\u5361"},{"uid":"1931130755","eventid":"15530","awardid":"28957","code":"c374ec28e3f631221873314d","time":"1398090739","flag":"0","groupflag":"0","lotteryid":"7906011","name":"10\u5143\u5145\u503c\u5361"},{"uid":"2141476270","eventid":"15530","awardid":"28957","code":"f3645a251abbf07d7b73a417","time":"1398087249","flag":"0","groupflag":"0","lotteryid":"7905964","name":"10\u5143\u5145\u503c\u5361"},{"uid":"1769755055","eventid":"15530","awardid":"28957","code":"abef3386f10d283a95bb4f82","time":"1398087132","flag":"0","groupflag":"0","lotteryid":"7905961","name":"10\u5143\u5145\u503c\u5361"},{"uid":"2012107477","eventid":"15530","awardid":"28957","code":"07d0980a22550d5eab2ceb98","time":"1398085811","flag":"0","groupflag":"0","lotteryid":"7905942","name":"10\u5143\u5145\u503c\u5361"}],"number":"12"}}</td>
+    </tr>
+    
+    <tr >
+      <td colspan="2" class="C_Display">结果统计</td>
+      <td class="C_Display">Total: <b>1</b>  Pass: <b><font color='Green'>1</font></b>  Fail: <b><font color='Red'>0</font></b></td>
+      <td class="C_Display">运行时间</td>
+      <td class="C_Display">2014-08-14 10:21:55</td>
+    </tr>
+    
+      </table>
+  <hr />
+</div>
+</body>
+</html>
+    

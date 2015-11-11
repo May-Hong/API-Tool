@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Miniblog API Test Result</title>
+    <script type="text/javascript" src="src/jquery.js"></script>
+    <script type="text/javascript" src="src/Expand_Collapse.js"></script>
+    <link type="text/css" rel="stylesheet" href="src/skin.css">
+</head>
+<body>
+    <h1 align="center">API Test Result</h1>
+    <p align="right">
+        <input type="submit" id="Expand ALL" value="展开用例" onclick="Expand_Header()"/>
+        <input type="submit" id="Expand ALL" value="展开详情" onclick="Expand_All()"/>
+        <input type="submit" id="Collapse ALL" value="收起所有" onclick="Collapse_All()"/>
+    </p>
+    <hr />
+    <div class="URLID" id="URLID">
+        <table width="100%" border="1" style="table-layout:fixed">
+            
+        <tr class="1_apiheader">
+      <td width="10%" scope="col" class="T_Header"><a href="#">1</a></td>
+      <td width="10%" scope="col" class="C_Display">接口说明</td>
+      <td width="30%" scope="col" class="L_Display">http://10.73.31.26/2/trendtop/hour<BR>获取热门话题榜单小时榜</td>
+      <td width="10%" scope="col" class="C_Display">参数说明</td>
+      <td width="50%" scope="col" class="L_Display"></td>
+    </tr>
+    
+    <tr class="case1-1_cheader" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="T_Header"><a href="#">1-1</a></td>
+      <td colspan="3" class="URL_Details">curl -H "Host:i.huati.weibo.com" "http://10.73.31.26/2/trendtop/hour?"<br>必选项</td>
+    </tr>
+
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">期望结果</td>
+      <td class="L_Display">total_number</td>
+      <td class="runresult"><b><font color='Green'> PASS </font></b></td>
+      <td class="LU_Display">time_connect: 0.064<BR>time_starttransfer: 0.150<br>time_total: 0.151</td>
+    </tr>  
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">运行结果</td>
+      <td colspan="3" class="L_Display">{"total_number":276,"date":"2014-08-15","hour":"10","data":[{"hotval":"284801","topic":"\u5468\u6770\u4f26\u6606\u51cc\u767b\u8bb0\u7ed3\u5a5a","title":"","url":"http:\/\/huati.weibo.com\/1218487","thread":{"id":"1218487","ctg1":"2","ctg2":"0","category1":"\u5a31\u4e50\u516b\u5366","category2":"","title":"\u7537\u795e\u5df2\u9886\u8bc1\u5e76\u540c\u5c45\uff0c\u7f51\u53cb\u542b\u6cea\u795d\u798f(\u56fe)","content":"\u636e\u53f0\u6e7e\u5a92\u4f53\u62a5\u9053\uff0c\u5468\u6770\u4f26\u4eca\u5e747\u6708\u5927\u65b9\u516c\u5f00\u660e\u5e741\u6708\u8981\u628a\u6606\u51cc\u5a36\u56de\u5bb6\uff0c\u4e0d\u8fc7\uff0c\u4ed6\u7684\u90bb\u5c45\u7206\u6599\uff0c\u4e24\u4eba\u65e9\u57285\u6708\u5c31\u767b\u8bb0\u4e86\uff0c\u4e14\u5df2\u7ecf\u4f4f\u5728\u4e00\u8d77\u3002\u5bf9\u6b64\uff0c\u5468\u8463\u7ecf\u7eaa\u516c\u53f8\u6de1\u5b9a\u8868\u793a\uff1a\u201c\u6770\u4f26\u8bf4\u8fc7\u5566\uff0c\u4ed6\u7ed3\u5a5a\u4f1a\u516c\u5f00\uff0c\u4f1a\u8ddf\u5927\u5bb6\u8bf4\u3002\u201d","metadata":{"settype":"2","banner":"4b79be8bjw1ejd2nfhcnfj2050050t8u","tiled":1},"province":"0","city":"0","created_at":"Fri Aug 15 09:32:54 +0800 2014","topic_name":"\u5468\u6770\u4f26\u6606\u51cc\u767b\u8bb0\u7ed3\u5a5a","is_hot":1,"has_tab":1}},{"hotval":"235372","topic":"\u65e5\u672c\u6295\u964d\u7eaa\u5ff5\u65e5","title":"","url":"http:\/\/huati.weibo.com\/331756","thread":{"id":"331756","ctg1":"1","ctg2":"0","category1":"\u793e\u4f1a","category2":"","title":"69\u5e74\u524d\u7684\u4eca\u5929\u65e5\u672c\u6295\u964d\uff01\u70b9\u4e00\u652f\u8721\u70db\u7eaa\u5ff5\u5148\u8f88","content":"\u8fd9\u662f\u503c\u5f97\u6c38\u8fdc\u94ed\u8bb0\u7684\u4e00\u5929\u3002\uff16\uff19\u5e74\u524d\u7684\uff18\u6708\uff11\uff15\u65e5\uff0c\u65e5\u672c\u5ba3\u5e03\u65e0\u6761\u4ef6\u6295\u964d\uff0c\u4eba\u7c7b\u5386\u53f2\u4e0a\u6f2b\u957f\u800c\u8840\u8165\u7684\u7b2c\u4e8c\u6b21\u4e16\u754c\u5927\u6218\u753b\u4e0a\u4e86\u53e5\u70b9\u3002\u66fe\u7ecf\u4e0d\u53ef\u4e00\u4e16\u7684\u65e5\u672c\u4fb5\u7565\u8005\u4e0d\u5f97\u4e0d\u541e\u54bd\u81ea\u5df1\u79cd\u4e0b\u7684\u6218\u4e89\u82e6\u679c\u3002","metadata":{"settype":"2","banner":"9e5389bbgw1ejc9iscyygj2050050aac"},"province":"0","city":"0","created_at":"Mon Aug 05 06:56:43 +0800 2013","topic_name":"\u65e5\u672c\u6295\u964d\u7eaa\u5ff5\u65e5","is_hot":1,"has_tab":1}},{"hotval":"188297","topic":"\u4ea7\u5987\u4e27\u547d\u533b\u62a4\u5931\u8e2a","title":"","url":"http:\/\/huati.weibo.com\/1213143","thread":{"id":"1213143","ctg1":"1","ctg2":"0","category1":"\u793e\u4f1a","category2":"","title":"\u5bb6\u5c5e\u5fae\u535a\u8be6\u8ff0\u5f53\u5929\u7ecf\u5386\u8ffd\u95ee\u771f\u76f8\uff0c\u67e5\u770b\u5168\u6587","content":"8\u670812\u65e5\u5a92\u4f53\u66dd\u4ea7\u5987\u6b7b\u5728\u624b\u672f\u53f0\u4e0a\uff0c\u533b\u62a4\u5168\u4f53\u5931\u8e2a\uff0c\u540e\u6709\u7f51\u53cb\u7206\u6599\uff0c\u662f\u5bb6\u5c5e\u805a\u96c6\u4eba\u5458\u56f4\u653b\u533b\u9662\uff0c\u53c2\u4e0e\u62a2\u6551\u7684\u533b\u52a1\u4eba\u5458\u88ab\u8feb\u9003\u79bb\u30028\u670813\u65e5\u5f53\u5730\u536b\u751f\u5c40\u53d1\u5fae\u535a\u8fd8\u539f\u4e8b\u4ef6\u771f\u76f8\uff0c14\u65e5\u5bb6\u5c5e\u5fae\u535a\u56de\u5e94\u8d28\u7591\u8be6\u8ff0\u5f53\u5929\u7ecf\u5386\u8ffd\u95ee\u771f\u76f8\u3002\u7a76\u7adf\u771f\u76f8\u662f\u4ec0\u4e48\u5462\uff1f","metadata":{"settype":"2","banner":"90eb2137jw1ejarhg8nvej20500503yk","tiled":1},"province":"0","city":"0","created_at":"Wed Aug 13 09:38:24 +0800 2014","topic_name":"\u4ea7\u5987\u4e27\u547d\u533b\u62a4\u5931\u8e2a","is_hot":1,"has_tab":1}},{"hotval":"155617","topic":"\u7709\u6bdb\u7c97\u7684\u4eba\u53ef\u7231","title":"","url":"http:\/\/huati.weibo.com\/1216587","thread":{"id":"1216587","ctg1":"9","ctg2":"0","category1":"\u521b\u610f\u5f81\u96c6","category2":"","title":"","content":"\u636e\u8bf4\u3002\u3002\u7709\u6bdb\u7c97\u7684\u4eba\u90fd\u5f88\u53ef\u7231\u3002\u3002","metadata":{"settype":"2","banner":"9ec580e3gw1ejc36yfswdj2050050t8t","tiled":1},"province":"0","city":"0","created_at":"Thu Aug 14 13:07:48 +0800 2014","topic_name":"\u7709\u6bdb\u7c97\u7684\u4eba\u53ef\u7231","is_hot":0,"has_tab":1}},{"hotval":"154348","topic":"\u534e\u6668\u5b87\u7b2c\u4e00\u4e3b\u6253\u9996\u53d1","title":"","url":"http:\/\/huati.weibo.com\/1217937","thread":{"id":"1217937","ctg1":"8","ctg2":"0","category1":"\u5176\u4ed6","category2":"","title":"","content":"\u5927\u5bb6\u4e0d\u8981\u518d\u5237\u8fd9\u4e2a\u8bdd\u9898\u4e86\u3002\u5bf9\u4e0d\u8d77\uff01\u8bf7\u5237 \u534e\u6668\u5b87\u7b2c\u4e00\u4e3b\u6253\u5168\u7403\u9996\u53d1 \u8c22\u8c22","metadata":{"settype":"1","banner":"","tiled":1},"province":"0","city":"0","created_at":"Thu Aug 14 21:58:44 +0800 2014","topic_name":"\u534e\u6668\u5b87\u7b2c\u4e00\u4e3b\u6253\u9996\u53d1","is_hot":0,"has_tab":1}},{"hotval":"122141","topic":"\u65e5\u672c\u6218\u8d25\u6295\u964d","title":"","url":"http:\/\/huati.weibo.com\/410933","thread":{"id":"410933","ctg1":"1","ctg2":"0","category1":"\u793e\u4f1a","category2":"","title":"","content":"\u301069\u5e74\u524d\u7684\u4eca\u5929\uff0c\u65e5\u672c\u6295\u964d\u30111945\u5e748\u670815\u65e5\uff0c\u65e5\u672c\u5ba3\u5e03\u65e0\u6761\u4ef6\u6295\u964d\u3002\u636e\u7edf\u8ba1\uff0c\u4fb5\u534e\u6218\u4e89\u671f\u95f4\uff0c\u4e2d\u56fd\u519b\u6c11\u4f24\u4ea1\u4eba\u6570\u8d85\u8fc73500\u4e07\u3002\u4eca\u5929\uff0c\u70b9\u4e00\u652f\uff0c\u796d\u5960\u9047\u96be\u540c\u80de\u548c\u6297\u6218\u5148\u70c8\u3002\u94c1\u8bc1\u5982\u5c71\uff0c\u5386\u53f2\u4e0d\u5bb9\u9057\u5fd8\uff1b\u94ed\u8bb0\u82e6\u96be\uff0c\u543e\u8f88\u66f4\u5f53\u81ea\u5f3a\uff01","metadata":{"settype":"2","banner":"8e85d695jw1e89cqcmspyj205805adfz","tiled":1},"province":"0","city":"0","created_at":"Tue Sep 03 15:35:50 +0800 2013","topic_name":"\u65e5\u672c\u6218\u8d25\u6295\u964d","is_hot":0,"has_tab":1}},{"hotval":"94801","topic":"\u5b8b\u667a\u5b5d0815\u751f\u65e5\u5feb\u4e50","title":"","url":"http:\/\/huati.weibo.com\/349601","thread":{"id":"349601","ctg1":"2","ctg2":"0","category1":"\u5a31\u4e50\u516b\u5366","category2":"","title":"","content":"8.15\u662f\u97e9\u56fd\u8d85\u706b\u7efc\u827aRunningman\u56fa\u5b9a\u6210\u5458\u3001\u8457\u540d\u5973\u6f14\u5458\u5b8b\u667a\u5b5d\u7684\u751f\u65e5\uff0c\u7535\u5f71\u300a\u80e1\u72fc\u6765\u4e86\u300b\u3001\u300a\u72d0\u72f8\u9636\u68af\u300b\u2026\u5230\u7535\u89c6\u5267\u300a\u6025\u8bca\u7537\u5973\u300b\u3001\u300a\u9636\u4f2f\u300b\u300a\u5929\u547d\u300b\u2026\u90fd\u5c55\u73b0\u51fa\u591a\u5143\u5316\u81ea\u7136\u7684\u6f14\u6280\uff0c\u5728\u8dd1\u7537\u4e2d\u7387\u771f\u53ef\u7231\u7684\u4e00\u70b9\u7ea2\uff0c\u61f5\u61f5\u5973\u6c49\u5b50\u5f62\u8c61\u6df1\u5165\u4eba\u5fc3\uff0c\u61f5\u667a\u68ee\u65e5\u7c97\u5361","metadata":{"settype":"2","banner":"77de26efgw1eiyqaw9lozj2050050t8v","tiled":1},"province":"0","city":"0","created_at":"Mon Aug 12 17:02:33 +0800 2013","topic_name":"\u5b8b\u667a\u5b5d0815\u751f\u65e5\u5feb\u4e50","is_hot":0,"has_tab":1}},{"hotval":"83014","topic":"\u91d1\u79c0\u8d24\u8bf7\u79bb\u5f00\u4e2d\u56fd\u5e7f\u544a\u754c","title":"","url":"http:\/\/huati.weibo.com\/1217606","thread":{"id":"1217606","ctg1":"12","ctg2":"0","category1":"\u9ed8\u8ba4\u5206\u7c7b","category2":"","title":"","content":"","metadata":{"tiled":1},"province":"0","city":"0","created_at":"Thu Aug 14 18:38:54 +0800 2014","topic_name":"\u91d1\u79c0\u8d24\u8bf7\u79bb\u5f00\u4e2d\u56fd\u5e7f\u544a\u754c","is_hot":0,"has_tab":1}},{"hotval":"71845","topic":"\u534e\u6668\u5b87\u539f\u521b\u65b0\u6b4c\u9996\u53d1","title":"","url":"http:\/\/huati.weibo.com\/1217151","thread":{"id":"1217151","ctg1":"8","ctg2":"0","category1":"\u5176\u4ed6","category2":"","title":"","content":"#\u534e\u6668\u5b87\u539f\u521b\u65b0\u6b4c\u9996\u53d1#@\u534e\u6668\u5b87yu 2014\u5168\u65b0\u521b\u4f5c\u5355\u66f2\u300aWhy nobody fights\u300b\u5c06\u57288\u670815\u65e5\u4e0a\u5348\u72ec\u5bb6\u9996\u64ad\uff01","metadata":{"settype":"2","banner":"728377e7gw1ejcaa0nmg8j2050050q31","tiled":1},"province":"0","city":"0","created_at":"Thu Aug 14 16:07:49 +0800 2014","topic_name":"\u534e\u6668\u5b87\u539f\u521b\u65b0\u6b4c\u9996\u53d1","is_hot":0,"has_tab":1}},{"hotval":"64060","topic":"\u65e5\u672c\u63a8\u51fa\u7537\u58eb\u80f8\u7f69","title":"","url":"http:\/\/huati.weibo.com\/1217144","thread":{"id":"1217144","ctg1":"2","ctg2":"0","category1":"\u5a31\u4e50\u516b\u5366","category2":"","title":"","content":"\u65e5\u672c\u63a8\u51fa\u9996\u6b3e\u7537\u58eb\u6587\u80f8\uff0c\u8fd9\u6b3e\u7279\u522b\u7684\u6587\u80f8\u4e13\u4e3a\u80f8\u808c\u53d1\u8fbe\u7684\u7537\u58eb\u8bbe\u8ba1\uff0c\u5ba3\u79f0\u80fd\u591f\u4e3a\u4ed6\u4eec\u5e26\u6765\u5168\u5929\u5019\u201c\u6297\u5730\u7403\u5f15\u529b\u201d\u4fdd\u62a4\uff0c\u9632\u6b62\u80f8\u90e8\u53d8\u5f62\u3002","metadata":{"settype":"2","banner":"61e7f4aajw1ejc89jtws6j2050050mxg","tiled":1},"province":"0","city":"0","created_at":"Thu Aug 14 16:06:54 +0800 2014","topic_name":"\u65e5\u672c\u63a8\u51fa\u7537\u58eb\u80f8\u7f69","is_hot":1,"has_tab":1}}]}</td>
+    </tr>
+    
+    <tr >
+      <td colspan="2" class="C_Display">结果统计</td>
+      <td class="C_Display">Total: <b>1</b>  Pass: <b><font color='Green'>1</font></b>  Fail: <b><font color='Red'>0</font></b></td>
+      <td class="C_Display">运行时间</td>
+      <td class="C_Display">2014-08-15 11:03:03</td>
+    </tr>
+    
+      </table>
+  <hr />
+</div>
+</body>
+</html>
+    

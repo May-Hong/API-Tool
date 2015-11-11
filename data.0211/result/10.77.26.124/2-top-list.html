@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Miniblog API Test Result</title>
+    <script type="text/javascript" src="src/jquery.js"></script>
+    <script type="text/javascript" src="src/Expand_Collapse.js"></script>
+    <link type="text/css" rel="stylesheet" href="src/skin.css">
+</head>
+<body>
+    <h1 align="center">API Test Result</h1>
+    <p align="right">
+        <input type="submit" id="Expand ALL" value="展开用例" onclick="Expand_Header()"/>
+        <input type="submit" id="Expand ALL" value="展开详情" onclick="Expand_All()"/>
+        <input type="submit" id="Collapse ALL" value="收起所有" onclick="Collapse_All()"/>
+    </p>
+    <hr />
+    <div class="URLID" id="URLID">
+        <table width="100%" border="1" style="table-layout:fixed">
+            
+        <tr class="1_apiheader">
+      <td width="10%" scope="col" class="T_Header"><a href="#">1</a></td>
+      <td width="10%" scope="col" class="C_Display">接口说明</td>
+      <td width="30%" scope="col" class="L_Display">http://10.77.26.124/2/top/list<BR>话题排行榜</td>
+      <td width="10%" scope="col" class="C_Display">参数说明</td>
+      <td width="50%" scope="col" class="L_Display"></td>
+    </tr>
+    
+    <tr class="case1-1_cheader" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="T_Header"><a href="#">1-1</a></td>
+      <td colspan="3" class="URL_Details">curl -H "Host:i.huati.weibo.com" "http://10.77.26.124/2/top/list?"<br>必选项</td>
+    </tr>
+
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">期望结果</td>
+      <td class="L_Display">total_number</td>
+      <td class="runresult"><b><font color='Green'> PASS </font></b></td>
+      <td class="LU_Display">time_connect: 0.319<BR>time_starttransfer: 0.456<br>time_total: 0.456</td>
+    </tr>  
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">运行结果</td>
+      <td colspan="3" class="L_Display">{"total_number":7,"list":[{"title":"","content":"据港媒报道，35岁的@胡杏儿 上周飞抵台北会男友，两人被拍到街头热吻。今天胡杏儿回复媒体笑认恋情，直夸男友好好。据悉，胡杏儿男友名叫Philip Lee，今年40岁，是猎头公司老板。两人被曝已拍拖3个月，但有消息称男方已向胡杏儿求婚。","topic":"胡杏儿承认恋情","num":711,"url":"http:\/\/huati.weibo.com\/1896720","province":"0","tid":1896720,"create_time":"1422423775","uid":"","ctg1_name":""},{"title":"","content":"","topic":"超生娃31年后找到父母","num":1692,"url":"http:\/\/huati.weibo.com\/1895867","province":0,"tid":1895867,"create_time":"1422413867","uid":"","ctg1_name":""},{"title":"","content":"从昨晚到现在，网友们的路线以及评论：第一站@陈赫 ：贱！第二站@张子萱 ：婊子配狗！第三站@蕾拉小姐 ：心疼你！第四站@杨一柳与刘也 ：绿色帽子棒棒哒！第五站@文章同學 ：终于有比你更贱的了！第六站@姚笛 ：贱！第七站@马伊琍 ：加油！终点站@邓超 ：千万别出轨！网友们真的好忙啊[doge]","topic":"网友很忙","num":1340,"url":"http:\/\/huati.weibo.com\/1895770","province":"0","tid":1895770,"create_time":"1422412833","uid":"","ctg1_name":""},{"title":"","content":"李佳航与李晟于2014年五月被曝光恋情，随即两人均大方承认，而在同年10月，曾有网友曝光两人在海岛拍摄婚纱照。2015年初，李佳航首次承认已经向李晟求婚。","topic":"李佳航李晟婚纱照","num":104,"url":"http:\/\/huati.weibo.com\/1895682","province":"0","tid":1895682,"create_time":"1422411859","uid":"","ctg1_name":""},{"title":"","content":"寒假来了，学习如何防止与老妈冲突攻略，再也不怕被麻麻骂了！哈哈哈，看哭了，对号入座，看哪条你还没做到？","topic":"防止与老妈冲突攻略","num":66,"url":"http:\/\/huati.weibo.com\/1895640","province":"0","tid":1895640,"create_time":"1422411489","uid":"","ctg1_name":""},{"title":"","content":"早在几年前,广东碣石镇成洋垃圾服装集散地就被曝光,大量国外旧衣物经此流入国内,其中包括南昌丁家巷.“洋垃圾”服装多指在国外淘汰,甚至是垃圾站、火葬场、殡仪馆捡来的服饰.“由于款式新颖,备受年轻人青睐,90后为购买主力军.”http:\/\/t.cn\/RZu9P3","topic":"90后成洋垃圾购买主力","num":33,"url":"http:\/\/huati.weibo.com\/1895555","province":"0","tid":1895555,"create_time":"1422410590","uid":"","ctg1_name":""},{"title":"","content":"","topic":"大学综合实力百强榜","num":51,"url":"http:\/\/huati.weibo.com\/1895382","province":"0","tid":1895382,"create_time":"1422408749","uid":"","ctg1_name":""},{"title":"","content":"秦海璐于2015年1月28日产下一子。据悉，秦海璐和老公王新军2011年在合拍电视剧《独立纵队》时相识，2012年4月开始恋爱，2014年1月23日领证。","topic":"秦海璐产子","num":342,"url":"http:\/\/huati.weibo.com\/1895281","province":"0","tid":1895281,"create_time":"1422407470","uid":"","ctg1_name":""},{"title":"","content":"陈某晚上11点多从梦中惊醒，疑丈夫对自己感情不忠，经常打骂自己，且有赌博、嫖娼的恶习，公婆对自己也不信任，生怕自己会把儿子带走。情绪失控，掐死一对熟睡的儿女。“我带不走别人也休想得到”的想法。","topic":"疑夫不忠掐死儿女","num":27,"url":"http:\/\/huati.weibo.com\/1895194","province":"0","tid":1895194,"create_time":"1422406028","uid":"","ctg1_name":""},{"title":"","content":"27日晚，#陈赫张子萱热吻#视频曝光，顿时让网友对两人展开新一轮声讨。迫于压力，@陈赫 先是晒出离婚协议书，证实自己已于2014年9月11日签署协议，欲证自己并未出轨，随后张子萱更是直接承认两人确实在一起，自己去年也已着手办理分手事宜，但尚未正式离婚","topic":"陈赫张子萱承认恋情","num":4757,"url":"http:\/\/huati.weibo.com\/1894228","province":"0","tid":1894228,"create_time":"1422374409","uid":"","ctg1_name":""}]}</td>
+    </tr>
+    
+    <tr >
+      <td colspan="2" class="C_Display">结果统计</td>
+      <td class="C_Display">Total: <b>1</b>  Pass: <b><font color='Green'>1</font></b>  Fail: <b><font color='Red'>0</font></b></td>
+      <td class="C_Display">运行时间</td>
+      <td class="C_Display">2015-01-28 15:25:30</td>
+    </tr>
+    
+      </table>
+  <hr />
+</div>
+</body>
+</html>
+    

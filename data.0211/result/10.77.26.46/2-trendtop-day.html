@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Miniblog API Test Result</title>
+    <script type="text/javascript" src="src/jquery.js"></script>
+    <script type="text/javascript" src="src/Expand_Collapse.js"></script>
+    <link type="text/css" rel="stylesheet" href="src/skin.css">
+</head>
+<body>
+    <h1 align="center">API Test Result</h1>
+    <p align="right">
+        <input type="submit" id="Expand ALL" value="展开用例" onclick="Expand_Header()"/>
+        <input type="submit" id="Expand ALL" value="展开详情" onclick="Expand_All()"/>
+        <input type="submit" id="Collapse ALL" value="收起所有" onclick="Collapse_All()"/>
+    </p>
+    <hr />
+    <div class="URLID" id="URLID">
+        <table width="100%" border="1" style="table-layout:fixed">
+            
+        <tr class="1_apiheader">
+      <td width="10%" scope="col" class="T_Header"><a href="#">1</a></td>
+      <td width="10%" scope="col" class="C_Display">接口说明</td>
+      <td width="30%" scope="col" class="L_Display">http://10.77.26.46/2/trendtop/day<BR>获取热门话题榜单日榜</td>
+      <td width="10%" scope="col" class="C_Display">参数说明</td>
+      <td width="50%" scope="col" class="L_Display"></td>
+    </tr>
+    
+    <tr class="case1-1_cheader" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="T_Header"><a href="#">1-1</a></td>
+      <td colspan="3" class="URL_Details">curl -H "Host:i.huati.weibo.com" "http://10.77.26.46/2/trendtop/day?"<br>必选项</td>
+    </tr>
+
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">期望结果</td>
+      <td class="L_Display">total_number</td>
+      <td class="runresult"><b><font color='Green'> PASS </font></b></td>
+      <td class="LU_Display">time_connect: 0.475<BR>time_starttransfer: 0.692<br>time_total: 0.692</td>
+    </tr>  
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">运行结果</td>
+      <td colspan="3" class="L_Display">{"total_number":969,"date":"2015-01-28","hour":"14","data":[{"object_id":"1022:100808fa5c5b2c952c1e810c6b9efc357ba30d","hotval":46384558684,"topic":"美拍","title":"","url":"http:\/\/weibo.com\/p\/100808fa5c5b2c952c1e810c6b9efc357ba30d?k=%E7%BE%8E%E6%8B%8D&from=trendtop_api","thread":{"id":"228904","ctg1":"9","ctg2":"0","category1":"创意征集","category2":"","title":"","content":"美拍 - 10秒也能拍大片。全球首创MV特效，普通视频一键变大片！美拍iPhone版、安卓版均已上线！请到App Store和各大安卓应用市场搜索“美拍”免费下载！超多明星潮人都已入住，你还在等什么？！","metadata":{"settype":"2","banner":"89dc5dd2gw1eg6z1va9tnj2050050gli","tabdef":"1","tiled":"0","match_area":"0"},"province":"0","city":"0","created_at":"Fri Jun 21 17:28:37 +0800 2013","topic_name":"美拍","is_hot":0,"has_tab":1}},{"object_id":"1022:100808379c7022bd330fef30aa9a9938f784a2","hotval":114444354,"topic":"徐静蕾有一个地方提档210","title":"","url":"http:\/\/weibo.com\/p\/100808379c7022bd330fef30aa9a9938f784a2?k=%E5%BE%90%E9%9D%99%E8%95%BE%E6%9C%89%E4%B8%80%E4%B8%AA%E5%9C%B0%E6%96%B9%E6%8F%90%E6%A1%A3210&from=trendtop_api","thread":{"id":"1887441","ctg1":"100","ctg2":"0","category1":"电影","category2":"","title":"","content":"由徐静蕾自导自演的第六部作品，吴亦凡、王丽坤、张超、热依扎领衔主演的电影《有一个地方只有我们知道》提档，将于2015年2月10日全国浪漫公映。情人节档期唯一！必看！爱情大片！情人节，只要你！让我们约起来！","metadata":{"tiled":1,"settype":2,"banner":"5f08f608jw1eon6zu6agij20500500t6"},"province":"0","city":"0","created_at":"Mon Jan 26 18:04:28 +0800 2015","topic_name":"徐静蕾有一个地方提档210","is_hot":0,"has_tab":0}},{"object_id":"1022:100808022427ba0d0b6f97ce9ac038edb60305","hotval":42617297,"topic":"陈赫张子萱热吻","title":"","url":"http:\/\/weibo.com\/p\/100808022427ba0d0b6f97ce9ac038edb60305?k=%E9%99%88%E8%B5%AB%E5%BC%A0%E5%AD%90%E8%90%B1%E7%83%AD%E5%90%BB&from=trendtop_api","thread":{"id":"1893098","ctg1":"2","ctg2":"2001","category1":"明星","category2":"内地","title":"","content":"今日，网曝陈赫张子萱亲密开房搂抱拥吻画面，两人在酒店高楼套房内一起做饭不时耳语，甜蜜劲似真夫妻媲美锋菲恋。","metadata":{"tiled":1,"settype":2,"banner":"61e7f4aajw1eoof30tldhj2050050gm7"},"province":"0","city":"0","created_at":"Tue Jan 27 21:14:19 +0800 2015","topic_name":"陈赫张子萱热吻","is_hot":1,"has_tab":0}},{"object_id":"1022:1008083ae2ac86cb5b21fc1d1691812a40527e","hotval":4581958946,"topic":"电视剧何以笙箫默","title":"","url":"http:\/\/weibo.com\/p\/1008083ae2ac86cb5b21fc1d1691812a40527e?k=%E7%94%B5%E8%A7%86%E5%89%A7%E4%BD%95%E4%BB%A5%E7%AC%99%E7%AE%AB%E9%BB%98&from=trendtop_api","thread":{"id":"1039143","ctg1":"101","ctg2":"0","category1":"电视剧","category2":"","title":"","content":"由@钟汉良 @唐嫣 领衔主演的#电视剧何以笙箫默#1月10日19:30登录@江苏卫视 ！参与双屏互动，让何以琛赵默笙早日微博团聚！","metadata":{"settype":2,"banner":"7dced06cjw1eo1zybcxklj2050050q35","h5_pic":"7dced06cjw1eo1ztma5ttj20hs08wabz","client_pic":"7dced06cjw1eo1zuxv724j20hs0hsq4j","tiled":1},"province":"0","city":"0","created_at":"Mon May 19 14:11:17 +0800 2014","topic_name":"电视剧何以笙箫默","is_hot":0,"has_tab":1}},{"object_id":"1022:100808c36731b9dab1e484f98c8008a8364bff","hotval":11185643462,"topic":"我是歌手","title":"","url":"http:\/\/weibo.com\/p\/100808c36731b9dab1e484f98c8008a8364bff?k=%E6%88%91%E6%98%AF%E6%AD%8C%E6%89%8B&from=trendtop_api","thread":{"id":"28000","ctg1":"102","ctg2":"102010","category1":"电视节目","category2":"我是歌手","title":"","content":"立白邀您观看#我是歌手#第三季！参与双屏话题互动，选出微博人气歌王；第三季，更多惊喜，整个世界都听你的！","metadata":{"settype":2,"banner":"7dced06cjw1eofsiyosrwj2050050mxj","h5_pic":"7dced06cjw1eo3g35h8p4j20hs08w77m","client_pic":"7dced06cjw1eo3g374bj4j20hs0hsjw8","tabdef":"1","tiled":"0","match_area":"0"},"province":"0","city":"0","created_at":"Sat Feb 16 10:50:33 +0800 2013","topic_name":"我是歌手","is_hot":1,"has_tab":1}},{"object_id":"1022:10080892228eacf17e73c20476aa3398e119d4","hotval":118324322,"topic":"陈赫承认离婚","title":"","url":"http:\/\/weibo.com\/p\/10080892228eacf17e73c20476aa3398e119d4?k=%E9%99%88%E8%B5%AB%E6%89%BF%E8%AE%A4%E7%A6%BB%E5%A9%9A&from=trendtop_api","thread":{"id":"1868346","ctg1":"2","ctg2":"2001","category1":"明星","category2":"内地","title":"与张子萱偷情视频曝光，双双发微博坐实恋情","content":"22日晚，陈赫发长文承认离婚，称半年前已签字。陈赫道歉称“我错了”，称自己没有维护好这个家。27日风行工作室爆出陈赫和女星张子萱上海公寓内偷情热吻视频，陈赫随后将离婚协议拍照发微博，确认自己去年9月11日离婚。","metadata":{"tiled":1,"settype":2,"banner":"61e7f4aajw1eoiop4d64rj2050050aao"},"province":"0","city":"0","created_at":"Thu Jan 22 22:05:19 +0800 2015","topic_name":"陈赫承认离婚","is_hot":1,"has_tab":0}},{"object_id":"1022:1008083d2f873fd627866ff0eefe1eb3635d6c","hotval":20988094,"topic":"移动政务峰会","title":"","url":"http:\/\/weibo.com\/p\/1008083d2f873fd627866ff0eefe1eb3635d6c?k=%E7%A7%BB%E5%8A%A8%E6%94%BF%E5%8A%A1%E5%B3%B0%E4%BC%9A&from=trendtop_api","thread":{"id":"1862861","ctg1":"1","ctg2":"0","category1":"社会","category2":"","title":"","content":"由人民日报社、新浪、微博联合主办的2015年移动政务峰会1月27日盛大启幕，数百位政府机构代表齐聚中华世纪坛，与中央网信办、人民日报社、新浪微博、知名专家共商新形势、新思维、新常态下移动政务发展。会上将发布“2014政务微博报告”、向2014年优秀政务机构和人员颁奖。@政务新媒体学院 全程直播。","metadata":{"tiled":1,"settype":2,"banner":"e082ab54jw1eompxdystkj2050050aad"},"province":"11","city":"1","created_at":"Wed Jan 21 19:58:03 +0800 2015","topic_name":"移动政务峰会","is_hot":0,"has_tab":0}},{"object_id":"1022:100808a22789abe88bda91885a0c4564b586e3","hotval":51555189,"topic":"腊八来了","title":"","url":"http:\/\/weibo.com\/p\/100808a22789abe88bda91885a0c4564b586e3?k=%E8%85%8A%E5%85%AB%E6%9D%A5%E4%BA%86&from=trendtop_api","thread":{"id":"1787662","ctg1":"1","ctg2":"0","category1":"社会","category2":"","title":"","content":"腊月初八是腊月里的第一个节日，每到这天家家都吃腊八粥。古人认为，粥是“世间第一补人之物”。若要皮肤好，粥里放红枣；若要不失眠，粥里添白莲；腰酸肾气虚，煮粥放板栗；心虚气不足，粥加桂圆肉；头昏多汗症，粥里加薏仁......明天腊八，喝碗热粥，注意保暖哦！","metadata":{"tiled":1,"settype":2,"banner":"a716fd45gw1eolw7fga5fj2050050q3a"},"province":"0","city":"0","created_at":"Wed Jan 07 12:57:53 +0800 2015","topic_name":"腊八来了","is_hot":0,"has_tab":0}},{"object_id":"1022:1008089d9afc3859f444afcd2cbbe5fde2b1b9","hotval":842783117,"topic":"活色生香","title":"","url":"http:\/\/weibo.com\/p\/1008089d9afc3859f444afcd2cbbe5fde2b1b9?k=%E6%B4%BB%E8%89%B2%E7%94%9F%E9%A6%99&from=trendtop_api","thread":{"id":"400565","ctg1":"101","ctg2":"0","category1":"电视剧","category2":"","title":"","content":"由欢瑞世纪出品，唐嫣、李易峰、舒畅、陈伟霆、黄明、张智尧、李溪芮联袂主演的国民偶像拼命之作《活色生香》即将于2月4日起，周日至周四每晚8点，周五周六每晚7点半，登陆湖南卫视金鹰独播剧场！2015欢喜开春芬芳奇幻之旅即将启程！","metadata":{"settype":2,"banner":"c4391115jw1eoo5xbvuxej2050050dgc","tiled":1},"province":"0","city":"0","created_at":"Fri Aug 30 14:50:13 +0800 2013","topic_name":"活色生香","is_hot":0,"has_tab":0}},{"object_id":"1022:10080870f2af49a12836ba0ee17b56feb0dd6c","hotval":3888809111,"topic":"让红包飞","title":"","url":"http:\/\/weibo.com\/p\/10080870f2af49a12836ba0ee17b56feb0dd6c?k=%E8%AE%A9%E7%BA%A2%E5%8C%85%E9%A3%9E&from=trendtop_api","thread":{"id":"27735","ctg1":"1","ctg2":"0","category1":"社会","category2":"","title":"","content":"2015年#让红包飞#即将于2月2日火力全开！\n10亿红包、千位明星大咖、超多高逼格好礼等你赢。\n小年、情人节、春晚、元宵红包一波接一波，你准备好开启红包模式了吗？！","metadata":{"settype":2,"banner":"e9345cbdjw1eo38kzkqldj2050050gly","h5_pic":"e9345cbdjw1eo38u4g2boj20hs08wjte","client_pic":"e9345cbdjw1eo38u6s3aqj20hs0hsgoa","tabdef":"1","tiled":"0","match_area":"0"},"province":"0","city":"0","created_at":"Mon Feb 04 17:38:24 +0800 2013","topic_name":"让红包飞","is_hot":1,"has_tab":1}}]}</td>
+    </tr>
+    
+    <tr >
+      <td colspan="2" class="C_Display">结果统计</td>
+      <td class="C_Display">Total: <b>1</b>  Pass: <b><font color='Green'>1</font></b>  Fail: <b><font color='Red'>0</font></b></td>
+      <td class="C_Display">运行时间</td>
+      <td class="C_Display">2015-01-28 16:13:00</td>
+    </tr>
+    
+      </table>
+  <hr />
+</div>
+</body>
+</html>
+    

@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Miniblog API Test Result</title>
+    <script type="text/javascript" src="src/jquery.js"></script>
+    <script type="text/javascript" src="src/Expand_Collapse.js"></script>
+    <link type="text/css" rel="stylesheet" href="src/skin.css">
+</head>
+<body>
+    <h1 align="center">API Test Result</h1>
+    <p align="right">
+        <input type="submit" id="Expand ALL" value="展开用例" onclick="Expand_Header()"/>
+        <input type="submit" id="Expand ALL" value="展开详情" onclick="Expand_All()"/>
+        <input type="submit" id="Collapse ALL" value="收起所有" onclick="Collapse_All()"/>
+    </p>
+    <hr />
+    <div class="URLID" id="URLID">
+        <table width="100%" border="1" style="table-layout:fixed">
+            
+        <tr class="1_apiheader">
+      <td width="10%" scope="col" class="T_Header"><a href="#">1</a></td>
+      <td width="10%" scope="col" class="C_Display">接口说明</td>
+      <td width="30%" scope="col" class="L_Display">http://10.77.26.35/2/hottopic/list<BR>首页右侧热点话题接口</td>
+      <td width="10%" scope="col" class="C_Display">参数说明</td>
+      <td width="50%" scope="col" class="L_Display"></td>
+    </tr>
+    
+    <tr class="case1-1_cheader" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="T_Header"><a href="#">1-1</a></td>
+      <td colspan="3" class="URL_Details">curl -H "Host:i.huati.weibo.com" "http://10.77.26.35/2/hottopic/list?"<br>必选项</td>
+    </tr>
+
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">期望结果</td>
+      <td class="L_Display">"url":"http:\/\/huati.weibo.com</td>
+      <td class="runresult"><b><font color='Green'> PASS </font></b></td>
+      <td class="LU_Display">time_connect: 0.072<BR>time_starttransfer: 0.282<br>time_total: 0.282</td>
+    </tr>  
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">运行结果</td>
+      <td colspan="3" class="L_Display">[{"hot_time":"1422432583","url":"http:\/\/huati.weibo.com\/1896965","thread":{"id":"1896965","ctg1":"1","ctg2":"0","category1":"社会","category2":"","title":"","content":"【视频：泉州8路现#公交飙歌王#一路飙歌 醉了[doge]】这位#公交车K歌王#K了一路，陆续上车乘客一开始忍俊不禁[偷笑]后来实在没忍住爆笑[笑cry]最后整车人都醉了，跟着一起哼哼：天上的云懒散的在游走，你可知道我的忧愁……你怎么看？投票：http:\/\/vote.weibo.com\/vid=2915642","metadata":{"tiled":1,"settype":2,"banner":"6b9d825dgw1eop9zj2w9zj205005074f"},"province":"35","city":"0","created_at":"Wed Jan 28 14:27:14 +0800 2015","topic_name":"公交飙歌王","is_hot":1,"has_tab":0},"uid":1805484637},{"hot_time":"1422432576","url":"http:\/\/huati.weibo.com\/1897130","thread":{"id":"1897130","ctg1":"1","ctg2":0,"category1":"社会","category2":"","title":"","content":"因彩票站室内太热，王雪脱去大衣，只剩一件吊带，结果遭到老板的辱骂。男老板：里面衣服是透明的全露了，就两个带；这家伙哎呀…我骂她了。女子：惹了一顿骂，都快吓秃噜了。","metadata":{"tiled":1,"settype":2,"banner":"928f6d09jw1eop95r5ehvj2050050jri"},"province":"23","city":"0","created_at":"Wed Jan 28 14:57:56 +0800 2015","topic_name":"哎呀全露出来了","is_hot":1,"has_tab":0},"uid":2458873097},{"hot_time":"1422432525","url":"http:\/\/huati.weibo.com\/1896783","thread":{"id":"1896783","ctg1":"1","ctg2":0,"category1":"社会","category2":"","title":"","content":"【广州学生寒假包车返乡 遇车祸2死十数伤[蜡烛]】今日(28日)凌晨4时许，深圳汽运公司车牌号为粤BAQ193的大巴行至雷州市北和镇鹅感坎路段发生侧翻，造成2人死亡，十几人受伤入院（其中1人重伤）。据了解，车祸发生时，大巴上的乘客均为从广州包车返乡的在校学生。","metadata":{"tiled":1,"settype":2,"banner":"8d969804gw1eop791huxgj2050050gm1"},"province":"44","city":"0","created_at":"Wed Jan 28 13:58:20 +0800 2015","topic_name":"学生包车返乡遇车祸","is_hot":1,"has_tab":0},"uid":2375456772},{"hot_time":"1422432517","url":"http:\/\/huati.weibo.com\/1895554","thread":{"id":"1895554","ctg1":"1","ctg2":"0","category1":"社会","category2":"","title":"","content":"26日晚，在南宁凤岭儿童公园摩天轮前草坪上，几个年轻人正忙着摆置心型蜡烛，另外3名女孩则簇拥着一位女生坐上了摩天轮…一场秘密筹划了3天的求婚仪式，由此拉开序幕。相恋8年，小伙终抱美人归。","metadata":{"tiled":1,"settype":2,"banner":"d5555b59jw1eop0cke11gj20500503yy"},"province":"45","city":"1","created_at":"Wed Jan 28 10:03:09 +0800 2015","topic_name":"摩天轮下求婚","is_hot":1,"has_tab":0},"uid":3579140953},{"hot_time":"1422432509","url":"http:\/\/huati.weibo.com\/1895343","thread":{"id":"1895343","ctg1":"1","ctg2":0,"category1":"社会","category2":"","title":"","content":"广西有十大名菜你造吗？阳朔啤酒鱼、灵马鲶鱼、荔浦芋扣肉、风味牛杂、沙虫刺身、柠檬鸭、醋血鸭、横县鱼生、白切土鸡、纸包鸡，你吃过几样？","metadata":{"tiled":1,"settype":2,"banner":"d5555b59jw1eoozg4wjddj2050050q3q"},"province":"45","city":"0","created_at":"Wed Jan 28 09:24:09 +0800 2015","topic_name":"广西十大名菜","is_hot":1,"has_tab":0},"uid":3579140953},{"hot_time":"1422432503","url":"http:\/\/huati.weibo.com\/1863888","thread":{"id":"1863888","ctg1":"1","ctg2":0,"category1":"社会","category2":"","title":"","content":"@上海上港集团足球俱乐部 刚刚发布，阿根廷籍球星达里奥•孔卡（Darío Leonardo Conca）将正式加盟上海上港集团足球俱乐部。孔卡，1983年5月11日出生，司职中场，将于近日抵达上海，通过体检后，将与上港集团足球俱乐部正式签约。","metadata":{"tiled":1,"settype":2,"banner":"6c2e55bbgw1eop7pghd56j2050050jrm"},"province":"31","city":"0","created_at":"Wed Jan 21 23:31:28 +0800 2015","topic_name":"孔卡加盟上港","is_hot":1,"has_tab":0},"uid":1814975931},{"hot_time":"1422429882","url":"http:\/\/huati.weibo.com\/1896720","thread":{"id":"1896720","ctg1":"2","ctg2":"2002","category1":"明星","category2":"港台","title":"","content":"据港媒报道，35岁的@胡杏儿 上周飞抵台北会男友，两人被拍到街头热吻。今天胡杏儿回复媒体笑认恋情，直夸男友好好。据悉，胡杏儿男友名叫Philip Lee，今年40岁，是猎头公司老板。两人被曝已拍拖3个月，但有消息称男方已向胡杏儿求婚。","metadata":{"tiled":1,"settype":2,"banner":"61e7f4aajw1eop9dze16lj2050050aa9"},"province":"0","city":"0","created_at":"Wed Jan 28 13:42:55 +0800 2015","topic_name":"胡杏儿承认恋情","is_hot":1,"has_tab":0},"uid":1642591402},{"hot_time":"1422428358","url":"http:\/\/huati.weibo.com\/1895867","thread":{"id":"1895867","ctg1":8,"ctg2":0,"category1":"其他","category2":"","title":"","content":"","metadata":{"tiled":1,"settype":2,"banner":"61ff32dejw1eop22i8lvuj205005074r"},"province":0,"city":0,"created_at":"Wed Jan 28 10:57:47 +0800 2015","topic_name":"超生娃31年后找到父母","is_hot":1,"has_tab":0},"uid":1644114654},{"hot_time":"1422418561","url":"http:\/\/huati.weibo.com\/1881866","thread":{"id":"1881866","ctg1":"1","ctg2":"0","category1":"社会","category2":"","title":"","content":"1月24日凌晨，德胜门内大街93号门前发生坍塌，出现长15米、宽5米、深10米的大坑，并造成地下给排水管线断裂，所幸未造成人员伤亡。","metadata":{"tiled":1,"settype":2,"banner":"60cf4637jw1eon2zhqzsjj20500500t7"},"province":"11","city":"0","created_at":"Sun Jan 25 15:15:44 +0800 2015","topic_name":"德胜门内大街93号坍塌","is_hot":1,"has_tab":0},"uid":1697601814},{"hot_time":"1422417739","url":"http:\/\/huati.weibo.com\/1895281","thread":{"id":"1895281","ctg1":"2","ctg2":"2001","category1":"明星","category2":"内地","title":"","content":"秦海璐于2015年1月28日产下一子。据悉，秦海璐和老公王新军2011年在合拍电视剧《独立纵队》时相识，2012年4月开始恋爱，2014年1月23日领证。","metadata":{"tiled":1,"settype":2,"banner":"61e7f4aajw1eop23kpzexj2050050aa6"},"province":"0","city":"0","created_at":"Wed Jan 28 09:11:10 +0800 2015","topic_name":"秦海璐产子","is_hot":1,"has_tab":0},"uid":1642591402}]</td>
+    </tr>
+    
+    <tr >
+      <td colspan="2" class="C_Display">结果统计</td>
+      <td class="C_Display">Total: <b>1</b>  Pass: <b><font color='Green'>1</font></b>  Fail: <b><font color='Red'>0</font></b></td>
+      <td class="C_Display">运行时间</td>
+      <td class="C_Display">2015-01-28 16:12:22</td>
+    </tr>
+    
+      </table>
+  <hr />
+</div>
+</body>
+</html>
+    

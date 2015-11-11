@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Miniblog API Test Result</title>
+    <script type="text/javascript" src="src/jquery.js"></script>
+    <script type="text/javascript" src="src/Expand_Collapse.js"></script>
+    <link type="text/css" rel="stylesheet" href="src/skin.css">
+</head>
+<body>
+    <h1 align="center">API Test Result</h1>
+    <p align="right">
+        <input type="submit" id="Expand ALL" value="展开用例" onclick="Expand_Header()"/>
+        <input type="submit" id="Expand ALL" value="展开详情" onclick="Expand_All()"/>
+        <input type="submit" id="Collapse ALL" value="收起所有" onclick="Collapse_All()"/>
+    </p>
+    <hr />
+    <div class="URLID" id="URLID">
+        <table width="100%" border="1" style="table-layout:fixed">
+            
+        <tr class="1_apiheader">
+      <td width="10%" scope="col" class="T_Header"><a href="#">1</a></td>
+      <td width="10%" scope="col" class="C_Display">接口说明</td>
+      <td width="30%" scope="col" class="L_Display">http://10.77.26.193/thread/showthreaduser<BR>获取话题的参与用户</td>
+      <td width="10%" scope="col" class="C_Display">参数说明</td>
+      <td width="50%" scope="col" class="L_Display"></td>
+    </tr>
+    
+    <tr class="case1-1_cheader" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="T_Header"><a href="#">1-1</a></td>
+      <td colspan="3" class="URL_Details">curl -H "Host:i.huati.weibo.com" "http://10.77.26.193/thread/showthreaduser?cip=127.1&tid=904253"<br>必选项</td>
+    </tr>
+
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">期望结果</td>
+      <td class="L_Display">"errmsg":"\u6210\u529f"</td>
+      <td class="runresult"><b><font color='Red'> FAIL </font></b></td>
+      <td class="LU_Display">time_connect: 0.009<BR>time_starttransfer: 0.094<br>time_total: 0.094</td>
+    </tr>  
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">运行结果</td>
+      <td colspan="3" class="L_Display">{"errno":1,"errmsg":"成功","result":{"count":21,"user":{"1581837512":{"id":1581837512,"screen_name":"艳红","name":"艳红","location":"北京 丰台区","province":"11","city":"6","description":"","profile_url":"lynne","profile_image_url":"http:\/\/tp1.sinaimg.cn\/1581837512\/50\/5615107603\/0","avatar_large":"http:\/\/tp1.sinaimg.cn\/1581837512\/180\/5615107603\/0","domain":"lynne","weihao":"","gender":"f","verified":false,"verified_reason":"","verified_type":220,"level":7,"lang":"zh-cn","created_at":"Fri Aug 14 20:49:13 +0800 2009","type":1,"badge":{"uc_domain":0,"enterprise":0,"anniversary":1,"taobao":0,"travel2013":1,"gongyi":1,"gongyi_level":1,"bind_taobao":1,"hongbao_2014":1,"suishoupai_2014":1,"dailv":1,"zongyiji":0,"hongbao_2015":1}},"2959226773":{"id":2959226773,"screen_name":"kan_test02","name":"kan_test02","location":"上海 黄浦区","province":"31","city":"1","description":"","profile_url":"u\/2959226773","profile_image_url":"http:\/\/tp2.sinaimg.cn\/2959226773\/50\/0\/1","avatar_large":"http:\/\/tp2.sinaimg.cn\/2959226773\/180\/0\/1","domain":"","weihao":"","gender":"m","verified":false,"verified_reason":"","verified_type":-1,"level":1,"lang":"zh-cn","created_at":"Tue Sep 25 18:06:41 +0800 2012","type":1,"badge":{"uc_domain":0,"enterprise":0,"anniversary":0,"taobao":0,"travel2013":0,"gongyi":0,"gongyi_level":0,"bind_taobao":0,"hongbao_2014":1,"suishoupai_2014":1,"dailv":0,"zongyiji":0,"hongbao_2015":1}},"3044647780":{"id":3044647780,"screen_name":"相生惠美千金","name":"相生惠美千金","location":"其他","province":"100","city":"1000","description":"","profile_url":"u\/3044647780","profile_image_url":"http:\/\/tp1.sinaimg.cn\/3044647780\/50\/5658995900\/1","avatar_large":"http:\/\/tp1.sinaimg.cn\/3044647780\/180\/5658995900\/1","domain":"","weihao":"","gender":"m","verified":false,"verified_reason":"","verified_type":-1,"level":1,"lang":"zh-cn","created_at":"Thu Nov 01 20:47:08 +0800 2012","type":182,"badge":{"uc_domain":0,"enterprise":0,"anniversary":0,"taobao":0,"travel2013":1,"gongyi":0,"gongyi_level":0,"bind_taobao":0,"hongbao_2014":1,"suishoupai_2014":0,"dailv":0,"zongyiji":0,"hongbao_2015":0}},"2789890764":{"id":2789890764,"screen_name":"170抖S三人组晴丽","name":"170抖S三人组晴丽","location":"其他","province":"100","city":"1000","description":"","profile_url":"u\/2789890764","profile_image_url":"http:\/\/tp1.sinaimg.cn\/2789890764\/50\/5637243680\/1","avatar_large":"http:\/\/tp1.sinaimg.cn\/2789890764\/180\/5637243680\/1","domain":"","weihao":"","gender":"m","verified":false,"verified_reason":"","verified_type":-1,"level":1,"lang":"zh-cn","created_at":"Tue Jul 03 08:02:47 +0800 2012","type":182,"badge":{"uc_domain":0,"enterprise":0,"anniversary":0,"taobao":0,"travel2013":1,"gongyi":0,"gongyi_level":1,"bind_taobao":0,"hongbao_2014":1,"suishoupai_2014":0,"dailv":0,"zongyiji":0,"hongbao_2015":0}},"2397516295":{"id":2397516295,"screen_name":"松松_lee","name":"松松_lee","location":"北京 海淀区","province":"11","city":"8","description":"做真实的自己——做最真的自己，遵从自己内心的意愿。让懂的人懂，让不懂的人不懂，不管岁月流年，不管蜚语流言 ！","profile_url":"515595456","profile_image_url":"http:\/\/tp4.sinaimg.cn\/2397516295\/50\/5707012397\/0","avatar_large":"http:\/\/tp4.sinaimg.cn\/2397516295\/180\/5707012397\/0","domain":"","weihao":"515595456","gender":"f","verified":false,"verified_reason":"","verified_type":220,"level":7,"lang":"zh-cn","created_at":"Wed Oct 05 19:44:48 +0800 2011","type":1,"badge":{"uc_domain":0,"enterprise":0,"anniversary":0,"taobao":0,"travel2013":1,"gongyi":0,"gongyi_level":0,"bind_taobao":0,"hongbao_2014":1,"suishoupai_2014":1,"dailv":1,"zongyiji":1,"hongbao_2015":1}}}}}</td>
+    </tr>
+    
+    <tr >
+      <td colspan="2" class="C_Display">结果统计</td>
+      <td class="C_Display">Total: <b>1</b>  Pass: <b><font color='Green'>0</font></b>  Fail: <b><font color='Red'>1</font></b></td>
+      <td class="C_Display">运行时间</td>
+      <td class="C_Display">2015-02-15 18:25:14</td>
+    </tr>
+    
+      </table>
+  <hr />
+</div>
+</body>
+</html>
+    

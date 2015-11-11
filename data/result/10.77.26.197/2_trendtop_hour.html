@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Miniblog API Test Result</title>
+    <script type="text/javascript" src="src/jquery.js"></script>
+    <script type="text/javascript" src="src/Expand_Collapse.js"></script>
+    <link type="text/css" rel="stylesheet" href="src/skin.css">
+</head>
+<body>
+    <h1 align="center">API Test Result</h1>
+    <p align="right">
+        <input type="submit" id="Expand ALL" value="展开用例" onclick="Expand_Header()"/>
+        <input type="submit" id="Expand ALL" value="展开详情" onclick="Expand_All()"/>
+        <input type="submit" id="Collapse ALL" value="收起所有" onclick="Collapse_All()"/>
+    </p>
+    <hr />
+    <div class="URLID" id="URLID">
+        <table width="100%" border="1" style="table-layout:fixed">
+            
+        <tr class="1_apiheader">
+      <td width="10%" scope="col" class="T_Header"><a href="#">1</a></td>
+      <td width="10%" scope="col" class="C_Display">接口说明</td>
+      <td width="30%" scope="col" class="L_Display">http://10.77.26.197/2/trendtop/hour<BR>获取热门话题榜单小时榜</td>
+      <td width="10%" scope="col" class="C_Display">参数说明</td>
+      <td width="50%" scope="col" class="L_Display"></td>
+    </tr>
+    
+    <tr class="case1-1_cheader" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="T_Header"><a href="#">1-1</a></td>
+      <td colspan="3" class="URL_Details">curl -H "Host:i.huati.weibo.com" "http://10.77.26.197/2/trendtop/hour?"<br>必选项</td>
+    </tr>
+
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">期望结果</td>
+      <td class="L_Display">total_number</td>
+      <td class="runresult"><b><font color='Green'> PASS </font></b></td>
+      <td class="LU_Display">time_connect: 0.004<BR>time_starttransfer: 0.180<br>time_total: 0.180</td>
+    </tr>  
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">运行结果</td>
+      <td colspan="3" class="L_Display">{"total_number":285,"date":"2015-02-15","hour":"16","data":[{"object_id":"1022:10080870f2af49a12836ba0ee17b56feb0dd6c","hotval":7117830610,"topic":"让红包飞","title":"","url":"http:\/\/weibo.com\/p\/10080870f2af49a12836ba0ee17b56feb0dd6c?k=%E8%AE%A9%E7%BA%A2%E5%8C%85%E9%A3%9E&from=trendtop_api","thread":{"id":"27735","ctg1":"1","ctg2":"0","category1":"社会","category2":"","title":"","content":"2015年#让红包飞#2月2日-3月6日火力全开！\n10亿红包、千位明星大咖、超多高逼格好礼等你赢。\n小年、情人节、春晚、元宵红包一波接一波，你准备好开启红包模式了吗？！","metadata":{"settype":2,"banner":"e9345cbdjw1ep34y9k4i2j205005074g","h5_pic":"e9345cbdjw1eowcy6oppqj20hs08wwgq","client_pic":"e9345cbdjw1eowcy8636mj20hs0hswhe","tabdef":"1","tiled":"0","match_area":"0"},"province":"0","city":"0","created_at":"Mon Feb 04 17:38:24 +0800 2013","topic_name":"让红包飞","is_hot":1,"has_tab":1}},{"object_id":"1022:100808c4328f75476f5e56374f7e1983092036","hotval":317962856,"topic":"情人节","title":"","url":"http:\/\/weibo.com\/p\/100808c4328f75476f5e56374f7e1983092036?k=%E6%83%85%E4%BA%BA%E8%8A%82&from=trendtop_api","thread":{"id":"27980","ctg1":"5","ctg2":"0","category1":"情感两性","category2":"","title":"新春迎来情人节，网友微博贡献过节吐槽","content":"我眼中的TA是这一时刻最美的定格——在做饭、在睡觉、在发呆或者在运动……来为喜欢的他\/她拍一张照片或写一段文字，带话题词#情人节#，节日君帮你记录只属于你们的这个瞬间。发布微博还有机会获得iPhone 5s手机，以及由@第一摩码房产众筹 赞助的精品酒店情侣套房或白金海岸之旅，方便大家约起来~","metadata":{"settype":2,"banner":"719d0099gw1ep5h6sevs8j2050050aa1","h5_pic":"8617f7f7jw1ep6e2fxwwhj20hs08w0t8","client_pic":"8617f7f7jw1ep6e2a50jwj20hs0hsdgh"},"province":"0","city":"0","created_at":"Thu Feb 14 14:54:46 +0800 2013","topic_name":"情人节","is_hot":1,"has_tab":1}},{"object_id":"1022:1008081ede377dc831a6618864b89660bb7d57","hotval":27431736,"topic":"最远的距离","title":"","url":"http:\/\/weibo.com\/p\/1008081ede377dc831a6618864b89660bb7d57?k=%E6%9C%80%E8%BF%9C%E7%9A%84%E8%B7%9D%E7%A6%BB&from=trendtop_api","thread":{"id":"203361","ctg1":"9","ctg2":"9004","category1":"创意征集","category2":"温情故事","title":"","content":"不是你不在我身边，而是你在我身边却看着手机。我们的确越来越离不开手机，但过年回家碰到多年不见的老朋友，回到一年才见一两次的父母亲人面前相聚团圆时，我们可否暂时放下手机，陪他们聊聊天，给他们一个真实的拥抱","metadata":{"settype":2,"banner":"866ec85agw1ep9wyp865dj2050050mxf"},"province":"0","city":"0","created_at":"Thu Jun 13 15:26:21 +0800 2013","topic_name":"最远的距离","is_hot":0,"has_tab":0}},{"object_id":"1022:10080806a116373f6589b4c4a30e4dcac0707c","hotval":970088521,"topic":"一条狗","title":"","url":"http:\/\/weibo.com\/p\/10080806a116373f6589b4c4a30e4dcac0707c?k=%E4%B8%80%E6%9D%A1%E7%8B%97&from=trendtop_api","thread":{"id":"1733748","ctg1":"97","ctg2":"97004","category1":"动漫","category2":"国产动漫","title":"","content":"上班族卞构跟自家养的名叫一条狗的土狗互换了身体，成了一条狗，接下来会有怎样的大冒险等着他呢……","metadata":{"tiled":1,"settype":2,"banner":"69917555jw1enqfdn23z7j2050050aaj"},"province":"0","city":"0","created_at":"Mon Dec 29 11:38:59 +0800 2014","topic_name":"一条狗","is_hot":1,"has_tab":0}},{"object_id":"1022:100808cc820d9db96c05414397788ad8263b9f","hotval":272121698,"topic":"新华微评","title":"","url":"http:\/\/weibo.com\/p\/100808cc820d9db96c05414397788ad8263b9f?k=%E6%96%B0%E5%8D%8E%E5%BE%AE%E8%AF%84&from=trendtop_api","thread":{"id":"687653","ctg1":"1","ctg2":"0","category1":"社会","category2":"","title":"","content":"新华微评","metadata":{"settype":"2","banner":"654b47dajw1ekokp69smdj2050050aa6","tiled":1},"province":"0","city":"0","created_at":"Thu Dec 26 16:06:51 +0800 2013","topic_name":"新华微评","is_hot":0,"has_tab":1}},{"object_id":"1022:1008087cbf00ffcafbc0d0c967449efc48a52b","hotval":678898068,"topic":"相爱穿梭千年","title":"","url":"http:\/\/weibo.com\/p\/1008087cbf00ffcafbc0d0c967449efc48a52b?k=%E7%9B%B8%E7%88%B1%E7%A9%BF%E6%A2%AD%E5%8D%83%E5%B9%B4&from=trendtop_api","thread":{"id":"1551506","ctg1":"102","ctg2":"102103","category1":"电视节目","category2":"其他","title":"","content":"由井柏然、郑爽主演的湖南卫视自制周播剧，翻拍自热门韩剧《仁显王后的男人》","metadata":{"tiled":1,"settype":2,"banner":"005QfIizgw1enwfwud2knj3050050dfy"},"province":"0","city":"0","created_at":"Thu Nov 27 20:53:33 +0800 2014","topic_name":"相爱穿梭千年","is_hot":0,"has_tab":0}},{"object_id":"1022:10080888b60083020f37a8db162051db3f1621","hotval":9642285,"topic":"有一种童年叫两小无猜","title":"","url":"http:\/\/weibo.com\/p\/10080888b60083020f37a8db162051db3f1621?k=%E6%9C%89%E4%B8%80%E7%A7%8D%E7%AB%A5%E5%B9%B4%E5%8F%AB%E4%B8%A4%E5%B0%8F%E6%97%A0%E7%8C%9C&from=trendtop_api","thread":{"id":"1960784","ctg1":"100","ctg2":"100002","category1":"电影","category2":"国产电影","title":"","content":"《爸爸的假期》大年初一上映！两小无猜的萌娃Angela 和kimi 再相聚啦！","metadata":{"tiled":1,"settype":2,"banner":"687d0e9bjw1ep5r66o0o3j20p40gf40o"},"province":"0","city":"0","created_at":"Wed Feb 11 20:10:09 +0800 2015","topic_name":"有一种童年叫两小无猜","is_hot":0,"has_tab":0}},{"object_id":"1022:1008082d8a94ebb05d43378cdf178a5847583a","hotval":1372871997,"topic":"奇妙的朋友","title":"","url":"http:\/\/weibo.com\/p\/1008082d8a94ebb05d43378cdf178a5847583a?k=%E5%A5%87%E5%A6%99%E7%9A%84%E6%9C%8B%E5%8F%8B&from=trendtop_api","thread":{"id":"1675653","ctg1":"102","ctg2":"102103","category1":"电视节目","category2":"其他","title":"","content":"《奇妙的朋友》将于每周六晚22：00播出，请来李宇春、杜海涛、胡杏儿、黄轩、杜天皓、倪妮参加，与动物们一起生活并且学习如何照顾，想知道他们的奇妙之旅是如何开始的吗？快来发微博带上#奇妙的朋友#话题词参与活动，奇妙惊喜等着你！","metadata":{"tiled":1,"settype":2,"banner":"005RT53vjw1eokh878vauj31kw0tjqcu"},"province":"0","city":"0","created_at":"Fri Dec 19 10:41:47 +0800 2014","topic_name":"奇妙的朋友","is_hot":0,"has_tab":0}},{"object_id":"1022:100808bd5a8b13b80aac4067ffc939a921755e","hotval":674075190,"topic":"2015羊年春晚","title":"","url":"http:\/\/weibo.com\/p\/100808bd5a8b13b80aac4067ffc939a921755e?k=2015%E7%BE%8A%E5%B9%B4%E6%98%A5%E6%99%9A&from=trendtop_api","thread":{"id":"1296750","ctg1":"102","ctg2":"102102","category1":"电视节目","category2":"春晚","title":"羊年春晚确定由哈文指导，你有什么期待吗(图)","content":"哈文再次出山担任#2015羊年春晚#总导演， 2月8日春晚第二次彩排于晚上八点左右落下帷幕。彩排时长超过5个半小时，这就意味着将有部分节目被毙。","metadata":{"settype":"2","banner":"6ff51fefjw1el9bfw25t0j20500500sx","tiled":1},"province":"0","city":"0","created_at":"Fri Sep 19 17:09:11 +0800 2014","topic_name":"2015羊年春晚","is_hot":1,"has_tab":1}},{"object_id":"1022:1008082c084874b79d7fc7147e18807b0dd8e2","hotval":21771455,"topic":"春节求签","title":"","url":"http:\/\/weibo.com\/p\/1008082c084874b79d7fc7147e18807b0dd8e2?k=%E6%98%A5%E8%8A%82%E6%B1%82%E7%AD%BE&from=trendtop_api","thread":{"id":"1855230","ctg1":"1","ctg2":"0","category1":"社会","category2":"","title":"","content":"求签问命是我国春节的美好传统。想知道你的羊年运势如何？请果断点击活动链接http:\/\/t.cn\/Rw24Bpi，选择想问的运势类别，开始占卜吧。愿你的羊年风调雨顺。#春节求签#","metadata":{"settype":2,"banner":"608e285ejw1eox5bgnt84j205005074f","h5_pic":"4daca88bjw1eoxh8tbphnj20hs08wtae","client_pic":"4daca88bjw1eoxh8xqfpkj20hs0hsgnt","tiled":1},"province":"0","city":"0","created_at":"Tue Jan 20 10:17:07 +0800 2015","topic_name":"春节求签","is_hot":0,"has_tab":0}}]}</td>
+    </tr>
+    
+    <tr >
+      <td colspan="2" class="C_Display">结果统计</td>
+      <td class="C_Display">Total: <b>1</b>  Pass: <b><font color='Green'>1</font></b>  Fail: <b><font color='Red'>0</font></b></td>
+      <td class="C_Display">运行时间</td>
+      <td class="C_Display">2015-02-15 18:25:27</td>
+    </tr>
+    
+      </table>
+  <hr />
+</div>
+</body>
+</html>
+    

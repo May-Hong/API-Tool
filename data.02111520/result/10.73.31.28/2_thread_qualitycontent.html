@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Miniblog API Test Result</title>
+    <script type="text/javascript" src="src/jquery.js"></script>
+    <script type="text/javascript" src="src/Expand_Collapse.js"></script>
+    <link type="text/css" rel="stylesheet" href="src/skin.css">
+</head>
+<body>
+    <h1 align="center">API Test Result</h1>
+    <p align="right">
+        <input type="submit" id="Expand ALL" value="展开用例" onclick="Expand_Header()"/>
+        <input type="submit" id="Expand ALL" value="展开详情" onclick="Expand_All()"/>
+        <input type="submit" id="Collapse ALL" value="收起所有" onclick="Collapse_All()"/>
+    </p>
+    <hr />
+    <div class="URLID" id="URLID">
+        <table width="100%" border="1" style="table-layout:fixed">
+            
+        <tr class="1_apiheader">
+      <td width="10%" scope="col" class="T_Header"><a href="#">1</a></td>
+      <td width="10%" scope="col" class="C_Display">接口说明</td>
+      <td width="30%" scope="col" class="L_Display">http://10.73.31.28/2/thread/qualitycontent<BR>获取话题优质推荐内容</td>
+      <td width="10%" scope="col" class="C_Display">参数说明</td>
+      <td width="50%" scope="col" class="L_Display"></td>
+    </tr>
+    
+    <tr class="case1-1_cheader" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="T_Header"><a href="#">1-1</a></td>
+      <td colspan="3" class="URL_Details">curl -H "Host:i.huati.weibo.com"  -H "appkey:1493185076" "http://10.73.31.28/2/thread/qualitycontent?source=1493185076"<br>必选项</td>
+    </tr>
+
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">期望结果</td>
+      <td class="L_Display">create_time</td>
+      <td class="runresult"><b><font color='Green'> PASS </font></b></td>
+      <td class="LU_Display">time_connect: 0.004<BR>time_starttransfer: 0.088<br>time_total: 0.088</td>
+    </tr>  
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">运行结果</td>
+      <td colspan="3" class="L_Display">{"create_time":1398394928,"data":[{"title":"\u4ed6\u7684\u65b0\u5a18\u662f\u5979\u524d\u4efb","desc":"\u4ed6\u7684\u65b0\u5a18\u662f\u5979\u524d\u4efb","praise":"1234","pic":"http:\/\/ww2.sinaimg.cn\/large\/45da8ff4jw1e7eai85haqj208c0503zb.jpg","url":"http:\/\/hot.weibo.com\/topic\/131608","position":"1.1.1"},{"title":"NBA\u65b0\u8d5b\u5b63\u8d5b\u7a0b","desc":"NBA\u65b0\u8d5b\u5b63\u8d5b\u7a0b","praise":"1234","pic":"http:\/\/ww2.sinaimg.cn\/large\/45da8ff4jw1e7eaipecgqj2050030aa0.jpg","url":"http:\/\/hot.weibo.com\/topic\/131694","position":"1.1.2"},{"title":"\u57ce\u7ba1\u5367\u5e95\u6446\u5730\u644a","desc":"\u6b66\u6c49\u6d2a\u5c71\u57ce\u7ba1\u4eba\u58eb\u79f0\u540c\u4e8b\u6446\u644a\u5b9e\u4e3a\u5367\u5e95\u4f53\u9a8c","praise":"1112","pic":"http:\/\/ww4.sinaimg.cn\/large\/7fb5a0adjw1e5zaqvmzybj20c808ddgf.jpg","url":"http:\/\/hot.weibo.com\/topic\/24733","position":"1.2.1"},{"title":"\u67ef\u9707\u4e1c\u8427\u4e9a\u8f69\u60c5\u53d8","desc":"\u67ef\u9707\u4e1c\u8427\u4e9a\u8f69\u60c5\u53d8","praise":"1111","pic":"http:\/\/ww3.sinaimg.cn\/large\/7fb5a0adjw1e5zasfxoioj20a40goab2.jpg","url":"http:\/\/hot.weibo.com\/topic\/30470","position":"1.2.2"},{"title":"\u9ed8\u591a\u514b\u9093\u6587\u8fea\u79bb\u5a5a","desc":"\u9ed8\u591a\u514b\u9093\u6587\u8fea\u79bb\u5a5a","praise":"2222","pic":"http:\/\/ww4.sinaimg.cn\/large\/7fb5a0adjw1e5zatggxgxj20c80ae75j.jpg","url":"http:\/\/hot.weibo.com\/topic\/16275","position":"2.1.1"},{"title":"\u72d7\u8089\u8282\u6740\u72d7\u906d\u8d28\u7591","desc":"\u5e7f\u897f\u7389\u6797\u72d7\u8089\u8282\u5c06\u5c60\u674010000\u6761\u72d7\u906d\u8d28\u7591","praise":"2221","pic":"http:\/\/ww4.sinaimg.cn\/large\/7fb5a0adjw1e5zav1u15pj20c808w76e.jpg","url":"http:\/\/hot.weibo.com\/topic\/28703","position":"2.1.2"},{"title":"\u820c\u5c16\u4e0a\u7684\u4e2d\u56fd\u7b2c\u4e8c\u5b63","desc":"\u820c\u5c16\u4e0a\u7684\u4e2d\u56fd\u7b2c\u4e8c\u5b63","praise":"1234","pic":"http:\/\/ww1.sinaimg.cn\/large\/45da8ff4tw1efrnnbjjzrj20dw0a4ae1.jpg","url":"http:\/\/hot.weibo.com\/topic\/900300","position":"2.2.1"},{"title":"\u82b1\u513f\u4e0e\u5c11\u5e74","desc":"\u82b1\u513f\u4e0e\u5c11\u5e74","praise":"1234","pic":"http:\/\/ww1.sinaimg.cn\/large\/45da8ff4tw1efrni6iftlj20dw0a4jui.jpg","url":"http:\/\/hot.weibo.com\/topic\/889891","position":"2.2.2"},{"title":"#\u5907\u80ce\u662f\u600e\u6837\u7ec3\u6210\u7684#","desc":"\u5907\u80ce\u662f\u600e\u6837\u7ec3\u6210\u7684","praise":"3333","pic":"http:\/\/ww1.sinaimg.cn\/large\/7fb5a0adjw1e5zayg645rj205p0360sp.jpg","url":"http:\/\/huati.weibo.com\/222983","position":"2.3.1"},{"title":"#\u6d88\u6691\u795e\u5668#","desc":"\u708e\u708e\u590f\u65e5 \u6765\u79c0\u4e00\u4e0b\u4f60\u7684\u6d88\u6691\u795e\u5668","praise":"1999","pic":"http:\/\/ww3.sinaimg.cn\/large\/7fb5a0adjw1e5zaz8gvp0j205p036t8n.jpg","url":"http:\/\/huati.weibo.com\/218353","position":"2.3.2"}]}</td>
+    </tr>
+    
+    <tr >
+      <td colspan="2" class="C_Display">结果统计</td>
+      <td class="C_Display">Total: <b>1</b>  Pass: <b><font color='Green'>1</font></b>  Fail: <b><font color='Red'>0</font></b></td>
+      <td class="C_Display">运行时间</td>
+      <td class="C_Display">2014-08-15 11:03:04</td>
+    </tr>
+    
+      </table>
+  <hr />
+</div>
+</body>
+</html>
+    

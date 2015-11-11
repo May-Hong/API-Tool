@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Miniblog API Test Result</title>
+    <script type="text/javascript" src="src/jquery.js"></script>
+    <script type="text/javascript" src="src/Expand_Collapse.js"></script>
+    <link type="text/css" rel="stylesheet" href="src/skin.css">
+</head>
+<body>
+    <h1 align="center">API Test Result</h1>
+    <p align="right">
+        <input type="submit" id="Expand ALL" value="展开用例" onclick="Expand_Header()"/>
+        <input type="submit" id="Expand ALL" value="展开详情" onclick="Expand_All()"/>
+        <input type="submit" id="Collapse ALL" value="收起所有" onclick="Collapse_All()"/>
+    </p>
+    <hr />
+    <div class="URLID" id="URLID">
+        <table width="100%" border="1" style="table-layout:fixed">
+            
+        <tr class="1_apiheader">
+      <td width="10%" scope="col" class="T_Header"><a href="#">1</a></td>
+      <td width="10%" scope="col" class="C_Display">接口说明</td>
+      <td width="30%" scope="col" class="L_Display">http://10.77.26.237/2/top/list<BR>话题排行榜</td>
+      <td width="10%" scope="col" class="C_Display">参数说明</td>
+      <td width="50%" scope="col" class="L_Display"></td>
+    </tr>
+    
+    <tr class="case1-1_cheader" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="T_Header"><a href="#">1-1</a></td>
+      <td colspan="3" class="URL_Details">curl -H "Host:i.huati.weibo.com" "http://10.77.26.237/2/top/list?"<br>必选项</td>
+    </tr>
+
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">期望结果</td>
+      <td class="L_Display">total_number</td>
+      <td class="runresult"><b><font color='Green'> PASS </font></b></td>
+      <td class="LU_Display">time_connect: 0.339<BR>time_starttransfer: 0.593<br>time_total: 0.593</td>
+    </tr>  
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">运行结果</td>
+      <td colspan="3" class="L_Display">{"total_number":7,"list":[{"title":"","content":"近日，有网友爆出一张截图，是刘强东晒出手带戒指的照片，并且写道：“此生此刻，有你最幸福……最好的生日礼物……”奶茶妹妹也点赞。据知情人士透露，刘强东和章泽天在情人节前订了去国外的旅程。在刘强东的朋友圈里，其友人也称“已经备好红包”。","topic":"刘强东奶茶妹妹被曝已婚","num":16,"url":"http:\/\/huati.weibo.com\/1979623","province":"0","tid":1979623,"create_time":"1424054742","uid":"","ctg1_name":""},{"title":"","content":"小鲜肉宁泽涛微博发布唱歌视频，四大鲜肉干脆在微博上传原定在春晚的节目吧！！！小鲜肉们不一起来吗？2月14日官方宣布吴亦凡、鹿晗、陈伟霆、宁泽涛的小鲜肉组合的节目无缘春晚。","topic":"小鲜肉微春晚","num":109,"url":"http:\/\/huati.weibo.com\/1979550","province":0,"tid":1979550,"create_time":"1424053317","uid":"","ctg1_name":""},{"title":"","content":"据知情人爆料，原计划将在羊年央视春晚舞台表演唯美《国色天香》水袖舞的四位女艺人：马苏(饰杨贵妃)、王丽坤(饰王昭君)、佟丽娅(饰貂蝉)、秦岚(饰西施)，临时接到通知，因某些因素导致该节目被临时取消。新浪娱乐还在求证中，截止发稿未得到回复。","topic":"四大美人无缘春晚","num":290,"url":"http:\/\/huati.weibo.com\/1979504","province":0,"tid":1979504,"create_time":"1424052424","uid":"","ctg1_name":""},{"title":"","content":"中国的羊年很快就要到了，这个“羊”到底是什么羊？最终找来各种“中国专家”做调查，可以是依旧没有结论…老外们已经疯了…","topic":"是山羊还是绵羊","num":3474,"url":"http:\/\/huati.weibo.com\/1979204","province":"0","tid":1979204,"create_time":"1424045222","uid":"","ctg1_name":""},{"title":"","content":"据说这是#现代九大流行病#，中三个以上的自觉拿走 ！！！","topic":"现代九大流行病","num":3,"url":"http:\/\/huati.weibo.com\/1978361","province":"0","tid":1978361,"create_time":"1424012062","uid":"","ctg1_name":""},{"title":"","content":"今天，腊月二十八，马年还剩下3天！","topic":"马年最后三天","num":1085,"url":"http:\/\/huati.weibo.com\/1978251","province":"0","tid":1978251,"create_time":"1424010653","uid":"","ctg1_name":""},{"title":"","content":"一段在叙利亚拍摄的视频走红网络。视频中一位老奶奶当街拦下了“伊斯兰国”的车，走到车窗边上，对车内的“伊斯兰国”武装分子数落3分钟，告诫他们“迷途知返吧，回到真主这里。”","topic":"伊斯兰老奶奶碎碎念","num":147,"url":"http:\/\/huati.weibo.com\/1977560","province":"0","tid":1977560,"create_time":"1423998633","uid":"","ctg1_name":""},{"title":"","content":"马来西亚政府宣布，从2015年2月15日-12月31日，免除中国游客30马币（约合人民币52.3元）的签证费。受马航MH370航班失联和MH17航班坠毁事故的影响，2014年中国赴马游客大幅减少。","topic":"马来西亚签证免费","num":406,"url":"http:\/\/huati.weibo.com\/1977195","province":"0","tid":1977195,"create_time":"1423991205","uid":"","ctg1_name":""},{"title":"","content":"外出买水果的朱某偶遇割腕自杀的美女，他一把夺过刀子将其救下；而当美女掏出手机想与亲友联系时，朱某顿起贪念，借口帮美女跟亲人解释，要过手机骑上电动车就跑…最终，佯装“英雄救美”的朱某被民警抓获。","topic":"救自杀美女后抢手机","num":168,"url":"http:\/\/huati.weibo.com\/1976960","province":"0","tid":1976960,"create_time":"1423986969","uid":"","ctg1_name":""},{"title":"","content":"羊年春节快到了，可这生肖羊是绵羊(sheep)，还是山羊(goat)，可把外国人搞懵了。中文中的“羊”含义模糊，英文的sheep和goat可是泾渭分明。有专家认为：北方以绵羊为主，南方以山羊为主。网友：真这么掰，狗年没法弄了~[doge]","topic":"生肖羊之争","num":42,"url":"http:\/\/huati.weibo.com\/1976392","province":"0","tid":1976392,"create_time":"1423977464","uid":"","ctg1_name":""}]}</td>
+    </tr>
+    
+    <tr >
+      <td colspan="2" class="C_Display">结果统计</td>
+      <td class="C_Display">Total: <b>1</b>  Pass: <b><font color='Green'>1</font></b>  Fail: <b><font color='Red'>0</font></b></td>
+      <td class="C_Display">运行时间</td>
+      <td class="C_Display">2015-02-16 11:36:22</td>
+    </tr>
+    
+      </table>
+  <hr />
+</div>
+</body>
+</html>
+    

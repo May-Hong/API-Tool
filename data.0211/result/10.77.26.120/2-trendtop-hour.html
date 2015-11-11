@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Miniblog API Test Result</title>
+    <script type="text/javascript" src="src/jquery.js"></script>
+    <script type="text/javascript" src="src/Expand_Collapse.js"></script>
+    <link type="text/css" rel="stylesheet" href="src/skin.css">
+</head>
+<body>
+    <h1 align="center">API Test Result</h1>
+    <p align="right">
+        <input type="submit" id="Expand ALL" value="展开用例" onclick="Expand_Header()"/>
+        <input type="submit" id="Expand ALL" value="展开详情" onclick="Expand_All()"/>
+        <input type="submit" id="Collapse ALL" value="收起所有" onclick="Collapse_All()"/>
+    </p>
+    <hr />
+    <div class="URLID" id="URLID">
+        <table width="100%" border="1" style="table-layout:fixed">
+            
+        <tr class="1_apiheader">
+      <td width="10%" scope="col" class="T_Header"><a href="#">1</a></td>
+      <td width="10%" scope="col" class="C_Display">接口说明</td>
+      <td width="30%" scope="col" class="L_Display">http://10.77.26.120/2/trendtop/hour<BR>获取热门话题榜单小时榜</td>
+      <td width="10%" scope="col" class="C_Display">参数说明</td>
+      <td width="50%" scope="col" class="L_Display"></td>
+    </tr>
+    
+    <tr class="case1-1_cheader" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="T_Header"><a href="#">1-1</a></td>
+      <td colspan="3" class="URL_Details">curl -H "Host:i.huati.weibo.com" "http://10.77.26.120/2/trendtop/hour?"<br>必选项</td>
+    </tr>
+
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">期望结果</td>
+      <td class="L_Display">total_number</td>
+      <td class="runresult"><b><font color='Green'> PASS </font></b></td>
+      <td class="LU_Display">time_connect: 0.216<BR>time_starttransfer: 0.349<br>time_total: 0.349</td>
+    </tr>  
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">运行结果</td>
+      <td colspan="3" class="L_Display">{"total_number":159,"date":"2015-01-28","hour":"13","data":[{"object_id":"1022:10080892228eacf17e73c20476aa3398e119d4","hotval":115784317,"topic":"陈赫承认离婚","title":"","url":"http:\/\/weibo.com\/p\/10080892228eacf17e73c20476aa3398e119d4?k=%E9%99%88%E8%B5%AB%E6%89%BF%E8%AE%A4%E7%A6%BB%E5%A9%9A&from=trendtop_api","thread":{"id":"1868346","ctg1":"2","ctg2":"2001","category1":"明星","category2":"内地","title":"与张子萱偷情视频曝光，双双发微博坐实恋情","content":"22日晚，陈赫发长文承认离婚，称半年前已签字。陈赫道歉称“我错了”，称自己没有维护好这个家。27日风行工作室爆出陈赫和女星张子萱上海公寓内偷情热吻视频，陈赫随后将离婚协议拍照发微博，确认自己去年9月11日离婚。","metadata":{"tiled":1,"settype":2,"banner":"61e7f4aajw1eoiop4d64rj2050050aao"},"province":"0","city":"0","created_at":"Thu Jan 22 22:05:19 +0800 2015","topic_name":"陈赫承认离婚","is_hot":1,"has_tab":0}},{"object_id":"1022:100808b01b79705f46f1119c21577b4ea66685","hotval":5814817,"topic":"羊年春晚吉祥物","title":"","url":"http:\/\/weibo.com\/p\/100808b01b79705f46f1119c21577b4ea66685?k=%E7%BE%8A%E5%B9%B4%E6%98%A5%E6%99%9A%E5%90%89%E7%A5%A5%E7%89%A9&from=trendtop_api","thread":{"id":"1890366","ctg1":"1","ctg2":"0","category1":"社会","category2":"","title":"","content":"【羊年春晚吉祥物发布】阳阳，出生于“羊城”的名门之后！是有中国“国宝”、世界“超级羊”之称的小尾寒羊家族第108代嫡传子孙（也可能是132？168？……）33年春晚史上首个吉祥物，在除夕直播当天，“阳阳”将作为晚会特邀主持人与您见面！想要更多了解TA，请戳http:\/\/t.cn\/RZm06wj","metadata":{"tiled":1,"settype":2,"banner":"83bc7e05jw1eop0q7hyz6j2050050wf0"},"province":"0","city":"0","created_at":"Tue Jan 27 11:21:39 +0800 2015","topic_name":"羊年春晚吉祥物","is_hot":1,"has_tab":0}},{"object_id":"1022:10080800e690b218b6882321fac58ca133c32c","hotval":3320851,"topic":"秦海璐产子","title":"","url":"http:\/\/weibo.com\/p\/10080800e690b218b6882321fac58ca133c32c?k=%E7%A7%A6%E6%B5%B7%E7%92%90%E4%BA%A7%E5%AD%90&from=trendtop_api","thread":{"id":"1895281","ctg1":"2","ctg2":"2001","category1":"明星","category2":"内地","title":"","content":"秦海璐于2015年1月28日产下一子。据悉，秦海璐和老公王新军2011年在合拍电视剧《独立纵队》时相识，2012年4月开始恋爱，2014年1月23日领证。","metadata":{"tiled":1,"settype":2,"banner":"61e7f4aajw1eop23kpzexj2050050aa6"},"province":"0","city":"0","created_at":"Wed Jan 28 09:11:10 +0800 2015","topic_name":"秦海璐产子","is_hot":1,"has_tab":0}},{"object_id":"1022:100808c62279e53d0efd5fe7ffcad8dd1fac64","hotval":4644646,"topic":"IS劫杀日本人质","title":"","url":"http:\/\/weibo.com\/p\/100808c62279e53d0efd5fe7ffcad8dd1fac64?k=IS%E5%8A%AB%E6%9D%80%E6%97%A5%E6%9C%AC%E4%BA%BA%E8%B4%A8&from=trendtop_api","thread":{"id":"1879868","ctg1":"1","ctg2":"0","category1":"社会","category2":"","title":"安倍拒付2亿赎金，日本1人质已被IS斩首","content":"20日下午，极端组织IS突然发布视频威胁称，如果在72小时内没有收到2亿美元赎金，他们将杀害两名日本人质。两名人质分别是自由记者后藤健二和军火商汤川遥菜。24日，网上出现疑似IS发布的配图录音称已杀死汤川，同时要求用后藤健二交换被约旦抓捕的一名女恐怖分子。","metadata":{"tiled":1,"settype":2,"banner":"70e11e0fjw1eol31nwsq4j2050050wes"},"province":"400","city":"16","created_at":"Sun Jan 25 00:34:37 +0800 2015","topic_name":"IS劫杀日本人质","is_hot":1,"has_tab":0}},{"object_id":"1022:1008083ae2ac86cb5b21fc1d1691812a40527e","hotval":4578608553,"topic":"电视剧何以笙箫默","title":"","url":"http:\/\/weibo.com\/p\/1008083ae2ac86cb5b21fc1d1691812a40527e?k=%E7%94%B5%E8%A7%86%E5%89%A7%E4%BD%95%E4%BB%A5%E7%AC%99%E7%AE%AB%E9%BB%98&from=trendtop_api","thread":{"id":"1039143","ctg1":"101","ctg2":"0","category1":"电视剧","category2":"","title":"","content":"由@钟汉良 @唐嫣 领衔主演的#电视剧何以笙箫默#1月10日19:30登录@江苏卫视 ！参与双屏互动，让何以琛赵默笙早日微博团聚！","metadata":{"settype":2,"banner":"7dced06cjw1eo1zybcxklj2050050q35","h5_pic":"7dced06cjw1eo1ztma5ttj20hs08wabz","client_pic":"7dced06cjw1eo1zuxv724j20hs0hsq4j","tiled":1},"province":"0","city":"0","created_at":"Mon May 19 14:11:17 +0800 2014","topic_name":"电视剧何以笙箫默","is_hot":0,"has_tab":1}},{"object_id":"1022:100808463732d252282b22dc92d02972d592a2","hotval":617501530,"topic":"2015央视春晚","title":"","url":"http:\/\/weibo.com\/p\/100808463732d252282b22dc92d02972d592a2?k=2015%E5%A4%AE%E8%A7%86%E6%98%A5%E6%99%9A&from=trendtop_api","thread":{"id":"279931","ctg1":"102","ctg2":"102001","category1":"电视节目","category2":"喜乐街","title":"","content":"2015年央视春晚最新动态即时公布！敬请关注！","metadata":{"settype":2,"banner":"83bc7e05jw1eoih54wbpwj20500503yu"},"province":"0","city":"0","created_at":"Fri Jul 12 14:57:27 +0800 2013","topic_name":"2015央视春晚","is_hot":0,"has_tab":0}},{"object_id":"1022:100808ad676270f89c74754b43e0e19d3ae4f0","hotval":82660817,"topic":"医馆笑传","title":"","url":"http:\/\/weibo.com\/p\/100808ad676270f89c74754b43e0e19d3ae4f0?k=%E5%8C%BB%E9%A6%86%E7%AC%91%E4%BC%A0&from=trendtop_api","thread":{"id":"956478","ctg1":"101","ctg2":"0","category1":"电视剧","category2":"","title":"","content":"@辛迪加影视 出品的古装探案喜剧#医馆笑传#由@陈赫 @王传君 @姜妍二胖 @张子萱 领衔主演。主要描述明朝京城天和医馆逗逼们的探案故事，该剧将于#2015年1月28日#登陆@安徽卫视 @陕西卫视 晚间黄金档，同时@腾讯视频 网络同步更新。","metadata":{"settype":2,"banner":"005GuwjQgw1enyqoyadw8j3050050gm3","tiled":1},"province":"0","city":"0","created_at":"Sun Apr 06 20:22:35 +0800 2014","topic_name":"医馆笑传","is_hot":0,"has_tab":1}},{"object_id":"1022:100808c36731b9dab1e484f98c8008a8364bff","hotval":11183564867,"topic":"我是歌手","title":"","url":"http:\/\/weibo.com\/p\/100808c36731b9dab1e484f98c8008a8364bff?k=%E6%88%91%E6%98%AF%E6%AD%8C%E6%89%8B&from=trendtop_api","thread":{"id":"28000","ctg1":"102","ctg2":"102010","category1":"电视节目","category2":"我是歌手","title":"","content":"立白邀您观看#我是歌手#第三季！参与双屏话题互动，选出微博人气歌王；第三季，更多惊喜，整个世界都听你的！","metadata":{"settype":2,"banner":"7dced06cjw1eofsiyosrwj2050050mxj","h5_pic":"7dced06cjw1eo3g35h8p4j20hs08w77m","client_pic":"7dced06cjw1eo3g374bj4j20hs0hsjw8","tabdef":"1","tiled":"0","match_area":"0"},"province":"0","city":"0","created_at":"Sat Feb 16 10:50:33 +0800 2013","topic_name":"我是歌手","is_hot":1,"has_tab":1}},{"object_id":"1022:100808d88bb39881e0e9cda26c9444096a6a7b","hotval":5331309825,"topic":"神雕侠侣","title":"","url":"http:\/\/weibo.com\/p\/100808d88bb39881e0e9cda26c9444096a6a7b?k=%E7%A5%9E%E9%9B%95%E4%BE%A0%E4%BE%A3&from=trendtop_api","thread":{"id":"86855","ctg1":"101","ctg2":"0","category1":"电视剧","category2":"","title":"","content":"由华夏视听出品、于正编剧，陈晓 、陳妍希、陈翔、张馨予、严屹宽 等众星主演的电视剧《神雕侠侣》2015年1月6日起每周二周三晚22:00湖南卫视钻石周播剧场。且看陈晓版神雕大侠再战江湖！","metadata":{"settype":2,"banner":"e06b5541gw1emn41t5lc8j2050050mxe"},"province":"0","city":"0","created_at":"Tue May 14 00:26:52 +0800 2013","topic_name":"神雕侠侣","is_hot":0,"has_tab":1}},{"object_id":"1022:100808aa5ae47943a2ca061e1bf98f585224ce","hotval":19576928,"topic":"陈张出轨门","title":"","url":"http:\/\/weibo.com\/p\/100808aa5ae47943a2ca061e1bf98f585224ce?k=%E9%99%88%E5%BC%A0%E5%87%BA%E8%BD%A8%E9%97%A8&from=trendtop_api","thread":{"id":"1892632","ctg1":"2","ctg2":"2001","category1":"明星","category2":"内地","title":"","content":"人生需要揭穿。这是风行工作室和全民星探APP的宗旨。","metadata":{"tiled":1,"settype":2,"banner":"005OmkhXjw1eoobe5n90fj3050050jrl"},"province":"0","city":"0","created_at":"Tue Jan 27 19:35:06 +0800 2015","topic_name":"陈张出轨门","is_hot":0,"has_tab":0}}]}</td>
+    </tr>
+    
+    <tr >
+      <td colspan="2" class="C_Display">结果统计</td>
+      <td class="C_Display">Total: <b>1</b>  Pass: <b><font color='Green'>1</font></b>  Fail: <b><font color='Red'>0</font></b></td>
+      <td class="C_Display">运行时间</td>
+      <td class="C_Display">2015-01-28 14:36:15</td>
+    </tr>
+    
+      </table>
+  <hr />
+</div>
+</body>
+</html>
+    

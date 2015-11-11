@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Miniblog API Test Result</title>
+    <script type="text/javascript" src="src/jquery.js"></script>
+    <script type="text/javascript" src="src/Expand_Collapse.js"></script>
+    <link type="text/css" rel="stylesheet" href="src/skin.css">
+</head>
+<body>
+    <h1 align="center">API Test Result</h1>
+    <p align="right">
+        <input type="submit" id="Expand ALL" value="展开用例" onclick="Expand_Header()"/>
+        <input type="submit" id="Expand ALL" value="展开详情" onclick="Expand_All()"/>
+        <input type="submit" id="Collapse ALL" value="收起所有" onclick="Collapse_All()"/>
+    </p>
+    <hr />
+    <div class="URLID" id="URLID">
+        <table width="100%" border="1" style="table-layout:fixed">
+            
+        <tr class="1_apiheader">
+      <td width="10%" scope="col" class="T_Header"><a href="#">1</a></td>
+      <td width="10%" scope="col" class="C_Display">接口说明</td>
+      <td width="30%" scope="col" class="L_Display">http://i.huati.weibo.com/2/trendtop/day<BR>获取热门话题榜单日榜</td>
+      <td width="10%" scope="col" class="C_Display">参数说明</td>
+      <td width="50%" scope="col" class="L_Display"></td>
+    </tr>
+    
+    <tr class="case1-1_cheader" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="T_Header"><a href="#">1-1</a></td>
+      <td colspan="3" class="URL_Details">curl "http://i.huati.weibo.com/2/trendtop/day?"<br>必选项</td>
+    </tr>
+
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">期望结果</td>
+      <td class="L_Display">total_number</td>
+      <td class="runresult"><b><font color='Green'> PASS </font></b></td>
+      <td class="LU_Display">time_connect: 0.065<BR>time_starttransfer: 0.190<br>time_total: 0.191</td>
+    </tr>  
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">运行结果</td>
+      <td colspan="3" class="L_Display">{"total_number":457,"date":"2015-03-02","hour":"15","data":[{"object_id":"1022:10080870f2af49a12836ba0ee17b56feb0dd6c","hotval":9879468625,"topic":"让红包飞","title":"","url":"http:\/\/weibo.com\/p\/10080870f2af49a12836ba0ee17b56feb0dd6c?k=%E8%AE%A9%E7%BA%A2%E5%8C%85%E9%A3%9E&from=trendtop_api","thread":{"id":"27735","ctg1":"1","ctg2":"0","category1":"社会","category2":"","title":"","content":"虽然已经上班好几天了，但是在我心里，元宵节之前年都没过完。。。。老黄历都是这么说的！所以现在问题来了，每天早8：00 红包你抢了吗？duang~duang~duang~","metadata":{"settype":2,"banner":"e9345cbdjw1ep34y9k4i2j205005074g","h5_pic":"e9345cbdjw1eowcy6oppqj20hs08wwgq","client_pic":"e9345cbdjw1eowcy8636mj20hs0hswhe","tabdef":"1","tiled":"0","match_area":"0"},"province":"0","city":"0","created_at":"Mon Feb 04 17:38:24 +0800 2013","topic_name":"让红包飞","is_hot":1,"has_tab":1}},{"object_id":"1022:100808ae075f28fe730aef31d845eccf73eb79","hotval":277919529,"topic":"出彩中国人","title":"","url":"http:\/\/weibo.com\/p\/100808ae075f28fe730aef31d845eccf73eb79?k=%E5%87%BA%E5%BD%A9%E4%B8%AD%E5%9B%BD%E4%BA%BA&from=trendtop_api","thread":{"id":"569997","ctg1":"102","ctg2":"0","category1":"电视节目","category2":"","title":"","content":"《出彩中国人》是由央视和灿星制作携手打造的大型励志公益节目，节目由撒贝宁主持，第一季由周立波、李连杰、蔡明担任评委，第二季由周立波、蔡国庆、范冰冰出任评委，于2015年3月1日起每周日晚20:05分在央视一套播出。","metadata":{"settype":2,"banner":"5757cc05jw1epp8e5bb1sj2050050mxg","tiled":1},"province":"0","city":"0","created_at":"Mon Nov 11 19:05:59 +0800 2013","topic_name":"出彩中国人","is_hot":0,"has_tab":1}},{"object_id":"1022:100808e020ea93c0c1268236505eb5b9c66d17","hotval":171501292,"topic":"亚布力论坛","title":"","url":"http:\/\/weibo.com\/p\/100808e020ea93c0c1268236505eb5b9c66d17?k=%E4%BA%9A%E5%B8%83%E5%8A%9B%E8%AE%BA%E5%9D%9B&from=trendtop_api","thread":{"id":"380043","ctg1":"7","ctg2":"0","category1":"投资理财","category2":"","title":"","content":"2015年亚布力中国企业家论坛第十五届年会将于2015年2月28日-3月2日（正月初十——正月十二）在黑龙江亚布力召开。本届年会主题为【市场、法治与企业创新】","metadata":{"settype":2,"banner":"80e071c2jw1eppcs9zorrj205005074k","tiled":1},"province":"0","city":"0","created_at":"Fri Aug 23 10:25:17 +0800 2013","topic_name":"亚布力论坛","is_hot":1,"has_tab":1}},{"object_id":"1022:1008089d9afc3859f444afcd2cbbe5fde2b1b9","hotval":2467377090,"topic":"活色生香","title":"","url":"http:\/\/weibo.com\/p\/1008089d9afc3859f444afcd2cbbe5fde2b1b9?k=%E6%B4%BB%E8%89%B2%E7%94%9F%E9%A6%99&from=trendtop_api","thread":{"id":"400565","ctg1":"101","ctg2":"0","category1":"电视剧","category2":"","title":"","content":"《活色生香》除夕至大年初三播出时间调整为每晚7点半播出！初四起恢复正常，精彩提前放送~活色首日全国网收视率3.43，9.29，打破近十年电视剧首播记录！首日网络播放量10731万次！2集破亿！继首播收视登顶后，再次打破电视剧首播网络播放量记录！成为史上首播网络播放量最高剧集！","metadata":{"settype":2,"banner":"c4391115jw1eoprhuv0mjj2050050jrv","tiled":1},"province":"0","city":"0","created_at":"Fri Aug 30 14:50:13 +0800 2013","topic_name":"活色生香","is_hot":0,"has_tab":0}},{"object_id":"1022:1008084c2eee46ea12b4656d70c6b75e132e9b","hotval":119299655,"topic":"duang","title":"","url":"http:\/\/weibo.com\/p\/1008084c2eee46ea12b4656d70c6b75e132e9b?k=duang&from=trendtop_api","thread":{"id":"2007893","ctg1":"9","ctg2":"9001","category1":"创意征集","category2":"创意大赛","title":"","content":"视频《我的洗发液》走红网络，你被duang洗脑了吗？","metadata":{"tiled":1,"settype":2,"banner":"b34d6591gw1eplkciwlkzj2050050jre"},"province":"0","city":"0","created_at":"Wed Feb 25 13:54:56 +0800 2015","topic_name":"duang","is_hot":0,"has_tab":0}},{"object_id":"1022:100808cf6686a0f8d487613605934685712ca9","hotval":35793850,"topic":"中国最任性合影","title":"","url":"http:\/\/weibo.com\/p\/100808cf6686a0f8d487613605934685712ca9?k=%E4%B8%AD%E5%9B%BD%E6%9C%80%E4%BB%BB%E6%80%A7%E5%90%88%E5%BD%B1&from=trendtop_api","thread":{"id":"2008172","ctg1":"1","ctg2":"0","category1":"社会","category2":"","title":"","content":"在微博上看多了年轻人的自拍，岂料“老男孩”和“大龄文艺女青年”也爱自拍，本次参加亚布力的中国企业家大佬们都任性了一回，一个个玩起了自拍，用这种方式在亚布力留下了自己的身影，他们也告诉大家，我们也还年轻！","metadata":{"settype":2,"banner":"6403c928gw1epq02paamtj2050050dg6","h5_pic":"64036e22jw1epqjevqzpnj20hs08wq5v","client_pic":"64036e22jw1epqjf3fo2oj20hs0hswge","tiled":1},"province":"0","city":"0","created_at":"Wed Feb 25 15:14:22 +0800 2015","topic_name":"中国最任性合影","is_hot":1,"has_tab":0}},{"object_id":"1022:10080828ac2be96425c3295052015bbff3c46d","hotval":552417162,"topic":"天生我有才","title":"","url":"http:\/\/weibo.com\/p\/10080828ac2be96425c3295052015bbff3c46d?k=%E5%A4%A9%E7%94%9F%E6%88%91%E6%9C%89%E6%89%8D&from=trendtop_api","thread":{"id":"1419443","ctg1":"102","ctg2":"102103","category1":"电视节目","category2":"其他","title":"","content":"国内首档跨界创投真人秀《天生我有才》浙江卫视每周日晚21:30播出！","metadata":{"tiled":1,"settype":2,"banner":"005Isospgw1ep383b6b1xj3050050mxf"},"province":"0","city":"0","created_at":"Wed Nov 05 10:39:55 +0800 2014","topic_name":"天生我有才","is_hot":0,"has_tab":0}},{"object_id":"1022:1008084016154a00251ef594ec8ca0244be6c4","hotval":27674640,"topic":"微博看两会","title":"","url":"http:\/\/weibo.com\/p\/1008084016154a00251ef594ec8ca0244be6c4?k=%E5%BE%AE%E5%8D%9A%E7%9C%8B%E4%B8%A4%E4%BC%9A&from=trendtop_api","thread":{"id":"28789","ctg1":"8","ctg2":"0","category1":"其他","category2":"","title":"","content":"这是一扇全景展示会场内外的窗口。重要新闻全程直播，动态消息随到随报，有政策解读，有百姓声音。“央视新闻”让你，耳听八方，眼观六路，随时获取最有价值的两会新闻。","metadata":{"settype":"2","banner":"a70fcfb0gw1ehc88w9277j2050050q34","tabdef":"1","tiled":"0","match_area":"0"},"province":"0","city":"0","created_at":"Fri Mar 01 19:27:41 +0800 2013","topic_name":"微博看两会","is_hot":1,"has_tab":1}},{"object_id":"1022:1008087cbf00ffcafbc0d0c967449efc48a52b","hotval":1092745097,"topic":"相爱穿梭千年","title":"","url":"http:\/\/weibo.com\/p\/1008087cbf00ffcafbc0d0c967449efc48a52b?k=%E7%9B%B8%E7%88%B1%E7%A9%BF%E6%A2%AD%E5%8D%83%E5%B9%B4&from=trendtop_api","thread":{"id":"1551506","ctg1":"102","ctg2":"102103","category1":"电视节目","category2":"其他","title":"","content":"由井柏然、郑爽主演的湖南卫视自制周播剧，翻拍自热门韩剧《仁显王后的男人》","metadata":{"tiled":1,"settype":2,"banner":"005QfIizjw1epciceg9oej30qe11kdnw"},"province":"0","city":"0","created_at":"Thu Nov 27 20:53:33 +0800 2014","topic_name":"相爱穿梭千年","is_hot":0,"has_tab":0}},{"object_id":"1022:1008085ec48379f32a544c6612f24c9ad16beb","hotval":55197947,"topic":"2015两会","title":"","url":"http:\/\/weibo.com\/p\/1008085ec48379f32a544c6612f24c9ad16beb?k=2015%E4%B8%A4%E4%BC%9A&from=trendtop_api","thread":{"id":"882421","ctg1":"1","ctg2":"0","category1":"社会","category2":"","title":"","content":"【2015年全国两会开幕时间敲定：人大、政协分别在3月5日和3月3日】第十二届全国人民代表大会第三次会议和政协第十二届全国委员会第三次会议，将分别于2015年3月5日和3月3日在北京开幕。全国人大常委会办公厅和全国政协办公厅今天宣布，记者报名截止日期为2月25日。","metadata":{"tiled":1,"settype":2,"banner":"a716fd45jw1eotpu6fdr4j2050050glx"},"province":"0","city":"0","created_at":"Fri Mar 07 17:46:16 +0800 2014","topic_name":"2015两会","is_hot":1,"has_tab":1}}]}</td>
+    </tr>
+    
+    <tr >
+      <td colspan="2" class="C_Display">结果统计</td>
+      <td class="C_Display">Total: <b>1</b>  Pass: <b><font color='Green'>1</font></b>  Fail: <b><font color='Red'>0</font></b></td>
+      <td class="C_Display">运行时间</td>
+      <td class="C_Display">2015-03-02 16:24:41</td>
+    </tr>
+    
+      </table>
+  <hr />
+</div>
+</body>
+</html>
+    

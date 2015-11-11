@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Miniblog API Test Result</title>
+    <script type="text/javascript" src="src/jquery.js"></script>
+    <script type="text/javascript" src="src/Expand_Collapse.js"></script>
+    <link type="text/css" rel="stylesheet" href="src/skin.css">
+</head>
+<body>
+    <h1 align="center">API Test Result</h1>
+    <p align="right">
+        <input type="submit" id="Expand ALL" value="展开用例" onclick="Expand_Header()"/>
+        <input type="submit" id="Expand ALL" value="展开详情" onclick="Expand_All()"/>
+        <input type="submit" id="Collapse ALL" value="收起所有" onclick="Collapse_All()"/>
+    </p>
+    <hr />
+    <div class="URLID" id="URLID">
+        <table width="100%" border="1" style="table-layout:fixed">
+            
+        <tr class="1_apiheader">
+      <td width="10%" scope="col" class="T_Header"><a href="#">1</a></td>
+      <td width="10%" scope="col" class="C_Display">接口说明</td>
+      <td width="30%" scope="col" class="L_Display">http://10.77.26.66/page/eventlist<BR>历史活动</td>
+      <td width="10%" scope="col" class="C_Display">参数说明</td>
+      <td width="50%" scope="col" class="L_Display"></td>
+    </tr>
+    
+    <tr class="case1-1_cheader" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="T_Header"><a href="#">1-1</a></td>
+      <td colspan="3" class="URL_Details">curl -H "Host:i.huati.weibo.com" "http://10.77.26.66/page/eventlist?page_id=1008083ef687ed58637966b4f3a04d8ade9f69"<br>必选项</td>
+    </tr>
+
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">期望结果</td>
+      <td class="L_Display">"error_code":1000,"error_msg":"succ"</td>
+      <td class="runresult"><b><font color='Green'> PASS </font></b></td>
+      <td class="LU_Display">time_connect: 0.033<BR>time_starttransfer: 0.121<br>time_total: 0.121</td>
+    </tr>  
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">运行结果</td>
+      <td colspan="3" class="L_Display">{"error_code":1000,"error_msg":"succ","cache":600,"data":{"basic":{"id":"1117911","topic_id":"1107841","ctg1":"13","ctg2":"0","title":"","content":"话题自动化专用话题，不要修改话题自动化专用话题，不要修改,自动化专用话题，不要修改","guide":"","metadata":{"settype":"2","banner":"897d2f57jw1eiunnwn04hj2050050jrf","tiled":1},"province":"0","city":"0","attribute":"16678","uid":"0","source":"0","status":"1","create_time":"1403869626","update_time":"1413424017","topic_name":"test06271946"},"event_list":[{"event_id":"22034","start_time_str":"2014年07月18日","end_time_str":"2014年07月22日","desc":"话题自动化专用话题，不要修改","join_num":"0","creater_uid":"2306682711","award":[{"prize_id":"42423","name":"自动化测试","num":"100","price":"1","winner_num":"0","winner_eg":[],"pic_url":"http:\/\/ww3.sinaimg.cn\/thumb150\/897d2f57jw1eigzsz5mlpj2069069wer.jpg"}],"creater_user":{"id":2306682711,"screen_name":"湖口-黄土高坡湖口-黄土高坡","name":"湖口-黄土高坡湖口-黄土高坡","location":"北京 密云县","province":"11","city":"28","description":"fasdfasfsdfasdzxvasdfasdfasdvczxvasdfasdvczxvasdf","profile_url":"u\/2306682711","profile_image_url":"http:\/\/tp4.sinaimg.cn\/2306682711\/50\/5624520893\/0","avatar_large":"http:\/\/tp4.sinaimg.cn\/2306682711\/180\/5624520893\/0","domain":"","weihao":"","gender":"f","verified":true,"verified_reason":"测试部测试数据，请勿删除测试部测试数据，请勿删除","verified_type":2,"level":2,"lang":"zh-cn","created_at":"Fri Sep 02 14:19:51 +0800 2011","type":1,"badge":{"uc_domain":0,"enterprise":1,"anniversary":0,"taobao":0,"travel2013":0,"gongyi":1,"gongyi_level":1,"bind_taobao":0,"hongbao_2014":1,"suishoupai_2014":1,"dailv":1,"zongyiji":1}},"creater_user_html":"&lt;a class=\"W_fb\" usercard=\"id=2306682711\" target=\"_blank\" href=\"http:\/\/weibo.com\/u\/2306682711\"&gt;湖口-黄土高坡湖口-黄土高坡&lt;i class=\"approve_co\" title=\"微博机构认证\"&gt;&lt;\/i&gt;&lt;\/a&gt;","creater_user_profile_url":"http:\/\/weibo.com\/u\/2306682711"},{"event_id":"20564","start_time_str":"2014年07月02日","end_time_str":"2014年07月09日","desc":"","join_num":"7","creater_uid":"2306682711","award":[{"prize_id":"39759","name":"不怕猪一样的对手，就怕不中虚","num":"9","price":"123","winner_num":"0","winner_eg":[],"pic_url":"http:\/\/ww3.sinaimg.cn\/thumb150\/897d2f57jw1ehydqf4ipej20c81o879i.jpg"},{"prize_id":"39758","name":"实物奖可以多磨东方闪电水电费水","num":"12","price":"123","winner_num":"0","winner_eg":[],"pic_url":"http:\/\/ww2.sinaimg.cn\/thumb150\/897d2f57jw1ehydoou5n5j208m0cxdhi.jpg"},{"prize_id":"39757","name":"恶趣味","num":"6","price":"12","winner_num":"0","winner_eg":[],"pic_url":"http:\/\/ww3.sinaimg.cn\/thumb150\/897d2f57jw1ehykmt10ecg20c10c1goj.gif"}],"creater_user":{"id":2306682711,"screen_name":"湖口-黄土高坡湖口-黄土高坡","name":"湖口-黄土高坡湖口-黄土高坡","location":"北京 密云县","province":"11","city":"28","description":"fasdfasfsdfasdzxvasdfasdfasdvczxvasdfasdvczxvasdf","profile_url":"u\/2306682711","profile_image_url":"http:\/\/tp4.sinaimg.cn\/2306682711\/50\/5624520893\/0","avatar_large":"http:\/\/tp4.sinaimg.cn\/2306682711\/180\/5624520893\/0","domain":"","weihao":"","gender":"f","verified":true,"verified_reason":"测试部测试数据，请勿删除测试部测试数据，请勿删除","verified_type":2,"level":2,"lang":"zh-cn","created_at":"Fri Sep 02 14:19:51 +0800 2011","type":1,"badge":{"uc_domain":0,"enterprise":1,"anniversary":0,"taobao":0,"travel2013":0,"gongyi":1,"gongyi_level":1,"bind_taobao":0,"hongbao_2014":1,"suishoupai_2014":1,"dailv":1,"zongyiji":1}},"creater_user_html":"&lt;a class=\"W_fb\" usercard=\"id=2306682711\" target=\"_blank\" href=\"http:\/\/weibo.com\/u\/2306682711\"&gt;湖口-黄土高坡湖口-黄土高坡&lt;i class=\"approve_co\" title=\"微博机构认证\"&gt;&lt;\/i&gt;&lt;\/a&gt;","creater_user_profile_url":"http:\/\/weibo.com\/u\/2306682711"}],"pager":[]}}</td>
+    </tr>
+    
+    <tr >
+      <td colspan="2" class="C_Display">结果统计</td>
+      <td class="C_Display">Total: <b>1</b>  Pass: <b><font color='Green'>1</font></b>  Fail: <b><font color='Red'>0</font></b></td>
+      <td class="C_Display">运行时间</td>
+      <td class="C_Display">2015-01-29 13:34:28</td>
+    </tr>
+    
+      </table>
+  <hr />
+</div>
+</body>
+</html>
+    

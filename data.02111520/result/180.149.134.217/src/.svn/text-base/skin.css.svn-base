@@ -1,0 +1,74 @@
+h1{
+	font-family: Times New Roman;
+	font-size: xx-large;
+	font-weight: bold;
+	color: #000050;
+	text-align:center;
+}
+
+.T_Header {
+	font-family: Times New Roman;
+	font-size: medium;
+	font-weight: bold;
+	color: #000050;
+	text-align:center;
+	background-color: #808080;
+	word-wrap:break-word; 
+	overflow:hidden;
+}
+.C_Display {
+	font-family: Times New Roman;
+	font-size: medium;
+	font-weight: normal;
+	color: #000050;
+	text-align:center;
+	word-wrap:break-word; 
+	overflow:hidden;
+}
+.L_Display{
+	font-family: Times New Roman;
+	font-size: medium;
+	font-weight: normal;
+	color: #000050;
+	word-wrap:break-word; 
+	overflow:hidden;
+}
+.URL_Details {
+	font-family: Times New Roman;
+	font-size: medium;
+	font-weight: normal;
+	color: #000050;
+	text-align: left;
+	background-color: #C0C0C0;
+	word-wrap:break-word; 
+	overflow:hidden;
+}
+.CU_Display {
+	font-family: Times New Roman;
+	font-size: medium;
+	font-weight: normal;
+	color: #000050;
+	text-align:center;
+	text-transform:uppercase;
+	word-wrap:break-word; 
+	overflow:hidden;
+}
+.LU_Display {
+	font-family: Times New Roman;
+	font-size: medium;
+	font-weight: normal;
+	color: #000050;
+	text-transform:uppercase;
+	word-wrap:break-word; 
+	overflow:hidden;
+}
+.runresult {
+	font-family: Times New Roman;
+	font-size: medium;
+	font-weight: normal;
+	color: #000050;
+	text-align:center;
+	text-transform:uppercase;
+	word-wrap:break-word; 
+	overflow:hidden;
+}

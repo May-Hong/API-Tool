@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Miniblog API Test Result</title>
+    <script type="text/javascript" src="src/jquery.js"></script>
+    <script type="text/javascript" src="src/Expand_Collapse.js"></script>
+    <link type="text/css" rel="stylesheet" href="src/skin.css">
+</head>
+<body>
+    <h1 align="center">API Test Result</h1>
+    <p align="right">
+        <input type="submit" id="Expand ALL" value="展开用例" onclick="Expand_Header()"/>
+        <input type="submit" id="Expand ALL" value="展开详情" onclick="Expand_All()"/>
+        <input type="submit" id="Collapse ALL" value="收起所有" onclick="Collapse_All()"/>
+    </p>
+    <hr />
+    <div class="URLID" id="URLID">
+        <table width="100%" border="1" style="table-layout:fixed">
+            
+        <tr class="1_apiheader">
+      <td width="10%" scope="col" class="T_Header"><a href="#">1</a></td>
+      <td width="10%" scope="col" class="C_Display">接口说明</td>
+      <td width="30%" scope="col" class="L_Display">http://10.75.12.245/foreign_eventhuati/groupshare<BR>查询活动信息</td>
+      <td width="10%" scope="col" class="C_Display">参数说明</td>
+      <td width="50%" scope="col" class="L_Display"></td>
+    </tr>
+    
+    <tr class="case1-1_cheader" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="T_Header"><a href="#">1-1</a></td>
+      <td colspan="3" class="URL_Details">curl -H "Host:i.brand.service.weibo.com" "http://10.75.12.245/foreign_eventhuati/groupshare?group_id=5"<br>必选项</td>
+    </tr>
+
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">期望结果</td>
+      <td class="L_Display">"groupid":"5"</td>
+      <td class="runresult"><b><font color='Green'> PASS </font></b></td>
+      <td class="LU_Display">time_connect: 0.024<BR>time_starttransfer: 0.031<br>time_total: 0.031</td>
+    </tr>  
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">运行结果</td>
+      <td colspan="3" class="L_Display">{"code":"1000","msg":"success","data":{"groupid":"5","shareaid":"21989,22054,22056,22050,22062,21879,22067,22065,21852,22051,22083,21901,24196,21999,21993,22265,21997,21946,21948,21952,21994,22003,21980,22002,22008,21939,21943,21941,21975,21977,22005,21984,21986,21991,22007,21979,21981,22006,21987,21982,21990,22247,21967,21969,21941,21950,21964,21966,21959,21961,21955,21957,21973,21974,21972,21954,21968,21965,21962,21958,22705,22324,22450,22566,22270,22536,22351,22332,22550,22248,22533,22591,22570,22678,22696,22574,23188,23024,23288,23283,23286,23275,23359,24357,23278,23290,23299,23294,23663,23264,23260,21559,21676,21641,21728,21681,21677,21649,21516,21657,21896,21758,21890,21971,21884,21552,21949,21786,23773,23770,23704,23551,22976,23886,23408,23904,23584,22325,22455,23041,22978,23956,23989,24143,24288,24138,24143,24280,24282,23943,24293,23412,23409,24151,24161,24303,24516,24396,24571,24393,24381,24306,24570,24565,24470,24589,24294,23989,24281,23146,23041,24296,24270,24479,24479,24270,24569,24296,22325,21887,22978,24286,24460,24358,24855,24853,24566,24181,24155,24309,25146,25041,25169,24874,22455,25273,24918,24828,25015,25037,24181,24505,25651,25274,25502,25162,25631,24921,21496,25134,24963,25046,24868,28988,28989,25168,25224,24583,25110,25140,25137,24903,28562,25274,25502,25162,25631,24866,24827,25148,25613,25883,25711,26026,25900,25732,25829,25820,25878,25889,26236,25720,26116,26341,25722,24945,25785,26232,24833,26125,26074,26351,25163,26320,23985,26453,26351,26462,26440,26520,23975,26459,25905,25048,25803,26289,23370,26550,26988,26905,26928,26537,27017,26925,26975,27005,26518,26810,26905,26928,26515,23975,25048,21851,25803,27417,27105,27418,27407,27365,26460,24485,26816,26810,24309,27598,27765,27579,27678,27886,27672,27571,27849,28161,28030,28167,27626,28419,28315,28724,29442","shareurl":null,"sharepid":""}}</td>
+    </tr>
+    
+    <tr >
+      <td colspan="2" class="C_Display">结果统计</td>
+      <td class="C_Display">Total: <b>1</b>  Pass: <b><font color='Green'>1</font></b>  Fail: <b><font color='Red'>0</font></b></td>
+      <td class="C_Display">运行时间</td>
+      <td class="C_Display">2015-02-11 19:49:06</td>
+    </tr>
+    
+      </table>
+  <hr />
+</div>
+</body>
+</html>
+    

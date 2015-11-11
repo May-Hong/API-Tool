@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Miniblog API Test Result</title>
+    <script type="text/javascript" src="src/jquery.js"></script>
+    <script type="text/javascript" src="src/Expand_Collapse.js"></script>
+    <link type="text/css" rel="stylesheet" href="src/skin.css">
+</head>
+<body>
+    <h1 align="center">API Test Result</h1>
+    <p align="right">
+        <input type="submit" id="Expand ALL" value="展开用例" onclick="Expand_Header()"/>
+        <input type="submit" id="Expand ALL" value="展开详情" onclick="Expand_All()"/>
+        <input type="submit" id="Collapse ALL" value="收起所有" onclick="Collapse_All()"/>
+    </p>
+    <hr />
+    <div class="URLID" id="URLID">
+        <table width="100%" border="1" style="table-layout:fixed">
+            
+        <tr class="1_apiheader">
+      <td width="10%" scope="col" class="T_Header"><a href="#">1</a></td>
+      <td width="10%" scope="col" class="C_Display">接口说明</td>
+      <td width="30%" scope="col" class="L_Display">http://10.69.20.124/page/modulercd<BR>主持人推荐</td>
+      <td width="10%" scope="col" class="C_Display">参数说明</td>
+      <td width="50%" scope="col" class="L_Display"></td>
+    </tr>
+    
+    <tr class="case1-1_cheader" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="T_Header"><a href="#">1-1</a></td>
+      <td colspan="3" class="URL_Details">curl -H "Host:i.huati.weibo.com" "http://10.69.20.124/page/modulercd?page_id=1008083ef687ed58637966b4f3a04d8ade9f69"<br>必选项</td>
+    </tr>
+
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">期望结果</td>
+      <td class="L_Display">"module_title":"主持人推荐"</td>
+      <td class="runresult"><b><font color='Red'> FAIL </font></b></td>
+      <td class="LU_Display">time_connect: 0.008<BR>time_starttransfer: 0.187<br>time_total: 0.187</td>
+    </tr>  
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">运行结果</td>
+      <td colspan="3" class="L_Display">NOTICE[8]:Undefined index: top_mbolgs @/data1/www/htdocs/huati.weibo.com/application/modules/Internal/actions/Page/Modulercd.php[85]&lt;br /&gt;
+ {"error_code":1001,"error_msg":"Invalid argument supplied for foreach()","info":{"_debug":{"message":"Invalid argument supplied for foreach()","code":2,"file":"\/data1\/www\/htdocs\/huati.weibo.com\/application\/modules\/Internal\/actions\/Page\/Modulercd.php","line":85,"trace":[{"file":"\/data1\/www\/htdocs\/huati.weibo.com\/application\/modules\/Internal\/actions\/Page\/Modulercd.php","line":85,"function":"errorHandler","class":"Bootstrap","type":"::","args":[2,"Invalid argument supplied for foreach()","\/data1\/www\/htdocs\/huati.weibo.com\/application\/modules\/Internal\/actions\/Page\/Modulercd.php",85,{"tid":200000028784,"uid":null,"offset":0,"pagesize":3,"page_id":"1008083ef687ed58637966b4f3a04d8ade9f69","type":"","thread":{"id":"200000028784","topic_id":"4383","ctg1":"8","ctg2":"0","title":"","content":"","guide":"","metadata":{"tiled":1},"province":"0","city":"0","attribute":"34","uid":"0","source":"0","status":"1","create_time":"1405397087","update_time":"1410341147","topic_name":"test06271946","emcee":{"id":2837401245,"screen_name":"asdfghjkasdfghjkasdfghjk","name":"asdfghjkasdfghjkasdfghjk","location":"广东 佛山","province":"44","city":"6","description":"","profile_url":"u\/2837401245","profile_image_url":"http:\/\/tp2.sinaimg.cn\/2837401245\/50\/0\/0","avatar_large":"http:\/\/tp2.sinaimg.cn\/2837401245\/180\/0\/0","domain":"","weihao":"","gender":"f","verified":false,"verified_reason":"","verified_type":-1,"level":1,"lang":"zh-cn","created_at":"Mon Aug 20 13:15:12 +0800 2012","type":1,"badge":{"uc_domain":0,"enterprise":0,"anniversary":0,"taobao":0,"travel2013":1,"gongyi":0,"gongyi_level":0,"bind_taobao":0,"hongbao_2014":1,"suishoupai_2014":1,"dailv":1,"zongyiji":0},"uid":2837401245}},"ret":{"control":{"display":0,"message":"rcd"},"filtercardtype":["topic"],"topicfeedtype":"outline","pageinfo":{"module_title":"主持人推荐","feed_title":"rcd","publish_rewrite":false}},"mids":[],"top_mids":[],"push_mids":[],"tab_info":[],"tabs":{"5485":{"id":"5485","tid":"200000028784","name":"主持人推荐","type":"7","sort":"1","attribute":"0"}},"tabinfo":{"id":"5485","tid":"200000028784","name":"主持人推荐","type":"7","sort":"1","attribute":"0"},"k":5485,"tab_id":"5485","rcd_info":[]}]},{"file":"\/data1\/www\/htdocs\/huati.weibo.com\/application\/modules\/Internal\/actions\/Page\/Modulercd.php","line":44,"function":"getRcd","class":"ActionModulercd","type":"::","args":[200000028784,null,0,3,"1008083ef687ed58637966b4f3a04d8ade9f69",""]},{"function":"execute","class":"ActionModulercd","type":"-&gt;","args":[]},{"file":"\/data1\/www\/htdocs\/huati.weibo.com\/index.php","line":13,"function":"run","class":"Yaf_Application","type":"-&gt;","args":[]}]}}}</td>
+    </tr>
+    
+    <tr >
+      <td colspan="2" class="C_Display">结果统计</td>
+      <td class="C_Display">Total: <b>1</b>  Pass: <b><font color='Green'>0</font></b>  Fail: <b><font color='Red'>1</font></b></td>
+      <td class="C_Display">运行时间</td>
+      <td class="C_Display">2015-01-28 18:13:29</td>
+    </tr>
+    
+      </table>
+  <hr />
+</div>
+</body>
+</html>
+    

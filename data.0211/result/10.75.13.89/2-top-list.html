@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Miniblog API Test Result</title>
+    <script type="text/javascript" src="src/jquery.js"></script>
+    <script type="text/javascript" src="src/Expand_Collapse.js"></script>
+    <link type="text/css" rel="stylesheet" href="src/skin.css">
+</head>
+<body>
+    <h1 align="center">API Test Result</h1>
+    <p align="right">
+        <input type="submit" id="Expand ALL" value="展开用例" onclick="Expand_Header()"/>
+        <input type="submit" id="Expand ALL" value="展开详情" onclick="Expand_All()"/>
+        <input type="submit" id="Collapse ALL" value="收起所有" onclick="Collapse_All()"/>
+    </p>
+    <hr />
+    <div class="URLID" id="URLID">
+        <table width="100%" border="1" style="table-layout:fixed">
+            
+        <tr class="1_apiheader">
+      <td width="10%" scope="col" class="T_Header"><a href="#">1</a></td>
+      <td width="10%" scope="col" class="C_Display">接口说明</td>
+      <td width="30%" scope="col" class="L_Display">http://10.75.13.89/2/top/list<BR>话题排行榜</td>
+      <td width="10%" scope="col" class="C_Display">参数说明</td>
+      <td width="50%" scope="col" class="L_Display"></td>
+    </tr>
+    
+    <tr class="case1-1_cheader" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="T_Header"><a href="#">1-1</a></td>
+      <td colspan="3" class="URL_Details">curl -H "Host:i.huati.weibo.com" "http://10.75.13.89/2/top/list?"<br>必选项</td>
+    </tr>
+
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">期望结果</td>
+      <td class="L_Display">total_number</td>
+      <td class="runresult"><b><font color='Green'> PASS </font></b></td>
+      <td class="LU_Display">time_connect: 0.315<BR>time_starttransfer: 0.463<br>time_total: 0.463</td>
+    </tr>  
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">运行结果</td>
+      <td colspan="3" class="L_Display">{"total_number":7,"list":[{"title":"","content":"“人市”、“买女子”，这样的词语在甘肃陇东地区并不新鲜。人均年收入4000多，结婚却甚至要花去一、二十万。出不起彩礼钱，就讨不到媳妇…小伙们结婚成了大难题！是什么造成这里一女难求？","topic":"倾家荡产给彩礼","num":1023,"url":"http:\/\/huati.weibo.com\/1948010","province":"0","tid":1948010,"create_time":"1423444266","uid":"","ctg1_name":""},{"title":"","content":"“呼格吉勒图冤案”疑似真凶赵志红将于2月9日上午9时30分至上午10时公开宣判。","topic":"呼格案疑似真凶宣判","num":2193,"url":"http:\/\/huati.weibo.com\/1945735","province":"0","tid":1945735,"create_time":"1423392565","uid":"","ctg1_name":""},{"title":"","content":"看！火车侠！","topic":"霸气铲雪火车","num":226,"url":"http:\/\/huati.weibo.com\/1945097","province":"0","tid":1945097,"create_time":"1423381099","uid":"","ctg1_name":""},{"title":"","content":"张女士在北京伊美尔健翔医院，做抗衰老AAS3D美容手术，花7万元。术后，她两次晕倒，脸上长包还冒出线头！伊美尔卖240元蛋白线，进价仅11.5元！做手术的还是口腔医生！一定转告爱美的她！","topic":"口腔医生给你整容","num":142,"url":"http:\/\/huati.weibo.com\/1944650","province":"0","tid":1944650,"create_time":"1423373366","uid":"","ctg1_name":""},{"title":"","content":"春节又快了！请保护每个单身！没有买卖，就没有杀害！","topic":"女子频繁相亲致呕吐","num":1029,"url":"http:\/\/huati.weibo.com\/1943811","province":"0","tid":1943811,"create_time":"1423361344","uid":"","ctg1_name":""},{"title":"","content":"地中海实蝇，危害250种植物，主要是柑橘、苹果、梨等水果和茄科蔬菜，被称为“水果头号杀手”，是世界上公认的最具毁灭性的害虫！","topic":"地中海实蝇","num":328,"url":"http:\/\/huati.weibo.com\/1943798","province":"0","tid":1943798,"create_time":"1423361201","uid":"","ctg1_name":""},{"title":"","content":"36岁的章子怡@稀土部队 迎来了人生中重要的时刻！@汪峰 这次真的求婚了。昨晚，在章子怡生日派对上，汪峰惊喜浪漫求婚。在@那英 @王力宏 等众多圈内亲朋好友的见证下，章子怡激动落泪说出“我愿意”。详情：http:\/\/t.cn\/RwwIa93 恭喜！","topic":"汪峰求婚章子怡成功","num":43588,"url":"http:\/\/huati.weibo.com\/1943471","province":"0","tid":1943471,"create_time":"1423355735","uid":"","ctg1_name":""},{"title":"","content":"他30岁，河北人在天津打工。1月23日，他为救落水男子而坠入冰窟，抢救无效牺牲，而落水者最终被成功救起…他叫国二宝，他是一个普通农民工，他是一双年过六旬老人的儿子，再过几天就过年了，他却再也无法回家","topic":"农民工救人牺牲","num":5427,"url":"http:\/\/huati.weibo.com\/1943465","province":"0","tid":1943465,"create_time":"1423355610","uid":"","ctg1_name":""},{"title":"","content":"#别人家的体育老师#昨天，有网友po出几张疑似一美女体育老师在学校操场上课的照片，照片中的美女老师面容姣好，身材高挑，网友纷纷询问，这到底是哪个学校的老师？想上（体育课）…而据熟悉韩国网络红人的网友称，这名“美女老师”名为艺正花，是韩国的超人气私人教练","topic":"别人家的体育老师","num":6767,"url":"http:\/\/huati.weibo.com\/1943198","province":"0","tid":1943198,"create_time":"1423334327","uid":"","ctg1_name":""},{"title":"","content":"【室友上传恶搞视频 #上铺小哥#呆萌抢镜走红】据说看这个视频的人，眼睛会一直盯着那位上铺小哥！[doge][哈哈]室友@本超的超人计划 扮成如花上传恶搞视频，却被上铺呆萌小鲜肉抢镜，飞行学员@Mr小博03 一夜之间走红网络，涨粉数万，后援会都有了！","topic":"上铺小哥","num":66140,"url":"http:\/\/huati.weibo.com\/1942630","province":"0","tid":1942630,"create_time":"1423323491","uid":"","ctg1_name":""}]}</td>
+    </tr>
+    
+    <tr >
+      <td colspan="2" class="C_Display">结果统计</td>
+      <td class="C_Display">Total: <b>1</b>  Pass: <b><font color='Green'>1</font></b>  Fail: <b><font color='Red'>0</font></b></td>
+      <td class="C_Display">运行时间</td>
+      <td class="C_Display">2015-02-09 11:15:12</td>
+    </tr>
+    
+      </table>
+  <hr />
+</div>
+</body>
+</html>
+    

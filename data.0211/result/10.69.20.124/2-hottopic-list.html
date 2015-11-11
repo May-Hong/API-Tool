@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Miniblog API Test Result</title>
+    <script type="text/javascript" src="src/jquery.js"></script>
+    <script type="text/javascript" src="src/Expand_Collapse.js"></script>
+    <link type="text/css" rel="stylesheet" href="src/skin.css">
+</head>
+<body>
+    <h1 align="center">API Test Result</h1>
+    <p align="right">
+        <input type="submit" id="Expand ALL" value="展开用例" onclick="Expand_Header()"/>
+        <input type="submit" id="Expand ALL" value="展开详情" onclick="Expand_All()"/>
+        <input type="submit" id="Collapse ALL" value="收起所有" onclick="Collapse_All()"/>
+    </p>
+    <hr />
+    <div class="URLID" id="URLID">
+        <table width="100%" border="1" style="table-layout:fixed">
+            
+        <tr class="1_apiheader">
+      <td width="10%" scope="col" class="T_Header"><a href="#">1</a></td>
+      <td width="10%" scope="col" class="C_Display">接口说明</td>
+      <td width="30%" scope="col" class="L_Display">http://10.69.20.124/2/hottopic/list<BR>首页右侧热点话题接口</td>
+      <td width="10%" scope="col" class="C_Display">参数说明</td>
+      <td width="50%" scope="col" class="L_Display"></td>
+    </tr>
+    
+    <tr class="case1-1_cheader" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="T_Header"><a href="#">1-1</a></td>
+      <td colspan="3" class="URL_Details">curl -H "Host:i.huati.weibo.com" "http://10.69.20.124/2/hottopic/list?"<br>必选项</td>
+    </tr>
+
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">期望结果</td>
+      <td class="L_Display">"url":"http:\/\/huati.weibo.com</td>
+      <td class="runresult"><b><font color='Green'> PASS </font></b></td>
+      <td class="LU_Display">time_connect: 0.183<BR>time_starttransfer: 0.710<br>time_total: 0.710</td>
+    </tr>  
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">运行结果</td>
+      <td colspan="3" class="L_Display">[{"hot_time":"1419938266","url":"http:\/\/huati.weibo.com\/200000029288","thread":{"id":"200000029288","ctg1":"1","ctg2":"0","category1":"社会","category2":"","title":"","content":"","metadata":{"tiled":1},"province":"0","city":"0","created_at":"Mon Sep 29 12:03:48 +0800 2014","topic_name":"test___测试主持人竞争5","is_hot":1,"has_tab":0}},{"hot_time":"1419579624","url":"http:\/\/huati.weibo.com\/200000038615","thread":{"id":"200000038615","ctg1":"126","ctg2":"0","category1":"游戏竞技","category2":"","title":"","content":"111","metadata":{"tiled":1},"province":"11","city":"3","created_at":"Thu Oct 23 11:20:49 +0800 2014","topic_name":"test___10231120","is_hot":1,"has_tab":0},"uid":2106784773},{"hot_time":"1415339127","url":"http:\/\/huati.weibo.com\/200000028979","thread":{"id":"200000028979","ctg1":"8","ctg2":"0","category1":"其他","category2":"","title":"","content":"","metadata":{"tiled":1},"province":"0","city":"0","created_at":"Fri Sep 12 13:51:44 +0800 2014","topic_name":"test___321","is_hot":1,"has_tab":0}},{"hot_time":"1415339127","url":"http:\/\/huati.weibo.com\/10004510","thread":{"id":"10004510","ctg1":"13","ctg2":"0","category1":"测试","category2":"","title":"","content":"111","metadata":{"settype":"1","banner":""},"province":"21","city":"1","created_at":"Thu Aug 14 15:15:20 +0800 2014","topic_name":"just_debug_for_10004510","is_hot":1,"has_tab":1}},{"hot_time":"1415339127","url":"http:\/\/huati.weibo.com\/10003264","thread":{"id":"10003264","ctg1":"8","ctg2":"0","category1":"其他","category2":"","title":"","content":"","metadata":{"settype":1},"province":"50","city":"2","created_at":"Tue Jul 08 19:23:13 +0800 2014","topic_name":"just_debug_for_10003264","is_hot":0,"has_tab":0}},{"hot_time":"1415339127","url":"http:\/\/huati.weibo.com\/10003212","thread":{"id":"10003212","ctg1":"8","ctg2":"0","category1":"其他","category2":"","title":"","content":"","metadata":{"settype":1},"province":"44","city":"2","created_at":"Wed Jul 09 16:18:23 +0800 2014","topic_name":"just_debug_for_10003212","is_hot":0,"has_tab":0}},{"hot_time":"1415339127","url":"http:\/\/huati.weibo.com\/10002922","thread":{"id":"10002922","ctg1":"8","ctg2":"0","category1":"其他","category2":"","title":"","content":"","metadata":{"settype":1},"province":"43","city":"2","created_at":"Tue Jul 08 19:23:30 +0800 2014","topic_name":"just_debug_for_10002922","is_hot":0,"has_tab":0}},{"hot_time":"1415339127","url":"http:\/\/huati.weibo.com\/10002567","thread":{"id":"10002567","ctg1":"8","ctg2":"0","category1":"其他","category2":"","title":"","content":"","metadata":{"settype":1},"province":"12","city":"1","created_at":"Tue Jul 08 17:24:24 +0800 2014","topic_name":"just_debug_for_10002567","is_hot":0,"has_tab":0}},{"hot_time":"1415339127","url":"http:\/\/huati.weibo.com\/10002431","thread":{"id":"10002431","ctg1":"8","ctg2":"0","category1":"其他","category2":"","title":"","content":"","metadata":{"settype":1},"province":"41","city":"1","created_at":"Tue Jul 08 17:24:24 +0800 2014","topic_name":"just_debug_for_10002431","is_hot":0,"has_tab":1}},{"hot_time":"1415339127","url":"http:\/\/huati.weibo.com\/10002429","thread":{"id":"10002429","ctg1":"8","ctg2":"0","category1":"其他","category2":"","title":"","content":"","metadata":{"settype":1},"province":"0","city":"0","created_at":"Tue Jul 08 19:23:22 +0800 2014","topic_name":"just_debug_for_10002429","is_hot":0,"has_tab":1}}]</td>
+    </tr>
+    
+    <tr >
+      <td colspan="2" class="C_Display">结果统计</td>
+      <td class="C_Display">Total: <b>1</b>  Pass: <b><font color='Green'>1</font></b>  Fail: <b><font color='Red'>0</font></b></td>
+      <td class="C_Display">运行时间</td>
+      <td class="C_Display">2015-01-28 18:13:30</td>
+    </tr>
+    
+      </table>
+  <hr />
+</div>
+</body>
+</html>
+    

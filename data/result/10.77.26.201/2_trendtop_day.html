@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Miniblog API Test Result</title>
+    <script type="text/javascript" src="src/jquery.js"></script>
+    <script type="text/javascript" src="src/Expand_Collapse.js"></script>
+    <link type="text/css" rel="stylesheet" href="src/skin.css">
+</head>
+<body>
+    <h1 align="center">API Test Result</h1>
+    <p align="right">
+        <input type="submit" id="Expand ALL" value="展开用例" onclick="Expand_Header()"/>
+        <input type="submit" id="Expand ALL" value="展开详情" onclick="Expand_All()"/>
+        <input type="submit" id="Collapse ALL" value="收起所有" onclick="Collapse_All()"/>
+    </p>
+    <hr />
+    <div class="URLID" id="URLID">
+        <table width="100%" border="1" style="table-layout:fixed">
+            
+        <tr class="1_apiheader">
+      <td width="10%" scope="col" class="T_Header"><a href="#">1</a></td>
+      <td width="10%" scope="col" class="C_Display">接口说明</td>
+      <td width="30%" scope="col" class="L_Display">http://10.77.26.201/2/trendtop/day<BR>获取热门话题榜单日榜</td>
+      <td width="10%" scope="col" class="C_Display">参数说明</td>
+      <td width="50%" scope="col" class="L_Display"></td>
+    </tr>
+    
+    <tr class="case1-1_cheader" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="T_Header"><a href="#">1-1</a></td>
+      <td colspan="3" class="URL_Details">curl -H "Host:i.huati.weibo.com" "http://10.77.26.201/2/trendtop/day?"<br>必选项</td>
+    </tr>
+
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">期望结果</td>
+      <td class="L_Display">total_number</td>
+      <td class="runresult"><b><font color='Green'> PASS </font></b></td>
+      <td class="LU_Display">time_connect: 0.173<BR>time_starttransfer: 0.346<br>time_total: 0.347</td>
+    </tr>  
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">运行结果</td>
+      <td colspan="3" class="L_Display">{"total_number":476,"date":"2015-02-15","hour":"17","data":[{"object_id":"1022:10080870f2af49a12836ba0ee17b56feb0dd6c","hotval":7131644148,"topic":"让红包飞","title":"","url":"http:\/\/weibo.com\/p\/10080870f2af49a12836ba0ee17b56feb0dd6c?k=%E8%AE%A9%E7%BA%A2%E5%8C%85%E9%A3%9E&from=trendtop_api","thread":{"id":"27735","ctg1":"1","ctg2":"0","category1":"社会","category2":"","title":"","content":"2015年#让红包飞#2月2日-3月6日火力全开！\n10亿红包、千位明星大咖、超多高逼格好礼等你赢。\n小年、情人节、春晚、元宵红包一波接一波，你准备好开启红包模式了吗？！","metadata":{"settype":2,"banner":"e9345cbdjw1ep34y9k4i2j205005074g","h5_pic":"e9345cbdjw1eowcy6oppqj20hs08wwgq","client_pic":"e9345cbdjw1eowcy8636mj20hs0hswhe","tabdef":"1","tiled":"0","match_area":"0"},"province":"0","city":"0","created_at":"Mon Feb 04 17:38:24 +0800 2013","topic_name":"让红包飞","is_hot":1,"has_tab":1}},{"object_id":"1022:100808c4328f75476f5e56374f7e1983092036","hotval":319670982,"topic":"情人节","title":"","url":"http:\/\/weibo.com\/p\/100808c4328f75476f5e56374f7e1983092036?k=%E6%83%85%E4%BA%BA%E8%8A%82&from=trendtop_api","thread":{"id":"27980","ctg1":"5","ctg2":"0","category1":"情感两性","category2":"","title":"新春迎来情人节，网友微博贡献过节吐槽","content":"我眼中的TA是这一时刻最美的定格——在做饭、在睡觉、在发呆或者在运动……来为喜欢的他\/她拍一张照片或写一段文字，带话题词#情人节#，节日君帮你记录只属于你们的这个瞬间。发布微博还有机会获得iPhone 5s手机，以及由@第一摩码房产众筹 赞助的精品酒店情侣套房或白金海岸之旅，方便大家约起来~","metadata":{"settype":2,"banner":"719d0099gw1ep5h6sevs8j2050050aa1","h5_pic":"8617f7f7jw1ep6e2fxwwhj20hs08w0t8","client_pic":"8617f7f7jw1ep6e2a50jwj20hs0hsdgh"},"province":"0","city":"0","created_at":"Thu Feb 14 14:54:46 +0800 2013","topic_name":"情人节","is_hot":1,"has_tab":1}},{"object_id":"1022:1008083068f6c4ea812d944f335795c29a2238","hotval":57144883,"topic":"爸爸2情人节上快本","title":"","url":"http:\/\/weibo.com\/p\/1008083068f6c4ea812d944f335795c29a2238?k=%E7%88%B8%E7%88%B82%E6%83%85%E4%BA%BA%E8%8A%82%E4%B8%8A%E5%BF%AB%E6%9C%AC&from=trendtop_api","thread":{"id":"1963624","ctg1":"100","ctg2":"0","category1":"电影","category2":"","title":"","content":"《爸爸去哪儿2大电影》星爸美妈萌娃，情人节齐齐亮相快乐大本营！喜气洋洋过大年！2月19日与观众相约，初一影院见！么么哒！","metadata":{"tiled":1,"settype":2,"banner":"ec2f6204gw1ep6wv3ys6fj2050050q3o"},"province":"0","city":"0","created_at":"Thu Feb 12 12:35:44 +0800 2015","topic_name":"爸爸2情人节上快本","is_hot":0,"has_tab":0}},{"object_id":"1022:1008083458c1bb02dc1a2a7e31b3afdbe8ca6a","hotval":67338818,"topic":"情人节这样过","title":"","url":"http:\/\/weibo.com\/p\/1008083458c1bb02dc1a2a7e31b3afdbe8ca6a?k=%E6%83%85%E4%BA%BA%E8%8A%82%E8%BF%99%E6%A0%B7%E8%BF%87&from=trendtop_api","thread":{"id":"789232","ctg1":"5","ctg2":"5014","category1":"情感两性","category2":"感悟生活","title":"","content":"情人节，我们要这样过！大胆晒出和情人节有关的图，和大家一起分享你们的浪漫故事哦～如何用微博客户端发带贴纸的微博，请戳：http:\/\/t.cn\/RwUMw3h","metadata":{"settype":2,"banner":"005TVFMkjw1ep7h30rwadj3050050t8t","h5_pic":"699ee942jw1ep7l26tuppj20hs08wgop","client_pic":"699ee942jw1ep7l24cfj7j20hs0hsjvm","tiled":1},"province":"0","city":"0","created_at":"Sat Jan 25 13:35:33 +0800 2014","topic_name":"情人节这样过","is_hot":0,"has_tab":1}},{"object_id":"1022:1008081ede377dc831a6618864b89660bb7d57","hotval":28673438,"topic":"最远的距离","title":"","url":"http:\/\/weibo.com\/p\/1008081ede377dc831a6618864b89660bb7d57?k=%E6%9C%80%E8%BF%9C%E7%9A%84%E8%B7%9D%E7%A6%BB&from=trendtop_api","thread":{"id":"203361","ctg1":"9","ctg2":"9004","category1":"创意征集","category2":"温情故事","title":"","content":"不是你不在我身边，而是你在我身边却看着手机。我们的确越来越离不开手机，但过年回家碰到多年不见的老朋友，回到一年才见一两次的父母亲人面前相聚团圆时，我们可否暂时放下手机，陪他们聊聊天，给他们一个真实的拥抱","metadata":{"settype":2,"banner":"866ec85agw1ep9wyp865dj2050050mxf"},"province":"0","city":"0","created_at":"Thu Jun 13 15:26:21 +0800 2013","topic_name":"最远的距离","is_hot":0,"has_tab":0}},{"object_id":"1022:1008082d8a94ebb05d43378cdf178a5847583a","hotval":1374126881,"topic":"奇妙的朋友","title":"","url":"http:\/\/weibo.com\/p\/1008082d8a94ebb05d43378cdf178a5847583a?k=%E5%A5%87%E5%A6%99%E7%9A%84%E6%9C%8B%E5%8F%8B&from=trendtop_api","thread":{"id":"1675653","ctg1":"102","ctg2":"102103","category1":"电视节目","category2":"其他","title":"","content":"《奇妙的朋友》将于每周六晚22：00播出，请来李宇春、杜海涛、胡杏儿、黄轩、杜天皓、倪妮参加，与动物们一起生活并且学习如何照顾，想知道他们的奇妙之旅是如何开始的吗？快来发微博带上#奇妙的朋友#话题词参与活动，奇妙惊喜等着你！","metadata":{"tiled":1,"settype":2,"banner":"005RT53vjw1eokh878vauj31kw0tjqcu"},"province":"0","city":"0","created_at":"Fri Dec 19 10:41:47 +0800 2014","topic_name":"奇妙的朋友","is_hot":0,"has_tab":0}},{"object_id":"1022:10080837d9b78ea80ec6d088589dfce9dc98c4","hotval":43326401,"topic":"栀子花开","title":"","url":"http:\/\/weibo.com\/p\/10080837d9b78ea80ec6d088589dfce9dc98c4?k=%E6%A0%80%E5%AD%90%E8%8A%B1%E5%BC%80&from=trendtop_api","thread":{"id":"74858","ctg1":"100","ctg2":"0","category1":"电影","category2":"","title":"","content":"何炅首执导筒，黄磊担纲监制的青春电影《栀子花开2015》正式启动。影片将甄选全新人阵容出演。#不怀旧，正青春#","metadata":{"settype":"2","banner":"bd6c1764gw1ekoz3aexymj2050050748"},"province":"0","city":"0","created_at":"Sat May 11 17:59:49 +0800 2013","topic_name":"栀子花开","is_hot":1,"has_tab":1}},{"object_id":"1022:1008085fedf9679c9c82d607e2bf9b99b74abe","hotval":42789727,"topic":"215爸爸去哪儿2点映","title":"","url":"http:\/\/weibo.com\/p\/1008085fedf9679c9c82d607e2bf9b99b74abe?k=215%E7%88%B8%E7%88%B8%E5%8E%BB%E5%93%AA%E5%84%BF2%E7%82%B9%E6%98%A0&from=trendtop_api","thread":{"id":"1964966","ctg1":"100","ctg2":"100002","category1":"电影","category2":"国产电影","title":"","content":"《爸爸去哪儿2大电影》2.15“小情人节”全国千场点映火爆展开，预售票迅速抢购一空！星爸萌娃全程高能乐翻天，大年初一，不见不散！么么哒！","metadata":{"tiled":1,"settype":2,"banner":"ec2f6204gw1ep6z025lwcj2050050q3o"},"province":"0","city":"0","created_at":"Thu Feb 12 17:17:52 +0800 2015","topic_name":"215爸爸去哪儿2点映","is_hot":0,"has_tab":0}},{"object_id":"1022:1008083d606bbd197591b7b95ec5d0f0a71c19","hotval":172934073,"topic":"2015NBA全明星","title":"","url":"http:\/\/weibo.com\/p\/1008083d606bbd197591b7b95ec5d0f0a71c19?k=2015NBA%E5%85%A8%E6%98%8E%E6%98%9F&from=trendtop_api","thread":{"id":"835941","ctg1":"98","ctg2":"98002","category1":"体育赛事","category2":"NBA","title":"","content":"2月14-16日，2015NBA全明星周末来袭。\n4天六项赛事，星光闪耀！\n技巧王、三分王、扣篮王、全明星MVP等各项荣誉即将诞生！","metadata":{"tiled":1,"settype":2,"banner":"7049c17bjw1eoipa99r5wj2050050mxk"},"province":"0","city":"0","created_at":"Sat Feb 15 16:39:21 +0800 2014","topic_name":"2015NBA全明星","is_hot":1,"has_tab":1}},{"object_id":"1022:100808c3b10bc9f7efccb560872b43bb053b77","hotval":1110302074,"topic":"一路上有你","title":"","url":"http:\/\/weibo.com\/p\/100808c3b10bc9f7efccb560872b43bb053b77?k=%E4%B8%80%E8%B7%AF%E4%B8%8A%E6%9C%89%E4%BD%A0&from=trendtop_api","thread":{"id":"124426","ctg1":"102","ctg2":"102103","category1":"电视节目","category2":"其他","title":"","content":"浙江卫视大型明星夫妻真人秀《一路上有你》每周六晚21:10由韩国当红艺人金希澈@希天才 带您走近他们…默契，矛盾，恩爱，打闹…从@張智霖 @袁咏仪靓靓 @田亮 @叶一茜 @赫子铭 @何洁 @希天才 身上学习相处之道，每期更有神秘嘉宾做客三家，期待您的观摩~","metadata":{"settype":2,"banner":"005Cawxcjw1eo19hykxn2j3050050jrj"},"province":"0","city":"0","created_at":"Sat May 25 23:32:48 +0800 2013","topic_name":"一路上有你","is_hot":1,"has_tab":0}}]}</td>
+    </tr>
+    
+    <tr >
+      <td colspan="2" class="C_Display">结果统计</td>
+      <td class="C_Display">Total: <b>1</b>  Pass: <b><font color='Green'>1</font></b>  Fail: <b><font color='Red'>0</font></b></td>
+      <td class="C_Display">运行时间</td>
+      <td class="C_Display">2015-02-15 19:05:36</td>
+    </tr>
+    
+      </table>
+  <hr />
+</div>
+</body>
+</html>
+    

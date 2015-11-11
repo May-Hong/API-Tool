@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Miniblog API Test Result</title>
+    <script type="text/javascript" src="src/jquery.js"></script>
+    <script type="text/javascript" src="src/Expand_Collapse.js"></script>
+    <link type="text/css" rel="stylesheet" href="src/skin.css">
+</head>
+<body>
+    <h1 align="center">API Test Result</h1>
+    <p align="right">
+        <input type="submit" id="Expand ALL" value="展开用例" onclick="Expand_Header()"/>
+        <input type="submit" id="Expand ALL" value="展开详情" onclick="Expand_All()"/>
+        <input type="submit" id="Collapse ALL" value="收起所有" onclick="Collapse_All()"/>
+    </p>
+    <hr />
+    <div class="URLID" id="URLID">
+        <table width="100%" border="1" style="table-layout:fixed">
+            
+        <tr class="1_apiheader">
+      <td width="10%" scope="col" class="T_Header"><a href="#">1</a></td>
+      <td width="10%" scope="col" class="C_Display">接口说明</td>
+      <td width="30%" scope="col" class="L_Display">http://10.73.31.30/page/trendtopblock<BR>左侧话题榜</td>
+      <td width="10%" scope="col" class="C_Display">参数说明</td>
+      <td width="50%" scope="col" class="L_Display"></td>
+    </tr>
+    
+    <tr class="case1-1_cheader" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="T_Header"><a href="#">1-1</a></td>
+      <td colspan="3" class="URL_Details">curl -H "Host:i.huati.weibo.com" "http://10.73.31.30/page/trendtopblock?page_id=100808b5198fa6233d092b9728c0a7765a590c"<br>必选项</td>
+    </tr>
+
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">期望结果</td>
+      <td class="L_Display">"title":"\u70ed\u95e8\u8bdd\u9898\u699c"</td>
+      <td class="runresult"><b><font color='Green'> PASS </font></b></td>
+      <td class="LU_Display">time_connect: 0.056<BR>time_starttransfer: 0.153<br>time_total: 0.153</td>
+    </tr>  
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">运行结果</td>
+      <td colspan="3" class="L_Display">{"error_code":1000,"error_msg":"\u6210\u529f","cache":300,"data":{"control":{"display":0},"card_title":{"title":"\u70ed\u95e8\u8bdd\u9898\u699c"},"items":[{"text":"#\u5468\u6770\u4f26\u6606\u51cc\u767b\u8bb0\u7ed3\u5a5a#","desc":"12.4\u4e07\u9605\u8bfb","text_link":"http:\/\/weibo.com\/p\/100808fba89adeb1392bff03aa418918a6237f?k=%E5%91%A8%E6%9D%B0%E4%BC%A6%E6%98%86%E5%87%8C%E7%99%BB%E8%AE%B0%E7%BB%93%E5%A9%9A&from=page_trendtop_block","text_link_target":"blank","icon":"http:\/\/img.t.sinajs.cn\/t5\/style\/images\/topic_PCD\/num\/num1.png?version=20140617114630"},{"text":"#\u65e5\u672c\u6295\u964d\u7eaa\u5ff5\u65e5#","desc":"1528.9\u4e07\u9605\u8bfb","text_link":"http:\/\/weibo.com\/p\/1008082591b7073e4af805f87d404d8d21b437?k=%E6%97%A5%E6%9C%AC%E6%8A%95%E9%99%8D%E7%BA%AA%E5%BF%B5%E6%97%A5&from=page_trendtop_block","text_link_target":"blank","icon":"http:\/\/img.t.sinajs.cn\/t5\/style\/images\/topic_PCD\/num\/num2.png?version=20140617114630"},{"text":"#\u4ea7\u5987\u4e27\u547d\u533b\u62a4\u5931\u8e2a#","desc":"7207.5\u4e07\u9605\u8bfb","text_link":"http:\/\/weibo.com\/p\/10080888f854caca96889394d0c89cdf58d2d7?k=%E4%BA%A7%E5%A6%87%E4%B8%A7%E5%91%BD%E5%8C%BB%E6%8A%A4%E5%A4%B1%E8%B8%AA&from=page_trendtop_block","text_link_target":"blank","icon":"http:\/\/img.t.sinajs.cn\/t5\/style\/images\/topic_PCD\/num\/num3.png?version=20140617114630"},{"text":"#\u7709\u6bdb\u7c97\u7684\u4eba\u53ef\u7231#","desc":"1331.8\u4e07\u9605\u8bfb","text_link":"http:\/\/weibo.com\/p\/1008083847b6aaa6ece8ef31b9b2ccda2edc6c?k=%E7%9C%89%E6%AF%9B%E7%B2%97%E7%9A%84%E4%BA%BA%E5%8F%AF%E7%88%B1&from=page_trendtop_block","text_link_target":"blank","icon":"http:\/\/img.t.sinajs.cn\/t5\/style\/images\/topic_PCD\/num\/num4.png?version=20140617114630"},{"text":"#\u534e\u6668\u5b87\u7b2c\u4e00\u4e3b\u6253\u9996\u53d1#","desc":"380.4\u4e07\u9605\u8bfb","text_link":"http:\/\/weibo.com\/p\/1008082a628b37c5b5fcece584b094748a0a67?k=%E5%8D%8E%E6%99%A8%E5%AE%87%E7%AC%AC%E4%B8%80%E4%B8%BB%E6%89%93%E9%A6%96%E5%8F%91&from=page_trendtop_block","text_link_target":"blank","icon":"http:\/\/img.t.sinajs.cn\/t5\/style\/images\/topic_PCD\/num\/num5.png?version=20140617114630"},{"text":"#\u65e5\u672c\u6218\u8d25\u6295\u964d#","desc":"963.9\u4e07\u9605\u8bfb","text_link":"http:\/\/weibo.com\/p\/1008088cf130da3c76f8ddaae099ea0fba0f62?k=%E6%97%A5%E6%9C%AC%E6%88%98%E8%B4%A5%E6%8A%95%E9%99%8D&from=page_trendtop_block","text_link_target":"blank","icon":"http:\/\/img.t.sinajs.cn\/t5\/style\/images\/topic_PCD\/num\/num6.png?version=20140617114630"},{"text":"#\u5b8b\u667a\u5b5d0815\u751f\u65e5\u5feb\u4e50#","desc":"2673.1\u4e07\u9605\u8bfb","text_link":"http:\/\/weibo.com\/p\/100808ef83a00c2d53ecdff0530846635f071a?k=%E5%AE%8B%E6%99%BA%E5%AD%9D0815%E7%94%9F%E6%97%A5%E5%BF%AB%E4%B9%90&from=page_trendtop_block","text_link_target":"blank","icon":"http:\/\/img.t.sinajs.cn\/t5\/style\/images\/topic_PCD\/num\/num7.png?version=20140617114630"},{"text":"#\u91d1\u79c0\u8d24\u8bf7\u79bb\u5f00\u4e2d\u56fd\u5e7f\u544a\u754c#","desc":"113\u4e07\u9605\u8bfb","text_link":"http:\/\/weibo.com\/p\/1008085da669f86db201b9e01a75f0ac799364?k=%E9%87%91%E7%A7%80%E8%B4%A4%E8%AF%B7%E7%A6%BB%E5%BC%80%E4%B8%AD%E5%9B%BD%E5%B9%BF%E5%91%8A%E7%95%8C&from=page_trendtop_block","text_link_target":"blank","icon":"http:\/\/img.t.sinajs.cn\/t5\/style\/images\/topic_PCD\/num\/num8.png?version=20140617114630"},{"text":"#\u534e\u6668\u5b87\u539f\u521b\u65b0\u6b4c\u9996\u53d1#","desc":"788.9\u4e07\u9605\u8bfb","text_link":"http:\/\/weibo.com\/p\/1008089ff1a7724259d23c480ceebf16e74bd9?k=%E5%8D%8E%E6%99%A8%E5%AE%87%E5%8E%9F%E5%88%9B%E6%96%B0%E6%AD%8C%E9%A6%96%E5%8F%91&from=page_trendtop_block","text_link_target":"blank","icon":"http:\/\/img.t.sinajs.cn\/t5\/style\/images\/topic_PCD\/num\/num9.png?version=20140617114630"},{"text":"#\u65e5\u672c\u63a8\u51fa\u7537\u58eb\u80f8\u7f69#","desc":"345.8\u4e07\u9605\u8bfb","text_link":"http:\/\/weibo.com\/p\/1008082c1ccc91756b6a36cfb6ea0f55fc8141?k=%E6%97%A5%E6%9C%AC%E6%8E%A8%E5%87%BA%E7%94%B7%E5%A3%AB%E8%83%B8%E7%BD%A9&from=page_trendtop_block","text_link_target":"blank","icon":"http:\/\/img.t.sinajs.cn\/t5\/style\/images\/topic_PCD\/num\/num10.png?version=20140617114630"}],"more_text":"\u67e5\u770b\u66f4\u591a","more_link":"http:\/\/huati.weibo.com\/?from=trendtopblock_more","more_link_target":"blank","bottom_pagebar":1}}</td>
+    </tr>
+    
+    <tr >
+      <td colspan="2" class="C_Display">结果统计</td>
+      <td class="C_Display">Total: <b>1</b>  Pass: <b><font color='Green'>1</font></b>  Fail: <b><font color='Red'>0</font></b></td>
+      <td class="C_Display">运行时间</td>
+      <td class="C_Display">2014-08-15 11:03:06</td>
+    </tr>
+    
+      </table>
+  <hr />
+</div>
+</body>
+</html>
+    

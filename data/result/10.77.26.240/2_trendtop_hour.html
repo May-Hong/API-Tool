@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Miniblog API Test Result</title>
+    <script type="text/javascript" src="src/jquery.js"></script>
+    <script type="text/javascript" src="src/Expand_Collapse.js"></script>
+    <link type="text/css" rel="stylesheet" href="src/skin.css">
+</head>
+<body>
+    <h1 align="center">API Test Result</h1>
+    <p align="right">
+        <input type="submit" id="Expand ALL" value="展开用例" onclick="Expand_Header()"/>
+        <input type="submit" id="Expand ALL" value="展开详情" onclick="Expand_All()"/>
+        <input type="submit" id="Collapse ALL" value="收起所有" onclick="Collapse_All()"/>
+    </p>
+    <hr />
+    <div class="URLID" id="URLID">
+        <table width="100%" border="1" style="table-layout:fixed">
+            
+        <tr class="1_apiheader">
+      <td width="10%" scope="col" class="T_Header"><a href="#">1</a></td>
+      <td width="10%" scope="col" class="C_Display">接口说明</td>
+      <td width="30%" scope="col" class="L_Display">http://10.77.26.240/2/trendtop/hour<BR>获取热门话题榜单小时榜</td>
+      <td width="10%" scope="col" class="C_Display">参数说明</td>
+      <td width="50%" scope="col" class="L_Display"></td>
+    </tr>
+    
+    <tr class="case1-1_cheader" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="T_Header"><a href="#">1-1</a></td>
+      <td colspan="3" class="URL_Details">curl -H "Host:i.huati.weibo.com" "http://10.77.26.240/2/trendtop/hour?"<br>必选项</td>
+    </tr>
+
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">期望结果</td>
+      <td class="L_Display">total_number</td>
+      <td class="runresult"><b><font color='Green'> PASS </font></b></td>
+      <td class="LU_Display">time_connect: 0.033<BR>time_starttransfer: 0.275<br>time_total: 0.275</td>
+    </tr>  
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">运行结果</td>
+      <td colspan="3" class="L_Display">{"total_number":280,"date":"2015-02-16","hour":"10","data":[{"object_id":"1022:10080870f2af49a12836ba0ee17b56feb0dd6c","hotval":7302544493,"topic":"让红包飞","title":"","url":"http:\/\/weibo.com\/p\/10080870f2af49a12836ba0ee17b56feb0dd6c?k=%E8%AE%A9%E7%BA%A2%E5%8C%85%E9%A3%9E&from=trendtop_api","thread":{"id":"27735","ctg1":"1","ctg2":"0","category1":"社会","category2":"","title":"","content":"过大年，抢红包，芝麻开花节节高！除夕20点-24点，整点抢1亿现金！","metadata":{"settype":2,"banner":"e9345cbdjw1ep34y9k4i2j205005074g","h5_pic":"e9345cbdjw1eowcy6oppqj20hs08wwgq","client_pic":"e9345cbdjw1eowcy8636mj20hs0hswhe","tabdef":"1","tiled":"0","match_area":"0"},"province":"0","city":"0","created_at":"Mon Feb 04 17:38:24 +0800 2013","topic_name":"让红包飞","is_hot":1,"has_tab":1}},{"object_id":"1022:100808e96b2f1e596ef5b918747369c5ca1a3b","hotval":2379678,"topic":"羊年就要咩咩哒","title":"","url":"http:\/\/weibo.com\/p\/100808e96b2f1e596ef5b918747369c5ca1a3b?k=%E7%BE%8A%E5%B9%B4%E5%B0%B1%E8%A6%81%E5%92%A9%E5%92%A9%E5%93%92&from=trendtop_api","thread":{"id":"1953446","ctg1":"1","ctg2":0,"category1":"社会","category2":"","title":"","content":"拜年卖萌神器出现了！！！和小黄人一起扭秧歌，羊年不仅萌萌哒，更要咩咩哒，大家一起咩起来(づ￣ ³￣)づ","metadata":{"tiled":1,"settype":2,"banner":"4cb38577gw1epaxqjfu15j2050050t98"},"province":"0","city":"0","created_at":"Tue Feb 10 11:33:35 +0800 2015","topic_name":"羊年就要咩咩哒","is_hot":0,"has_tab":0}},{"object_id":"1022:1008087d8b20d91e715f4e3037236ad9c650ed","hotval":24541948,"topic":"2015全明星","title":"","url":"http:\/\/weibo.com\/p\/1008087d8b20d91e715f4e3037236ad9c650ed?k=2015%E5%85%A8%E6%98%8E%E6%98%9F&from=trendtop_api","thread":{"id":"1968002","ctg1":"98","ctg2":"98002","category1":"体育赛事","category2":"NBA","title":"","content":"2015年NBA全明星赛将于北京时间2015年2月14日至16日在纽约举行，本届全明星赛是由尼克斯和篮网两队主场联手承办。其中第64届全明星正赛将在尼克斯队主场麦迪逊广场花园进行。而其他全明星活动项目，如三分球大赛与扣篮大赛等，将在篮网队主场巴克莱中心举办。","metadata":{"tiled":1,"settype":2,"banner":"a9395713jw1ep7l9zrnkcj2050050dg5"},"province":"0","city":"0","created_at":"Fri Feb 13 11:46:29 +0800 2015","topic_name":"2015全明星","is_hot":1,"has_tab":0}},{"object_id":"1022:100808455284b16946f5d2cf515f9b2cf3c3f6","hotval":18957793,"topic":"回家过年","title":"","url":"http:\/\/weibo.com\/p\/100808455284b16946f5d2cf515f9b2cf3c3f6?k=%E5%9B%9E%E5%AE%B6%E8%BF%87%E5%B9%B4&from=trendtop_api","thread":{"id":"162393","ctg1":"1","ctg2":"0","category1":"社会","category2":"","title":"","content":"有钱没钱 回家过年，家里总有年夜饭。","metadata":{"settype":2,"banner":"652f5916gw1ep5869snjoj20500500sy","h5_pic":"","client_pic":""},"province":"0","city":"0","created_at":"Sun Jun 02 22:39:42 +0800 2013","topic_name":"回家过年","is_hot":1,"has_tab":1}},{"object_id":"1022:10080837d9b78ea80ec6d088589dfce9dc98c4","hotval":55431420,"topic":"栀子花开","title":"","url":"http:\/\/weibo.com\/p\/10080837d9b78ea80ec6d088589dfce9dc98c4?k=%E6%A0%80%E5%AD%90%E8%8A%B1%E5%BC%80&from=trendtop_api","thread":{"id":"74858","ctg1":"100","ctg2":"0","category1":"电影","category2":"","title":"","content":"何炅首执导筒，黄磊担纲监制的青春电影《栀子花开2015》正式启动。影片将甄选全新人阵容出演。#不怀旧，正青春#","metadata":{"settype":"2","banner":"bd6c1764gw1ekoz3aexymj2050050748"},"province":"0","city":"0","created_at":"Sat May 11 17:59:49 +0800 2013","topic_name":"栀子花开","is_hot":1,"has_tab":1}},{"object_id":"1022:10080822d05fdf196f6e0c5abaa2865a8c10d8","hotval":1485875,"topic":"林俊杰滨崎步同台","title":"","url":"http:\/\/weibo.com\/p\/10080822d05fdf196f6e0c5abaa2865a8c10d8?k=%E6%9E%97%E4%BF%8A%E6%9D%B0%E6%BB%A8%E5%B4%8E%E6%AD%A5%E5%90%8C%E5%8F%B0&from=trendtop_api","thread":{"id":"1964142","ctg1":"2","ctg2":"0","category1":"明星","category2":"","title":"","content":"","metadata":{"tiled":1},"province":"0","city":"0","created_at":"Thu Feb 12 14:36:36 +0800 2015","topic_name":"林俊杰滨崎步同台","is_hot":0,"has_tab":0}},{"object_id":"1022:100808c4328f75476f5e56374f7e1983092036","hotval":341374979,"topic":"情人节","title":"","url":"http:\/\/weibo.com\/p\/100808c4328f75476f5e56374f7e1983092036?k=%E6%83%85%E4%BA%BA%E8%8A%82&from=trendtop_api","thread":{"id":"27980","ctg1":"5","ctg2":"0","category1":"情感两性","category2":"","title":"新春迎来情人节，网友微博贡献过节吐槽","content":"我眼中的TA是这一时刻最美的定格——在做饭、在睡觉、在发呆或者在运动……来为喜欢的他\/她拍一张照片或写一段文字，带话题词#情人节#，节日君帮你记录只属于你们的这个瞬间。发布微博还有机会获得iPhone 5s手机，以及由@第一摩码房产众筹 赞助的精品酒店情侣套房或白金海岸之旅，方便大家约起来~","metadata":{"settype":2,"banner":"719d0099gw1ep5h6sevs8j2050050aa1","h5_pic":"8617f7f7jw1ep6e2fxwwhj20hs08w0t8","client_pic":"8617f7f7jw1ep6e2a50jwj20hs0hsdgh"},"province":"0","city":"0","created_at":"Thu Feb 14 14:54:46 +0800 2013","topic_name":"情人节","is_hot":1,"has_tab":1}},{"object_id":"1022:1008088114e06dc4f7be5797ab8db0510b038d","hotval":178123028,"topic":"春节就看爸爸2","title":"","url":"http:\/\/weibo.com\/p\/1008088114e06dc4f7be5797ab8db0510b038d?k=%E6%98%A5%E8%8A%82%E5%B0%B1%E7%9C%8B%E7%88%B8%E7%88%B82&from=trendtop_api","thread":{"id":"1920105","ctg1":"100","ctg2":"0","category1":"电影","category2":"","title":"","content":"《爸爸去哪儿2大电影》首映口碑超爆！笑点鼻涕横流，泪点鼻涕爆喷！适合全家老小齐观看~暖暖感动浓浓亲情~春节就看爸爸2！初一见，么么哒！","metadata":{"tiled":1,"settype":2,"banner":"ec2f6204gw1eow6mbl23gj2050050q3o"},"province":"0","city":"0","created_at":"Tue Feb 03 12:15:48 +0800 2015","topic_name":"春节就看爸爸2","is_hot":0,"has_tab":0}},{"object_id":"1022:1008087cbf00ffcafbc0d0c967449efc48a52b","hotval":756397875,"topic":"相爱穿梭千年","title":"","url":"http:\/\/weibo.com\/p\/1008087cbf00ffcafbc0d0c967449efc48a52b?k=%E7%9B%B8%E7%88%B1%E7%A9%BF%E6%A2%AD%E5%8D%83%E5%B9%B4&from=trendtop_api","thread":{"id":"1551506","ctg1":"102","ctg2":"102103","category1":"电视节目","category2":"其他","title":"","content":"由井柏然、郑爽主演的湖南卫视自制周播剧，翻拍自热门韩剧《仁显王后的男人》","metadata":{"tiled":1,"settype":2,"banner":"005QfIizgw1enwfwud2knj3050050dfy"},"province":"0","city":"0","created_at":"Thu Nov 27 20:53:33 +0800 2014","topic_name":"相爱穿梭千年","is_hot":0,"has_tab":0}},{"object_id":"1022:1008089d9afc3859f444afcd2cbbe5fde2b1b9","hotval":1966896426,"topic":"活色生香","title":"","url":"http:\/\/weibo.com\/p\/1008089d9afc3859f444afcd2cbbe5fde2b1b9?k=%E6%B4%BB%E8%89%B2%E7%94%9F%E9%A6%99&from=trendtop_api","thread":{"id":"400565","ctg1":"101","ctg2":"0","category1":"电视剧","category2":"","title":"","content":"国民偶像拼命之作《活色生香》首日全国网收视率3.43，9.29，打破近十年电视剧首播记录！首日网络播放量10731万次！2集破亿！继首播收视登顶后，再次打破电视剧首播网络播放量记录！成为史上首播网络播放量最高剧集！周日至周四晚8点，周五周六晚7点半，湖南卫视芬芳献映！","metadata":{"settype":2,"banner":"c4391115jw1eoprhuv0mjj2050050jrv","tiled":1},"province":"0","city":"0","created_at":"Fri Aug 30 14:50:13 +0800 2013","topic_name":"活色生香","is_hot":0,"has_tab":0}}]}</td>
+    </tr>
+    
+    <tr >
+      <td colspan="2" class="C_Display">结果统计</td>
+      <td class="C_Display">Total: <b>1</b>  Pass: <b><font color='Green'>1</font></b>  Fail: <b><font color='Red'>0</font></b></td>
+      <td class="C_Display">运行时间</td>
+      <td class="C_Display">2015-02-16 11:36:33</td>
+    </tr>
+    
+      </table>
+  <hr />
+</div>
+</body>
+</html>
+    

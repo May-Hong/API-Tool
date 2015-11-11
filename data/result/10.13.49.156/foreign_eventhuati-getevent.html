@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Miniblog API Test Result</title>
+    <script type="text/javascript" src="src/jquery.js"></script>
+    <script type="text/javascript" src="src/Expand_Collapse.js"></script>
+    <link type="text/css" rel="stylesheet" href="src/skin.css">
+</head>
+<body>
+    <h1 align="center">API Test Result</h1>
+    <p align="right">
+        <input type="submit" id="Expand ALL" value="展开用例" onclick="Expand_Header()"/>
+        <input type="submit" id="Expand ALL" value="展开详情" onclick="Expand_All()"/>
+        <input type="submit" id="Collapse ALL" value="收起所有" onclick="Collapse_All()"/>
+    </p>
+    <hr />
+    <div class="URLID" id="URLID">
+        <table width="100%" border="1" style="table-layout:fixed">
+            
+        <tr class="1_apiheader">
+      <td width="10%" scope="col" class="T_Header"><a href="#">1</a></td>
+      <td width="10%" scope="col" class="C_Display">接口说明</td>
+      <td width="30%" scope="col" class="L_Display">http://10.13.49.156/foreign_eventhuati/getevent<BR>查询活动</td>
+      <td width="10%" scope="col" class="C_Display">参数说明</td>
+      <td width="50%" scope="col" class="L_Display"></td>
+    </tr>
+    
+    <tr class="case1-1_cheader" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="T_Header"><a href="#">1-1</a></td>
+      <td colspan="3" class="URL_Details">curl -H "Host:i.brand.service.weibo.com" "http://10.13.49.156/foreign_eventhuati/getevent?event_id=15530"<br>必选项</td>
+    </tr>
+
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">期望结果</td>
+      <td class="L_Display">id":"15530"</td>
+      <td class="runresult"><b><font color='Green'> PASS </font></b></td>
+      <td class="LU_Display">time_connect: 0.405<BR>time_starttransfer: 0.498<br>time_total: 0.500</td>
+    </tr>  
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">运行结果</td>
+      <td colspan="3" class="L_Display">{"code":"1000","msg":"success","data":{"id":"15530","huati":"\u968f\u624b\u62cd\u5988\u5988\u62ff\u624b\u83dc","huatiid":"983857","host":"2014570227","hostv":"2","introduce":"4\u670821\u65e5\u52305\u670816\u65e5\uff0c#\u968f\u624b\u62cd#\u6d3b\u52a8\u5c06\u542f\u52a8\uff01\u6d3b\u52a8\u671f\u95f4\uff0c\u53d1\u5e03#\u968f\u624b\u62cd\u5988\u5988\u62ff\u624b\u83dc#\uff0b\u56fe\u7247\uff0c\u6355\u6349\u751f\u6d3b\u4e2d\u7684\u7cbe\u5f69\uff0c\u5c31\u6709\u673a\u4f1a\u8d62\u597d\u793c\uff01\u53c2\u4e0e#\u968f\u624b\u62cd#\u5176\u4ed6\u6d3b\u52a8\u8fd8\u6709\u673a\u4f1a\u8d62\u53d6\u4f73\u80fd\u5355\u53cd\u76f8\u673a,\u81ea\u62cd\u795e\u5668\u7b49\u60ca\u559c\u5927\u793c\uff01\u5feb\u6765\u52a8\u624b\u62cd\u4e00\u62cd\uff01","message":"","eintroduce":"\u90fd\u8bf4\u5988\u5988\u505a\u7684\u83dc\u6700\u597d\u5403\uff01\u6d3b\u52a8\u671f\u95f4\uff0c\u53d1\u5e03#\u968f\u624b\u62cd\u5988\u5988\u62ff\u624b\u83dc#\uff0b\u56fe\u7247\uff0c\u6355\u6349\u751f\u6d3b\u4e2d\u7684\u7cbe\u5f69\uff0c\u5c31\u6709\u673a\u4f1a\u8d62\u597d\u793c\uff01\u53c2\u4e0e#\u968f\u624b\u62cd#\u5176\u4ed6\u6d3b\u52a8\u8fd8\u6709\u673a\u4f1a\u8d62\u53d6\u4f73\u80fd\u5355\u53cd\u76f8\u673a\uff0c\u81ea\u62cd\u795e\u5668\u7b49\u60ca\u559c\u5927\u793c\uff01\u5feb\u6765\u52a8\u624b\u62cd\u4e00\u62cd\uff01","starttime":"1398059340","endtime":"1399147200","iftime":"1","mid":"3701907786949966","code":"http:\/\/img1.qr.sinaimg.cn\/qrcode\/psl\/20140420\/0825ed209e1cd7cf1f9983a6fd8e63c2c0.png","iforiginal":"0","ifpic":"0","ifhost":"0","ifrepost":"0","ifcomment":"0","iflike":"0","daytop":"0","lotterytop":"0","extra":"","time":"1398048898","ifansnum":"515039","flag":"0","ifgroup":"0","groupid":"0","awardflag":"0","pid":"7813e6f3tw1efn0u5lx5jj2050050t91","action_type":"0","cfansnum":"1095063","objectid":"100808e07e42f41597994b806e15a6763de19a","admins":"","object_type":"topic","image_url":"http:\/\/ww4.sinaimg.cn\/thumb150\/7813e6f3tw1efn0u5lx5jj2050050t91.jpg","hostname":"\u968f\u624b\u62cd","award":{"28987":{"id":"28987","name":"\u4f73\u80fd\uff08Canon\uff09 EOS 70D \u5355\u53cd\u5957\u673a","type":"1","eventid":"15530","number":"1","pic":"777e9f7ftw1efmbn7rl6yj208c08c3yt","price":"4999","backflag":"1","frontflag":"0","workflag":"1","url":"","config":"[{\"starttime\":\"2014-05-11 04:00:06\",\"endtime\":\"2014-05-11 23:00:13\",\"win_num\":\"4261\",\"top\":\"1\"}]","eventtype":"0","extra":"","flag":"0","randkey":"0","introduce":"\u4f73\u80fd\uff08Canon\uff09 EOS 70D \u5355\u53cd\u5957\u673a\u4e00\u53f0","probability":"0.00001","uprize":"0","aprize":"0"},"28995":{"id":"28995","name":"casio TR300\u00a0","type":"1","eventid":"15530","number":"1","pic":"777e9f7ftw1efmboi3tx1j208c08cjrh","price":"4999","backflag":"1","frontflag":"0","workflag":"1","url":"","config":"[{\"starttime\":\"2014-05-11 04:00:06\",\"endtime\":\"2014-05-11 23:00:12\",\"win_num\":\"4999\",\"top\":\"1\"}]","eventtype":"0","extra":"","flag":"0","randkey":"0","introduce":"casio TR300\u00a0\u81ea\u62cd\u795e\u5668\u4e00\u53f0","probability":"0.00001","uprize":"0","aprize":"0"},"29000":{"id":"29000","name":"NOKIA 1520","type":"1","eventid":"15530","number":"1","pic":"777e9f7ftw1efmbo5oor6j208c08ct9a","price":"4999","backflag":"1","frontflag":"0","workflag":"1","url":"","config":"[{\"starttime\":\"2014-05-11 04:00:22\",\"endtime\":\"2014-05-11 23:00:27\",\"win_num\":\"4631\",\"top\":\"1\"}]","eventtype":"0","extra":"","flag":"0","randkey":"0","introduce":"NOKIA 1520\u4e00\u53f0","probability":"0.00001","uprize":"0","aprize":"0"},"28989":{"id":"28989","name":"sony\u5fae\u5355nex-3N","type":"1","eventid":"15530","number":"1","pic":"777e9f7ftw1efmbobpjahj208c08ct8z","price":"2999","backflag":"1","frontflag":"0","workflag":"1","url":"","config":"[{\"starttime\":\"2014-05-11 04:00:53\",\"endtime\":\"2014-05-11 23:00:58\",\"win_num\":\"5210\",\"top\":\"1\"}]","eventtype":"0","extra":"","flag":"0","randkey":"0","introduce":"sony\u5fae\u5355nex-3N\u4e00\u53f0","probability":"0.00001","uprize":"0","aprize":"0"},"28994":{"id":"28994","name":"\u4f73\u80fdIXUS265\u00a0","type":"1","eventid":"15530","number":"2","pic":"777e9f7ftw1efmbonlsquj208c08cjrn","price":"1499","backflag":"1","frontflag":"0","workflag":"0","url":"","config":"[{\"starttime\":\"2014-04-28 19:00:22\",\"endtime\":\"2014-05-16 23:00:26\",\"win_num\":\"3345\",\"top\":\"2\"}]","eventtype":"0","extra":"","flag":"0","randkey":"0","introduce":"\u4f73\u80fdIXUS265\u00a0\u4e00\u53f0","probability":"0.00001","uprize":"0","aprize":"0"},"28991":{"id":"28991","name":"\u5bcc\u58eb\u62cd\u7acb\u5f97","type":"1","eventid":"15530","number":"3","pic":"777e9f7ftw1efmbnsey2sj208c08c3yo","price":"499","backflag":"1","frontflag":"0","workflag":"0","url":"","config":"[{\"starttime\":\"2014-04-28 18:00:45\",\"endtime\":\"2014-05-05 23:00:46\",\"win_num\":\"2345\",\"top\":\"2\"},{\"starttime\":\"2014-05-05 18:00:12\",\"endtime\":\"2014-05-17 21:00:18\",\"win_num\":\"2421\",\"top\":\"1\"}]","eventtype":"0","extra":"","flag":"0","randkey":"0","introduce":"\u5bcc\u58eb\u62cd\u7acb\u5f97\u4e00\u53f0","probability":"0.00001","uprize":"0","aprize":"0"},"28957":{"id":"28957","name":"10\u5143\u5145\u503c\u5361","type":"2","eventid":"15530","number":"100","pic":"7813e6f3tw1efn14jd8edj208c08cq2y","price":"10","backflag":"0","frontflag":"0","workflag":"0","url":"http:\/\/t.cn\/8FPKzPZ","config":"","eventtype":"0","extra":"","flag":"0","randkey":"0","introduce":"","probability":"","uprize":"0","aprize":"0"}},"number":"17191","huati_prize_forbidden":""}}</td>
+    </tr>
+    
+    <tr >
+      <td colspan="2" class="C_Display">结果统计</td>
+      <td class="C_Display">Total: <b>1</b>  Pass: <b><font color='Green'>1</font></b>  Fail: <b><font color='Red'>0</font></b></td>
+      <td class="C_Display">运行时间</td>
+      <td class="C_Display">2015-03-10 11:55:30</td>
+    </tr>
+    
+      </table>
+  <hr />
+</div>
+</body>
+</html>
+    

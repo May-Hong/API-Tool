@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Miniblog API Test Result</title>
+    <script type="text/javascript" src="src/jquery.js"></script>
+    <script type="text/javascript" src="src/Expand_Collapse.js"></script>
+    <link type="text/css" rel="stylesheet" href="src/skin.css">
+</head>
+<body>
+    <h1 align="center">API Test Result</h1>
+    <p align="right">
+        <input type="submit" id="Expand ALL" value="展开用例" onclick="Expand_Header()"/>
+        <input type="submit" id="Expand ALL" value="展开详情" onclick="Expand_All()"/>
+        <input type="submit" id="Collapse ALL" value="收起所有" onclick="Collapse_All()"/>
+    </p>
+    <hr />
+    <div class="URLID" id="URLID">
+        <table width="100%" border="1" style="table-layout:fixed">
+            
+        <tr class="1_apiheader">
+      <td width="10%" scope="col" class="T_Header"><a href="#">1</a></td>
+      <td width="10%" scope="col" class="C_Display">接口说明</td>
+      <td width="30%" scope="col" class="L_Display">http://10.73.31.26/2/top/list<BR>话题排行榜</td>
+      <td width="10%" scope="col" class="C_Display">参数说明</td>
+      <td width="50%" scope="col" class="L_Display"></td>
+    </tr>
+    
+    <tr class="case1-1_cheader" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="T_Header"><a href="#">1-1</a></td>
+      <td colspan="3" class="URL_Details">curl -H "Host:i.huati.weibo.com" "http://10.73.31.26/2/top/list?"<br>必选项</td>
+    </tr>
+
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">期望结果</td>
+      <td class="L_Display">total_number</td>
+      <td class="runresult"><b><font color='Green'> PASS </font></b></td>
+      <td class="LU_Display">time_connect: 0.186<BR>time_starttransfer: 0.699<br>time_total: 0.700</td>
+    </tr>  
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">运行结果</td>
+      <td colspan="3" class="L_Display">{"total_number":7,"list":[{"title":"\u7537\u795e\u5df2\u9886\u8bc1\u5e76\u540c\u5c45\uff0c\u7f51\u53cb\u542b\u6cea\u795d\u798f(\u56fe)","content":"\u636e\u53f0\u6e7e\u5a92\u4f53\u62a5\u9053\uff0c\u5468\u6770\u4f26\u4eca\u5e747\u6708\u5927\u65b9\u516c\u5f00\u660e\u5e741\u6708\u8981\u628a\u6606\u51cc\u5a36\u56de\u5bb6\uff0c\u4e0d\u8fc7\uff0c\u4ed6\u7684\u90bb\u5c45\u7206\u6599\uff0c\u4e24\u4eba\u65e9\u57285\u6708\u5c31\u767b\u8bb0\u4e86\uff0c\u4e14\u5df2\u7ecf\u4f4f\u5728\u4e00\u8d77\u3002\u5bf9\u6b64\uff0c\u5468\u8463\u7ecf\u7eaa\u516c\u53f8\u6de1\u5b9a\u8868\u793a\uff1a\u201c\u6770\u4f26\u8bf4\u8fc7\u5566\uff0c\u4ed6\u7ed3\u5a5a\u4f1a\u516c\u5f00\uff0c\u4f1a\u8ddf\u5927\u5bb6\u8bf4\u3002\u201d","topic":"\u5468\u6770\u4f26\u6606\u51cc\u767b\u8bb0\u7ed3\u5a5a","num":2812,"url":"http:\/\/huati.weibo.com\/1218487","province":"0","tid":1218487,"create_time":"1408066374","uid":"","ctg1_name":""},{"title":"","content":"\u5218\u5065\u6848\u7ec8\u4e8e\u544a\u4e00\u6bb5\u843d\uff01\u4e2d\u56fd\u8db3\u534f\u7eaa\u5f8b\u59d4\u5458\u4f1a\u6b63\u5f0f\u5f00\u51fa\u7f5a\u5355\uff0c\u8ba4\u5b9a\u9752\u5c9b\u4e2d\u80fd\u5728\u5218\u5065\u8f6c\u4f1a\u6848\u4e2d\u5b58\u5728\u865a\u5047\u6587\u4ef6\u7684\u884c\u4e3a\uff0c\u505a\u51fa\u5904\u4ee5\u6263\u9664\u8054\u8d5b\u79ef\u52067\u5206\uff0c\u5e76\u88ab\u7f5a\u6b3e40\u4e07\u5143\u7684\u5904\u7f5a\u3002\u4f60\u600e\u6837\u770b\u5f85\u8db3\u534f\u5bf9\u4e8e\u9752\u5c9b\u7684\u5904\u7f5a\u5462\uff1f\u662f\u8fc7\u91cd\u8fd8\u662f\u8fc7\u8f7b\uff1f","topic":"\u5218\u5065\u6848","num":706,"url":"http:\/\/huati.weibo.com\/1217249","province":"0","tid":1217249,"create_time":"1408005482","uid":"","ctg1_name":""},{"title":"","content":"\u65e5\u672c\u63a8\u51fa\u9996\u6b3e\u7537\u58eb\u6587\u80f8\uff0c\u8fd9\u6b3e\u7279\u522b\u7684\u6587\u80f8\u4e13\u4e3a\u80f8\u808c\u53d1\u8fbe\u7684\u7537\u58eb\u8bbe\u8ba1\uff0c\u5ba3\u79f0\u80fd\u591f\u4e3a\u4ed6\u4eec\u5e26\u6765\u5168\u5929\u5019\u201c\u6297\u5730\u7403\u5f15\u529b\u201d\u4fdd\u62a4\uff0c\u9632\u6b62\u80f8\u90e8\u53d8\u5f62\u3002","topic":"\u65e5\u672c\u63a8\u51fa\u7537\u58eb\u80f8\u7f69","num":654,"url":"http:\/\/huati.weibo.com\/1217144","province":"0","tid":1217144,"create_time":"1408003614","uid":"","ctg1_name":""},{"title":"","content":"\u8fd1\u65e5\uff0c\u7f51\u53cb\u5728\u7f51\u4e0a\u6652\u51fa\u4e00\u7537\u5b50\u7167\u7247\uff0c\u79f0\u5176\u662f\u300a\u718a\u51fa\u6ca1\u300b\u4e2d\u7684\u771f\u4eba\u7248\u201c\u5149\u5934\u5f3a\u201d\u3002\u53ea\u4e0d\u8fc7\uff0c\u771f\u4eba\u7248\u7684\u201c\u5149\u5934\u5f3a\u201d\u4e0d\u662f\u4f10\u6728\u5de5\u4eba\uff0c\u800c\u662f\u5e7f\u897f\u9632\u57ce\u6e2f\u5e02\u7684\u4e00\u540d\u53a8\u5e08\uff0c\u73b0\u5728\u5df2\u6210\u4e3a\u5f53\u5730\u7684\u7f51\u7edc\u7ea2\u4eba\u3002\u653e\u4e0a\u5bf9\u6bd4\u56fe\u2193\u2193\u5927\u5bb6\u8bf4\u50cf\u4e0d\uff1f","topic":"\u5149\u5934\u5f3a\u771f\u4eba\u7248","num":354,"url":"http:\/\/huati.weibo.com\/1216627","province":"0","tid":1216627,"create_time":"1407993989","uid":"","ctg1_name":""},{"title":"","content":"\u4e01\u4fca\u6656\u4f5c\u5ba2\u592e\u89c62014\u5e74\u4f53\u575b\u300a\u98ce\u4e91\u4f1a\u300b\u8282\u76ee\uff0c\u81ea\u66dd\u5df2\u548c\u5973\u53cb\u9886\u8bc1\u7ed3\u5a5a\uff0c\u4f46\u8fd8\u6ca1\u6709\u529e\u4eea\u5f0f\u3002\u4ed6\u900f\u9732\u7231\u4eba\u7ec6\u5fc3\u7684\u7167\u987e\u3001\u4e92\u76f8\u6c9f\u901a\u7ed9\u4e86\u4ed6\u5f88\u5927\u5e2e\u52a9\uff1a\u201c\u4ee5\u524d\u6709\u4ec0\u4e48\u60f3\u6cd5\u90fd\u618b\u7740\uff0c\u73b0\u5728\u4e0d\u7528\u8bf4\uff0c\u5979\u90fd\u80fd\u770b\u5f97\u51fa\u6765\u3002\u201d","topic":"\u4e01\u4fca\u6656\u9886\u8bc1","num":507,"url":"http:\/\/huati.weibo.com\/1216507","province":0,"tid":1216507,"create_time":"1407991006","uid":"","ctg1_name":""},{"title":"","content":"2014\u5357\u4eac\u9752\u5965\u4f1a\u5f00\u5e55\u5f0f\u603b\u5bfc\u6f14\u9648\u7ef4\u4e9a\u786e\u8ba4\uff0c\u90fd\u6559\u6388@\u91d1\u79c0\u8d24 \u5c06\u548c@\u5f20\u9753\u9896 @\u5f20\u6770 \u7b49\u51714\u4eba\u6f14\u5531\u5f00\u5e55\u5f0f\u4e3b\u9898\u6b4c\u300a\u70b9\u4eae\u672a\u6765\u300b\u3002","topic":"\u90fd\u6559\u6388\u732e\u5531\u9752\u5965\u4f1a","num":15958,"url":"http:\/\/huati.weibo.com\/1216453","province":"0","tid":1216453,"create_time":"1407990042","uid":"","ctg1_name":""},{"title":"\u9752\u5c9b\u8138\u57fa\u5c3c\u5927\u5988\u6210\u529f\u6253\u5165\u65f6\u5c1a\u5708\uff0c\u5927\u7247\u6765\u88ad","content":"2012\u5e74\u590f\u5929\u5728\u56fd\u5185\u8d70\u7ea2\u7684\u9752\u5c9b\u5927\u5988\u6d77\u8fb9\u9632\u6652\u5934\u5957\u201c\u8138\u57fa\u5c3c\u201d\u8fd1\u65e5\u8d70\u5165\u56fd\u9645\u65f6\u5c1a\u5708\u3002\u6cd5\u56fd\u65f6\u5c1a\u6742\u5fd7CRFashion Book\u6700\u65b0\u4e00\u8f91\u4e2d\uff0c\u201c\u8138\u57fa\u5c3c\u201d(facekini)\u65f6\u5c1a\u5927\u7247\u5f15\u6765\u5173\u6ce8\u3002","topic":"\u8138\u57fa\u5c3c\u8d70\u5165\u56fd\u9645","num":918,"url":"http:\/\/huati.weibo.com\/1215972","province":"0","tid":1215972,"create_time":"1407981931","uid":"","ctg1_name":""},{"title":"","content":"\u636e\u53f0\u6e7e\u5a92\u4f53\u6d88\u606f\uff0c8\u670813\u65e5\uff0c\u6797\u5ba5\u5609\u5df2\u4f4e\u8c03\u5165\u4f0d\uff0c\u5230\u5b9c\u5170\u91d1\u516d\u7ed3\u65b0\u8bad\u4e2d\u5fc3\u62a5\u5230\u3002\u4ed6\u4eca\u5e74\u66fe\u8868\u793a\u8981\u4f11\u5b66\u3001\u5f53\u5175\uff0c\u201c\u5bf9\u5927\u5bb6\u8d1f\u8d23\u4efb\u201d\u3002","topic":"\u6797\u5ba5\u5609\u5165\u4f0d","num":37892,"url":"http:\/\/huati.weibo.com\/1215856","province":"0","tid":1215856,"create_time":"1407980310","uid":"","ctg1_name":""},{"title":"\u5916\u5f62\u9753\u4e3d\u4e0d\u8f93\u59d0\u59d0\uff0c\u591a\u5f20\u9ad8\u6e05\u751f\u6d3b\u7167\u66dd\u5149(\u56fe)","content":"\u8fd1\u65e5\uff0c\u77e5\u540d\u535a\u4e3b@\u957f\u6625\u56fd\u8d38 \u66dd\u5149\u4e86\u4e00\u7ec4\u5b8b\u7956\u82f1\u59b9\u59b9\u5b8b\u4f73\u73b2\u7684\u6e05\u7eaf\u7f8e\u7167\u3002\u5b8b\u4f73\u73b2\u5728\u5927\u5b66\u91cc\u5b66\u4e60\u7684\u662f\u58f0\u4e50\uff0c\u4f46\u6bd5\u4e1a\u540e\u5374\u5f53\u4e86\u4e00\u540d\u6f14\u5458\u3002","topic":"\u5b8b\u7956\u82f1\u59b9\u59b9\u6e05\u7eaf\u7167","num":4577,"url":"http:\/\/huati.weibo.com\/1215799","province":"0","tid":1215799,"create_time":"1407979257","uid":"","ctg1_name":""},{"title":"","content":"2014\u5e748\u670814\u65e5\u4e0a\u53489\u65f6,\u5317\u4eac\u5e02\u671d\u9633\u6cd5\u9662\u4f9d\u6cd5\u516c\u5f00\u5f00\u5ead\u5ba1\u7406\u5317\u4eac\u5c14\u739b\u5929\u4ed9\u6587\u5316\u4f20\u64ad\u6709\u9650\u8d23\u4efb\u516c\u53f8\u3001\u5317\u4eac\u5c14\u739b\u4e92\u52a8\u8425\u9500\u7b56\u5212\u6709\u9650\u516c\u53f8\u3001\u88ab\u544a\u4eba\u6768\u79c0\u5b87(\u7f51\u540d\u201c\u7acb\u4e8c\u62c6\u56db\u201d)\u3001\u5362\u6885\u975e\u6cd5\u7ecf\u8425\u4e00\u6848\u3002","topic":"\u7acb\u4e8c\u62c6\u56db\u53d7\u5ba1","num":645,"url":"http:\/\/huati.weibo.com\/1215757","province":"0","tid":1215757,"create_time":"1407978201","uid":"","ctg1_name":""}]}</td>
+    </tr>
+    
+    <tr >
+      <td colspan="2" class="C_Display">结果统计</td>
+      <td class="C_Display">Total: <b>1</b>  Pass: <b><font color='Green'>1</font></b>  Fail: <b><font color='Red'>0</font></b></td>
+      <td class="C_Display">运行时间</td>
+      <td class="C_Display">2014-08-15 11:03:03</td>
+    </tr>
+    
+      </table>
+  <hr />
+</div>
+</body>
+</html>
+    

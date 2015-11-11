@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Miniblog API Test Result</title>
+    <script type="text/javascript" src="src/jquery.js"></script>
+    <script type="text/javascript" src="src/Expand_Collapse.js"></script>
+    <link type="text/css" rel="stylesheet" href="src/skin.css">
+</head>
+<body>
+    <h1 align="center">API Test Result</h1>
+    <p align="right">
+        <input type="submit" id="Expand ALL" value="展开用例" onclick="Expand_Header()"/>
+        <input type="submit" id="Expand ALL" value="展开详情" onclick="Expand_All()"/>
+        <input type="submit" id="Collapse ALL" value="收起所有" onclick="Collapse_All()"/>
+    </p>
+    <hr />
+    <div class="URLID" id="URLID">
+        <table width="100%" border="1" style="table-layout:fixed">
+            
+        <tr class="1_apiheader">
+      <td width="10%" scope="col" class="T_Header"><a href="#">1</a></td>
+      <td width="10%" scope="col" class="C_Display">接口说明</td>
+      <td width="30%" scope="col" class="L_Display">http://10.77.26.42/2/thread/qualitycontent<BR>获取话题优质推荐内容</td>
+      <td width="10%" scope="col" class="C_Display">参数说明</td>
+      <td width="50%" scope="col" class="L_Display"></td>
+    </tr>
+    
+    <tr class="case1-1_cheader" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="T_Header"><a href="#">1-1</a></td>
+      <td colspan="3" class="URL_Details">curl -H "Host:i.huati.weibo.com"  -H "appkey:1493185076" "http://10.77.26.42/2/thread/qualitycontent?source=1493185076"<br>必选项</td>
+    </tr>
+
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">期望结果</td>
+      <td class="L_Display">create_time</td>
+      <td class="runresult"><b><font color='Green'> PASS </font></b></td>
+      <td class="LU_Display">time_connect: 0.005<BR>time_starttransfer: 0.128<br>time_total: 0.128</td>
+    </tr>  
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">运行结果</td>
+      <td colspan="3" class="L_Display">{"create_time":1398394928,"data":[{"title":"他的新娘是她前任","desc":"他的新娘是她前任","praise":"1234","pic":"http:\/\/ww2.sinaimg.cn\/large\/45da8ff4jw1e7eai85haqj208c0503zb.jpg","url":"http:\/\/hot.weibo.com\/topic\/131608","position":"1.1.1"},{"title":"NBA新赛季赛程","desc":"NBA新赛季赛程","praise":"1234","pic":"http:\/\/ww2.sinaimg.cn\/large\/45da8ff4jw1e7eaipecgqj2050030aa0.jpg","url":"http:\/\/hot.weibo.com\/topic\/131694","position":"1.1.2"},{"title":"城管卧底摆地摊","desc":"武汉洪山城管人士称同事摆摊实为卧底体验","praise":"1112","pic":"http:\/\/ww4.sinaimg.cn\/large\/7fb5a0adjw1e5zaqvmzybj20c808ddgf.jpg","url":"http:\/\/hot.weibo.com\/topic\/24733","position":"1.2.1"},{"title":"柯震东萧亚轩情变","desc":"柯震东萧亚轩情变","praise":"1111","pic":"http:\/\/ww3.sinaimg.cn\/large\/7fb5a0adjw1e5zasfxoioj20a40goab2.jpg","url":"http:\/\/hot.weibo.com\/topic\/30470","position":"1.2.2"},{"title":"默多克邓文迪离婚","desc":"默多克邓文迪离婚","praise":"2222","pic":"http:\/\/ww4.sinaimg.cn\/large\/7fb5a0adjw1e5zatggxgxj20c80ae75j.jpg","url":"http:\/\/hot.weibo.com\/topic\/16275","position":"2.1.1"},{"title":"狗肉节杀狗遭质疑","desc":"广西玉林狗肉节将屠杀10000条狗遭质疑","praise":"2221","pic":"http:\/\/ww4.sinaimg.cn\/large\/7fb5a0adjw1e5zav1u15pj20c808w76e.jpg","url":"http:\/\/hot.weibo.com\/topic\/28703","position":"2.1.2"},{"title":"舌尖上的中国第二季","desc":"舌尖上的中国第二季","praise":"1234","pic":"http:\/\/ww1.sinaimg.cn\/large\/45da8ff4tw1efrnnbjjzrj20dw0a4ae1.jpg","url":"http:\/\/hot.weibo.com\/topic\/900300","position":"2.2.1"},{"title":"花儿与少年","desc":"花儿与少年","praise":"1234","pic":"http:\/\/ww1.sinaimg.cn\/large\/45da8ff4tw1efrni6iftlj20dw0a4jui.jpg","url":"http:\/\/hot.weibo.com\/topic\/889891","position":"2.2.2"},{"title":"#备胎是怎样练成的#","desc":"备胎是怎样练成的","praise":"3333","pic":"http:\/\/ww1.sinaimg.cn\/large\/7fb5a0adjw1e5zayg645rj205p0360sp.jpg","url":"http:\/\/huati.weibo.com\/222983","position":"2.3.1"},{"title":"#消暑神器#","desc":"炎炎夏日 来秀一下你的消暑神器","praise":"1999","pic":"http:\/\/ww3.sinaimg.cn\/large\/7fb5a0adjw1e5zaz8gvp0j205p036t8n.jpg","url":"http:\/\/huati.weibo.com\/218353","position":"2.3.2"}]}</td>
+    </tr>
+    
+    <tr >
+      <td colspan="2" class="C_Display">结果统计</td>
+      <td class="C_Display">Total: <b>1</b>  Pass: <b><font color='Green'>1</font></b>  Fail: <b><font color='Red'>0</font></b></td>
+      <td class="C_Display">运行时间</td>
+      <td class="C_Display">2015-01-28 16:12:44</td>
+    </tr>
+    
+      </table>
+  <hr />
+</div>
+</body>
+</html>
+    

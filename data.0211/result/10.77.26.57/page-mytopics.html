@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Miniblog API Test Result</title>
+    <script type="text/javascript" src="src/jquery.js"></script>
+    <script type="text/javascript" src="src/Expand_Collapse.js"></script>
+    <link type="text/css" rel="stylesheet" href="src/skin.css">
+</head>
+<body>
+    <h1 align="center">API Test Result</h1>
+    <p align="right">
+        <input type="submit" id="Expand ALL" value="展开用例" onclick="Expand_Header()"/>
+        <input type="submit" id="Expand ALL" value="展开详情" onclick="Expand_All()"/>
+        <input type="submit" id="Collapse ALL" value="收起所有" onclick="Collapse_All()"/>
+    </p>
+    <hr />
+    <div class="URLID" id="URLID">
+        <table width="100%" border="1" style="table-layout:fixed">
+            
+        <tr class="1_apiheader">
+      <td width="10%" scope="col" class="T_Header"><a href="#">1</a></td>
+      <td width="10%" scope="col" class="C_Display">接口说明</td>
+      <td width="30%" scope="col" class="L_Display">http://10.77.26.57/page/mytopics<BR>Page获取profile页我的话题</td>
+      <td width="10%" scope="col" class="C_Display">参数说明</td>
+      <td width="50%" scope="col" class="L_Display"></td>
+    </tr>
+    
+    <tr class="case1-1_cheader" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="T_Header"><a href="#">1-1</a></td>
+      <td colspan="3" class="URL_Details">curl -H "Host:i.huati.weibo.com" "http://10.77.26.57/page/mytopics?page_id=1008082919868217&uid=2919868217"<br>必选项</td>
+    </tr>
+
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">期望结果</td>
+      <td class="L_Display">"error_msg":"succ"</td>
+      <td class="runresult"><b><font color='Green'> PASS </font></b></td>
+      <td class="LU_Display">time_connect: 0.215<BR>time_starttransfer: 0.252<br>time_total: 0.252</td>
+    </tr>  
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">运行结果</td>
+      <td colspan="3" class="L_Display">{"error_code":1000,"error_msg":"succ","cache":300,"data":{"title":"话题","title_link":"http:\/\/huati.weibo.com\/?from=page_100808_weibo&wvr=5.1&loc=huatititle","title_link_blank":true,"desc":"","icon_src":"","icon_link":"","icon_link_blank":false,"more_text":"更多»","more_link":"http:\/\/huati.weibo.com\/profile\/2919868217?from=page_100808_weibo&wvr=5.1&mod=huatimore","more_link_blank":true,"total_number":10,"items":[{"text":"[url='http:\/\/huati.weibo.com\/1817885?from=page_100808_weibo&wvr=5.1&mod=huati' title='%E5%B8%AE%E6%B0%91%E8%AD%A6%E5%B0%8F%E6%B1%A4%E4%B8%8A%E6%98%A5%E6%99%9A' alt='%E5%B8%AE%E6%B0%91%E8%AD%A6%E5%B0%8F%E6%B1%A4%E4%B8%8A%E6%98%A5%E6%99%9A' target='_blank']#帮民警小汤上春晚#[\/url]","operate":{"type":"1","params":{"text":"1.7亿阅读"}}},{"text":"[url='http:\/\/huati.weibo.com\/28000?from=page_100808_weibo&wvr=5.1&mod=huati' title='%E6%88%91%E6%98%AF%E6%AD%8C%E6%89%8B' alt='%E6%88%91%E6%98%AF%E6%AD%8C%E6%89%8B' target='_blank']#我是歌手#[\/url]","operate":{"type":"1","params":{"text":"112亿阅读"}}},{"text":"[url='http:\/\/huati.weibo.com\/200000039446?from=page_100808_weibo&wvr=5.1&mod=huati' title='test___%E5%B7%B2%E8%AE%A4%E9%A2%862%E4%B8%AA%E5%BE%85%E5%AE%A12%E4%B8%AA' alt='test___%E5%B7%B2%E8%AE%A4%E9%A2%862%E4%B8%AA%E5%BE%85%E5%AE%A12%E4%B8%AA' target='_blank']#test___已认领2个待审2个#[\/url]","operate":{"type":"1","params":{"text":"0阅读"}}},{"text":"[url='http:\/\/huati.weibo.com\/200000039445?from=page_100808_weibo&wvr=5.1&mod=huati' title='test___%E5%B7%B2%E8%AE%A4%E9%A2%862%E4%B8%AA%E5%BE%85%E5%AE%A11%E4%B8%AA' alt='test___%E5%B7%B2%E8%AE%A4%E9%A2%862%E4%B8%AA%E5%BE%85%E5%AE%A11%E4%B8%AA' target='_blank']#test___已认领2个待审1个#[\/url]","operate":{"type":"1","params":{"text":"0阅读"}}},{"text":"[url='http:\/\/huati.weibo.com\/200000039442?from=page_100808_weibo&wvr=5.1&mod=huati' title='test___%E8%AE%A4%E9%A2%861%E4%B8%AA%E5%BE%85%E5%AE%A13%E4%B8%AA' alt='test___%E8%AE%A4%E9%A2%861%E4%B8%AA%E5%BE%85%E5%AE%A13%E4%B8%AA' target='_blank']#test___认领1个待审3个#[\/url]","operate":{"type":"1","params":{"text":"0阅读"}}},{"text":"[url='http:\/\/huati.weibo.com\/200000039441?from=page_100808_weibo&wvr=5.1&mod=huati' title='test___%E8%AE%A4%E9%A2%861%E4%B8%AA%E5%BE%85%E5%AE%A12%E4%B8%AA' alt='test___%E8%AE%A4%E9%A2%861%E4%B8%AA%E5%BE%85%E5%AE%A12%E4%B8%AA' target='_blank']#test___认领1个待审2个#[\/url]","operate":{"type":"1","params":{"text":"0阅读"}}},{"text":"[url='http:\/\/huati.weibo.com\/200000039440?from=page_100808_weibo&wvr=5.1&mod=huati' title='test___%E8%AE%A4%E9%A2%861%E4%B8%AA%E5%BE%85%E5%AE%A11%E4%B8%AA' alt='test___%E8%AE%A4%E9%A2%861%E4%B8%AA%E5%BE%85%E5%AE%A11%E4%B8%AA' target='_blank']#test___认领1个待审1个#[\/url]","operate":{"type":"1","params":{"text":"0阅读"}}},{"text":"[url='http:\/\/huati.weibo.com\/1787859?from=page_100808_weibo&wvr=5.1&mod=huati' title='test___%E5%AE%A1%E6%A0%B8%E4%B8%AD4' alt='test___%E5%AE%A1%E6%A0%B8%E4%B8%AD4' target='_blank']#test___审核中4#[\/url]","operate":{"type":"1","params":{"text":"0阅读"}}},{"text":"[url='http:\/\/huati.weibo.com\/1787870?from=page_100808_weibo&wvr=5.1&mod=huati' title='test___%E5%AE%A1%E6%A0%B8%E4%B8%AD3' alt='test___%E5%AE%A1%E6%A0%B8%E4%B8%AD3' target='_blank']#test___审核中3#[\/url]","operate":{"type":"1","params":{"text":"33阅读"}}},{"text":"[url='http:\/\/huati.weibo.com\/1787321?from=page_100808_weibo&wvr=5.1&mod=huati' title='test___%E5%AE%A1%E6%A0%B8%E4%B8%AD2' alt='test___%E5%AE%A1%E6%A0%B8%E4%B8%AD2' target='_blank']#test___审核中2#[\/url]","operate":{"type":"1","params":{"text":"0阅读"}}}]}}</td>
+    </tr>
+    
+    <tr >
+      <td colspan="2" class="C_Display">结果统计</td>
+      <td class="C_Display">Total: <b>1</b>  Pass: <b><font color='Green'>1</font></b>  Fail: <b><font color='Red'>0</font></b></td>
+      <td class="C_Display">运行时间</td>
+      <td class="C_Display">2015-01-29 11:56:31</td>
+    </tr>
+    
+      </table>
+  <hr />
+</div>
+</body>
+</html>
+    

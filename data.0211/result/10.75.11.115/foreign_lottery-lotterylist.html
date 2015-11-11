@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Miniblog API Test Result</title>
+    <script type="text/javascript" src="src/jquery.js"></script>
+    <script type="text/javascript" src="src/Expand_Collapse.js"></script>
+    <link type="text/css" rel="stylesheet" href="src/skin.css">
+</head>
+<body>
+    <h1 align="center">API Test Result</h1>
+    <p align="right">
+        <input type="submit" id="Expand ALL" value="展开用例" onclick="Expand_Header()"/>
+        <input type="submit" id="Expand ALL" value="展开详情" onclick="Expand_All()"/>
+        <input type="submit" id="Collapse ALL" value="收起所有" onclick="Collapse_All()"/>
+    </p>
+    <hr />
+    <div class="URLID" id="URLID">
+        <table width="100%" border="1" style="table-layout:fixed">
+            
+        <tr class="1_apiheader">
+      <td width="10%" scope="col" class="T_Header"><a href="#">1</a></td>
+      <td width="10%" scope="col" class="C_Display">接口说明</td>
+      <td width="30%" scope="col" class="L_Display">http://10.75.11.115/foreign_lottery/lotterylist<BR>判断一个用户在一个活动中是否有抽奖资格</td>
+      <td width="10%" scope="col" class="C_Display">参数说明</td>
+      <td width="50%" scope="col" class="L_Display"></td>
+    </tr>
+    
+    <tr class="case1-1_cheader" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="T_Header"><a href="#">1-1</a></td>
+      <td colspan="3" class="URL_Details">curl -H "Host:i.brand.service.weibo.com" "http://10.75.11.115/foreign_lottery/lotterylist?event_id=15530"<br>必选项</td>
+    </tr>
+
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">期望结果</td>
+      <td class="L_Display">"code":"1000","msg":"success</td>
+      <td class="runresult"><b><font color='Green'> PASS </font></b></td>
+      <td class="LU_Display">time_connect: 0.040<BR>time_starttransfer: 0.118<br>time_total: 0.118</td>
+    </tr>  
+    <tr class="case1-1_content" style="display:none;">
+      <td>&nbsp;</th>
+      <td class="C_Display">运行结果</td>
+      <td colspan="3" class="L_Display">{"code":"1000","msg":"success","data":{"list":[{"uid":"3971689911","eventid":"15530","awardid":"28957","code":"d41db3b21f5aacbadb8e6867","time":"1398134541","flag":"0","groupflag":"0","lotteryid":"7906462","awardname":"10\u5143\u5145\u503c\u5361","userinfo":{"id":3971689911,"screen_name":"\u6316\u6398\u6280\u672f\u8c01\u5bb6\u5f3a","name":"\u6316\u6398\u6280\u672f\u8c01\u5bb6\u5f3a","location":"\u798f\u5efa \u53a6\u95e8","province":"35","city":"2","description":"","profile_url":"u\/3971689911","profile_image_url":"http:\/\/tp4.sinaimg.cn\/3971689911\/50\/5701338829\/1","avatar_large":"http:\/\/tp4.sinaimg.cn\/3971689911\/180\/5701338829\/1","domain":"","weihao":"","gender":"m","verified":false,"verified_reason":"","verified_type":-1,"lang":"zh-cn","created_at":"Wed Jan 08 18:22:08 +0800 2014"}},{"uid":"3190132503","eventid":"15530","awardid":"28957","code":"d8f2c18ab3ba4e1b6c1f9a36","time":"1398130153","flag":"0","groupflag":"0","lotteryid":"7906410","awardname":"10\u5143\u5145\u503c\u5361","userinfo":{"id":3190132503,"screen_name":"\u964c\u4e0a\u4eba\u672a\u601cJudy","name":"\u964c\u4e0a\u4eba\u672a\u601cJudy","location":"\u5317\u4eac \u671d\u9633\u533a","province":"11","city":"5","description":"\u505a\u597d\u81ea\u5df1\uff01\u4e0d\u5f3a\u6c42\uff0c\u4e0d\u52c9\u5f3a\uff01","profile_url":"u\/3190132503","profile_image_url":"http:\/\/tp4.sinaimg.cn\/3190132503\/50\/5718518974\/0","avatar_large":"http:\/\/tp4.sinaimg.cn\/3190132503\/180\/5718518974\/0","domain":"","weihao":"","gender":"f","verified":false,"verified_reason":"","verified_type":-1,"lang":"zh-cn","created_at":"Fri Dec 14 17:18:12 +0800 2012"}},{"uid":"3577650945","eventid":"15530","awardid":"28957","code":"7a4fe2969a03ff6a92766a78","time":"1398126194","flag":"0","groupflag":"0","lotteryid":"7906354","awardname":"10\u5143\u5145\u503c\u5361","userinfo":{"id":3577650945,"screen_name":"\u7e41\u534e\u70df\u5c182013","name":"\u7e41\u534e\u70df\u5c182013","location":"\u5176\u4ed6","province":"100","city":"1000","description":"\u61d2\u4eba\u4e00\u679a~~~","profile_url":"u\/3577650945","profile_image_url":"http:\/\/tp2.sinaimg.cn\/3577650945\/50\/5696376334\/0","avatar_large":"http:\/\/tp2.sinaimg.cn\/3577650945\/180\/5696376334\/0","domain":"","weihao":"","gender":"f","verified":false,"verified_reason":"","verified_type":-1,"lang":"zh-cn","created_at":"Wed Jul 03 19:33:41 +0800 2013"}},{"uid":"1253923801","eventid":"15530","awardid":"28957","code":"928d74872046dfe7682c9bdb","time":"1398122588","flag":"0","groupflag":"0","lotteryid":"7906306","awardname":"10\u5143\u5145\u503c\u5361","userinfo":{"id":1253923801,"screen_name":"\u65e9\u7761\u4e00\u70b9\u70b9","name":"\u65e9\u7761\u4e00\u70b9\u70b9","location":"\u6cb3\u5357 \u90d1\u5dde","province":"41","city":"1","description":"","profile_url":"u\/1253923801","profile_image_url":"http:\/\/tp2.sinaimg.cn\/1253923801\/50\/40052413365\/0","avatar_large":"http:\/\/tp2.sinaimg.cn\/1253923801\/180\/40052413365\/0","domain":"","weihao":"","gender":"f","verified":false,"verified_reason":"","verified_type":-1,"lang":"zh-cn","created_at":"Fri Nov 18 14:32:42 +0800 2011"}},{"uid":"3210304491","eventid":"15530","awardid":"28957","code":"3206a846e14b1fad07f79e1f","time":"1398110864","flag":"0","groupflag":"0","lotteryid":"7906230","awardname":"10\u5143\u5145\u503c\u5361","userinfo":{"id":3210304491,"screen_name":"\u519c\u6c11\u53d4\u7684\u5fae\u535a","name":"\u519c\u6c11\u53d4\u7684\u5fae\u535a","location":"\u5b89\u5fbd \u516d\u5b89","province":"34","city":"15","description":"\u9177\u7231\u65c5\u6e38\uff0c\u7f8e\u98df\u7684\u5904\u5973\u5ea7\u5927\u53d4\u2026\u2026","profile_url":"630875998","profile_image_url":"http:\/\/tp4.sinaimg.cn\/3210304491\/50\/5715986718\/1","avatar_large":"http:\/\/tp4.sinaimg.cn\/3210304491\/180\/5715986718\/1","domain":"","weihao":"630875998","gender":"m","verified":false,"verified_reason":"","verified_type":-1,"lang":"zh-cn","created_at":"Wed Jan 02 12:51:03 +0800 2013"}},{"uid":"2053606615","eventid":"15530","awardid":"28957","code":"208954db43d0010c84e195b3","time":"1398109069","flag":"0","groupflag":"0","lotteryid":"7906222","awardname":"10\u5143\u5145\u503c\u5361","userinfo":{"id":2053606615,"screen_name":"\u9633\u5149\u4e00\u76f4\u7231\u7740\u962e\u5c0f\u5929","name":"\u9633\u5149\u4e00\u76f4\u7231\u7740\u962e\u5c0f\u5929","location":"\u5c71\u4e1c \u70df\u53f0","province":"37","city":"6","description":"\u5b81\u53ef\u7626\u7684\u522b\u81f4\uff0c\u4e5f\u4e0d\u80d6\u7684\u96f7\u540c...","profile_url":"u\/2053606615","profile_image_url":"http:\/\/tp4.sinaimg.cn\/2053606615\/50\/5665321072\/0","avatar_large":"http:\/\/tp4.sinaimg.cn\/2053606615\/180\/5665321072\/0","domain":"","weihao":"","gender":"f","verified":false,"verified_reason":"","verified_type":-1,"lang":"zh-cn","created_at":"Tue Jan 15 13:36:47 +0800 2013"}},{"uid":"1931130755","eventid":"15530","awardid":"28957","code":"c374ec28e3f631221873314d","time":"1398090739","flag":"0","groupflag":"0","lotteryid":"7906011","awardname":"10\u5143\u5145\u503c\u5361","userinfo":{"id":1931130755,"screen_name":"\u7e41\u661f\u5091","name":"\u7e41\u661f\u5091","location":"\u6d59\u6c5f \u5b81\u6ce2","province":"33","city":"2","description":"\u65b0\u6d6a\u5fae\u535a\u793e\u533a\u59d4\u5458\u4f1a\u6210\u5458","profile_url":"u\/1931130755","profile_image_url":"http:\/\/tp4.sinaimg.cn\/1931130755\/50\/5716638096\/1","avatar_large":"http:\/\/tp4.sinaimg.cn\/1931130755\/180\/5716638096\/1","domain":"","weihao":"","gender":"m","verified":true,"verified_reason":"\u00a0\u00a0\u521d\u7ea7\u5fae\u751f\u7269\u6280\u672f\u68c0\u9a8c\u5458","verified_type":0,"lang":"zh-cn","created_at":"Sat Jan 22 22:01:18 +0800 2011"}},{"uid":"2141476270","eventid":"15530","awardid":"28957","code":"f3645a251abbf07d7b73a417","time":"1398087249","flag":"0","groupflag":"0","lotteryid":"7905964","awardname":"10\u5143\u5145\u503c\u5361","userinfo":{"id":2141476270,"screen_name":"\u58f9\u4e36\u5c31\u900f","name":"\u58f9\u4e36\u5c31\u900f","location":"\u5317\u4eac","province":"11","city":"1000","description":"\u4e00\u751f\u60e6\u5ff5\uff0c\u4e00\u751f\u6000\u7591\uff0c\u4e00\u751f\u5fe0\u8bda\u3002\u65f6\u95f4\u4f1a\u8ba9\u7ec6\u80de\u53bb\u91cd\u751f\uff0c\u7559\u4e0b\u90fd\u662f\u90a3\u4e9b\u56de\u5fc6\u3002","profile_url":"u\/2141476270","profile_image_url":"http:\/\/tp3.sinaimg.cn\/2141476270\/50\/5699720927\/1","avatar_large":"http:\/\/tp3.sinaimg.cn\/2141476270\/180\/5699720927\/1","domain":"","weihao":"","gender":"m","verified":true,"verified_reason":"\u8f67\u94a2\u5de5","verified_type":0,"lang":"zh-cn","created_at":"Sun May 08 09:53:52 +0800 2011"}},{"uid":"1769755055","eventid":"15530","awardid":"28957","code":"abef3386f10d283a95bb4f82","time":"1398087132","flag":"0","groupflag":"0","lotteryid":"7905961","awardname":"10\u5143\u5145\u503c\u5361","userinfo":{"id":1769755055,"screen_name":"\u5c0f\u9887\u55e8","name":"\u5c0f\u9887\u55e8","location":"\u6cb3\u5317","province":"13","city":"1000","description":"\u559c\u6b22\u5c31\u5fc3\u7518\u60c5\u613f\uff0c\u5269\u4e0b\u7684\u4ea4\u7ed9\u65f6\u95f4\u3002\u4f60\u8be5\u660e\u767d\u4eba\u751f\u592a\u77ed\uff0c\u5c06\u5c31\u4e86\u5c31\u4e0d\u5706\u6ee1\u3002","profile_url":"600288012","profile_image_url":"http:\/\/tp4.sinaimg.cn\/1769755055\/50\/5713184341\/0","avatar_large":"http:\/\/tp4.sinaimg.cn\/1769755055\/180\/5713184341\/0","domain":"","weihao":"600288012","gender":"f","verified":true,"verified_reason":"\u00a0\u00a0\u4fdd\u5065\u6309\u6469\u5e08 ","verified_type":0,"lang":"zh-cn","created_at":"Wed Jul 07 12:20:47 +0800 2010"}},{"uid":"2012107477","eventid":"15530","awardid":"28957","code":"07d0980a22550d5eab2ceb98","time":"1398085811","flag":"0","groupflag":"0","lotteryid":"7905942","awardname":"10\u5143\u5145\u503c\u5361","userinfo":{"id":2012107477,"screen_name":"say__\u6cab","name":"say__\u6cab","location":"\u5e7f\u4e1c \u5e7f\u5dde","province":"44","city":"1","description":"\u600e\u4e48\u5b66\u4f1a\u4e0d\u60b2\u4f24\u2026","profile_url":"u\/2012107477","profile_image_url":"http:\/\/tp2.sinaimg.cn\/2012107477\/50\/40052255137\/0","avatar_large":"http:\/\/tp2.sinaimg.cn\/2012107477\/180\/40052255137\/0","domain":"","weihao":"","gender":"f","verified":false,"verified_reason":"","verified_type":-1,"lang":"zh-cn","created_at":"Mon Mar 07 23:30:42 +0800 2011"}}],"number":"12"}}</td>
+    </tr>
+    
+    <tr >
+      <td colspan="2" class="C_Display">结果统计</td>
+      <td class="C_Display">Total: <b>1</b>  Pass: <b><font color='Green'>1</font></b>  Fail: <b><font color='Red'>0</font></b></td>
+      <td class="C_Display">运行时间</td>
+      <td class="C_Display">2015-02-11 14:14:04</td>
+    </tr>
+    
+      </table>
+  <hr />
+</div>
+</body>
+</html>
+    

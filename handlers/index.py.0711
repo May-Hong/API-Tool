@@ -1,0 +1,29 @@
+#coding:utf-8
+
+import tornado.web
+from model.entity import Entity
+import commands
+
+class MainHandler(tornado.web.RequestHandler):
+    def get(self):
+        entity = Entity("data")
+        self.render('show.html',result='',zNodes=entity.interface("data"))
+        
+class ResultHandler(tornado.web.RequestHandler):
+    def post(self):
+        paras = self.get_argument('paras')
+        host=self.get_argument('host',default="127.0.0.1")
+        if(paras[0]==","):
+            paras = paras[1:]
+        paras =paras.replace('/','_')
+        paras =paras.replace('|','/')
+        file=paras.split(',')
+        entity = Entity(file,host)
+        entity.get(file,host)
+        str=""
+        res=open("data/result.tmp")
+        for line in res.readlines():
+            str=str+","+line
+        res.close()
+        commands.getstatusoutput("rm -rf data/result.tmp")
+        self.write(str[1:])
