@@ -19,7 +19,7 @@ for k  in range(1,len(url_list)):
 excel=excel[:-1]+".xls"
 #+url_list[2]+".xls"
 #print excel
-rb=open_workbook(excel,formatting_info=True)
+rb=open_workbook(excel,formatting_info=False)
 wb=copy(rb)
 sheet=wb.get_sheet(0)
 paras=input[1].split('*')
@@ -28,7 +28,7 @@ for para in paras:
     text=para.split('|')
     j=1
     for t in text:
-        t=unicode(t, "utf-8");
+        t=unicode(t, "utf-8")
         if(j==6):
             j=j+1
             continue
@@ -38,7 +38,3 @@ for para in paras:
 os.remove(excel)
 wb.save(excel)
 print excel[:-4]
-		
-
-
-

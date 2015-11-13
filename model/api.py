@@ -401,7 +401,7 @@ for iurls in xrange(len(testurls)):
             
             if str(islogin).upper() == 'YES': 
                 if method == "GET":
-                    curlCMD = head+'-u "%s" "%s%s?%s"' %(userinfo,url,format,paras)
+                    curlCMD = head+'-L -H "Authorization: Token 103cac13223aa5a6abf07bd4cdf042b785658309" -u "%s" "%s%s?%s"' %(userinfo,url,format,paras)
                 elif method == "POST":
                     curlCMD = head+'-u "%s" -d "%s" "%s%s"' %(userinfo,paras,url,format)
                 elif method == "DELETE":

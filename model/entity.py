@@ -1,8 +1,9 @@
-#coding:utf-8
+# -*- coding: utf-8 -*-
 import os
 import commands
 from multiprocessing import Process
 import codecs
+import json
 class Entity(object):
    def __init__(self, name,host="127.0.0.1",flag=0):
        self.name = name
@@ -83,9 +84,8 @@ class Entity(object):
 
    def save(self,name):
        cmd="python ./model/save.py '"+name+"'"
-#  print cmd
+#       print cmd
        status,res = commands.getstatusoutput(cmd)
-#       print res
        read_cmd='python ./model/read.py '+res
 #print read_cmd
        status,result = commands.getstatusoutput(read_cmd)

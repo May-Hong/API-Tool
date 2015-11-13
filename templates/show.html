@@ -21,7 +21,7 @@
 </style>
 
 <SCRIPT type="text/javascript">
-		<!--
+                <!--
 		var setting = {
 			view: {
                 showLine: false,
@@ -39,7 +39,7 @@
 			    onCheck: onCheck,
 			}
 		};
-        var zNodes ={{zNodes}};
+        var zNodes ={% raw zNodes %};
 		var code, log, className = "dark";
         var paras="";
 		function onCheck(e, treeId, treeNode) {
@@ -308,11 +308,11 @@
                                  }
                                  if(str=="线上环境")
                                  {
-                                 tb_str = tb_str + "<td><a target='_blank' href='http://10.210.230.35/huatiAuto/data/result/127.0.0.1/"+l[1] +"'>"+l[1]+"</a></td></tr>";
+                                 tb_str = tb_str + "<td><a target='_blank' href='data/result/127.0.0.1/"+l[1] +"'>"+l[1]+"</a></td></tr>";
                                  }
                                  else
                                  {
-                                 tb_str = tb_str + "<td><a target='_blank' href='http://10.210.230.35/huatiAuto/data/result/"+str+"/"+l[1] +"'>"+l[1]+"</a></td></tr>";
+                                 tb_str = tb_str + "<td><a target='_blank' href='data/result/"+str+"/"+l[1] +"'>"+l[1]+"</a></td></tr>";
                                  }
                                 }
                               }
@@ -340,7 +340,7 @@
              $("#treeDemo").prepend("<div id=\"datetimepicker1\"> <label class=\"control-label\"                        width=\"80px\">执行host：</label><div class=\"controls\" margin-left=\"100px\"><textarea type=\"text\" name=\"host\"     id=\"host\" rows=\"3\" style=\"overflow-y:visible\" onfocus=\"if(value==\'多个host时一行一个ip\'){value=''}\" onblur=\"if (value ==''){value='多个host时一行一个ip'}\">多个host时一行一个ip</textarea></div></div>");
 
 		});
-		//-->
+                //-->
 	</SCRIPT>
 </head>
 
