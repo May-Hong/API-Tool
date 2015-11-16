@@ -6,3 +6,6 @@ sh: 1: Syntax error: "(" unexpected (expecting "}")
 sh: 1: Syntax error: "(" unexpected (expecting "}")
 sh: 1: Syntax error: "(" unexpected (expecting "}")
 sh: 1: Syntax error: "(" unexpected (expecting "}")
+Development server is running at http://127.0.0.1:8080/
+Quit the server with CONTROL-C
+WARNING:tornado.access:404 GET /report/api-v1-apps-banners.html (127.0.0.1) 1.32ms

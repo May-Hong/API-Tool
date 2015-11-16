@@ -3,7 +3,7 @@
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>微博QA - 话题接口自动化测试</title>
+<title>QA - 接口自动化测试工具</title>
 <link href="{{ static_url("css/style.css") }}" rel="stylesheet" type="text/css">
 <link href="{{ static_url("css/960.css") }}" rel="stylesheet" type="text/css">
 
@@ -291,7 +291,7 @@
                               else
                                   str=res[0];
                               tb_str = tb_str + str +'</a></div><div id="collapse'+v+'" class="accordion-body collapse"><div class="accordion-inner">';
-                              tb_str += "<div class='result right'><div class='page-spacer'><table id='rounded-corner'   summary='Huati-API Auto-Testing Result'><thead><tr><th scope='col' class='rounded'>接口名称</th><th scope='col'         class='rounded'>结果统计</th><th scope='col' class='rounded'>结果详情</th></tr></thead><tbody id='result'><tr>"; 
+                              tb_str += "<div class='result right'><div class='page-spacer'><table id='rounded-corner'   summary='API Auto-Testing Result'><thead><tr><th scope='col' class='rounded'>接口名称</th><th scope='col'         class='rounded'>结果统计</th><th scope='col' class='rounded'>结果详情</th></tr></thead><tbody id='result'><tr>";
                               var res_arr=res[1].split(',');
                               for(var a in res_arr)
                               {
@@ -308,11 +308,11 @@
                                  }
                                  if(str=="线上环境")
                                  {
-                                 tb_str = tb_str + "<td><a target='_blank' href='data/result/127.0.0.1/"+l[1] +"'>"+l[1]+"</a></td></tr>";
+                                 tb_str = tb_str + "<td><a target='_blank' href='/data/result/127.0.0.1/"+l[1] +"'>"+l[1]+"</a></td></tr>";
                                  }
                                  else
                                  {
-                                 tb_str = tb_str + "<td><a target='_blank' href='data/result/"+str+"/"+l[1] +"'>"+l[1]+"</a></td></tr>";
+                                 tb_str = tb_str + "<td><a target='_blank' href='/data/result/"+str+"/"+l[1] +"'>"+l[1]+"</a></td></tr>";
                                  }
                                 }
                               }
@@ -353,7 +353,7 @@
         	<div id="logo">
             	<a href="#"><img src="{{ static_url("images/logo.jpg") }}" alt=""></a>
             </div>
-            <h2>#话题接口列表:</h2>
+            <h2>#接口列表:</h2>
             <div>
             <button type="button1" onclick="submit()" class="btn btn-default">执行</button>
             <button type="button2" onclick="edit()" class="btn btn-default">编辑</button> 
@@ -373,14 +373,12 @@
         
                 <!--title Start-->
         <div id="right-title" class="right-title-first">
-		
-            <div class="right-title-icon">&nbsp;</div>
-                
-                <div class="right-title">接口自动化</div>
-                
+
+
+
                 <div class="clearfix"></div>
-                
-                            
+
+
            
           
         </div>
